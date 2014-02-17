@@ -9,7 +9,7 @@
     <title>Overlays - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/8746579a.master.css"/>
+    <link rel="stylesheet" href="./ui/css/e505b584.master.css"/>
     <script src="./ui/js/lib/modernizr.js"></script>
   </head>
   <body class="wr">
@@ -33,31 +33,28 @@
             <a href="./">Home</a>
           </li>
           <li class="">
+            <a href="general.html">General elements</a>
+          </li>
+          <li class="">
             <a href="grid.html">Grid</a>
-          </li>
-          <li class="">
-            <a href="typography.html">Typography</a>
-          </li>
-          <li class="">
-            <a href="lists.html">Lists</a>
           </li>
           <li class="">
             <a href="forms.html">Forms</a>
           </li>
           <li class="">
+            <a href="buttons.html">Buttons</a>
+          </li>
+          <li class="">
             <a href="panels.html">Panels</a>
           </li>
           <li class="">
-            <a href="list-tables.html">List Tables</a>
-          </li>
-          <li class="">
-            <a href="tabs.html">Tabs</a>
-          </li>
-          <li class="">
-            <a href="address-lookup.html">Address Lookup</a>
+            <a href="tables.html">Tables</a>
           </li>
           <li class="">
             <a href="date-cards.html">Date Cards</a>
+          </li>
+          <li class="">
+            <a href="address-lookup.html">Address Lookup</a>
           </li>
           <li class="active">
             <a href="overlays.html">Overlays</a>
@@ -66,6 +63,48 @@
       </div>
     </div>
     <div class="wr__page-content">
+      <div class="pattern" id="dialog">
+        <p class="pattern__title">Dialog overlay</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <p><a href="#dialog-window" class="js-overlay-open js-overlay-open-dialog">Launch dialog overlay</a>
+            <div id="dialog-window" class="overlay overlay--dialog mfp-hide">
+              <p class="overlay__title">Dialog Title</p>
+              <div class="overlay__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is a standard dialog overlay, where the content lives in the page
+              where the id of the container and the anchor link match up.</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;p&gt;&lt;a href=&quot;#dialog-window&quot; class=&quot;js-overlay-open js-overlay-open-dialog&quot;&gt;Launch dialog overlay&lt;/a&gt;
+&lt;div id=&quot;dialog-window&quot; class=&quot;overlay overlay--dialog mfp-hide&quot;&gt;
+  &lt;p class=&quot;overlay__title&quot;&gt;Dialog Title&lt;/p&gt;
+  &lt;div class=&quot;overlay__content&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
     </div>
     <script>
     var ie7 = false;

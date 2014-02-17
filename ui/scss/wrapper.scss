@@ -7,7 +7,6 @@ $font-bold: "Thesans-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helv
 $font-select: "Thesans-Semi-Light-Select", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
 
 
-
 html {
   font-family: $font-regular;
   overflow-x: hidden;
@@ -137,7 +136,7 @@ html {
 }
 
 .wr__example {
-  @include rem(margin-bottom,10);
+  @include rem(margin-bottom,20);
 }
 
 .wr__mobnav {
@@ -194,14 +193,25 @@ html {
  * @author Tim  Shedor
  */
 
- pre[class*="language-"] {
-  position:relative;
-  margin: 0 0 .5em 0;
+.wr__code {
   @media screen and (min-width: 800px) {
     width: 48%;
     float: left;
     margin-left: 2%;
   }
+
+  margin: 0 0 .5em 0;
+}
+
+.wr__code__text {
+  font-family: $font-bold;
+  margin: 20px 0 5px 0;
+}
+
+ pre[class*="language-"] {
+  position:relative;
+  margin: 0;
+  margin-bottom: 10px;
   border: 1px solid #ececec;
   border-left: 3px solid #BC0031;
 
@@ -309,4 +319,25 @@ code[class*="language"] {
 .token.cr:before,
 .token.lf:before {
   color: #e0d7d1;
+}
+
+//*PATTERN SPECIFIC STYLES*//
+
+.page-banner,
+.page-header {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+
+.page-banner {
+  @media screen and (min-width: 769px) {
+    margin-bottom: 130px;
+  }
+}
+
+.page-footer {
+  background: #2E3137;
 }

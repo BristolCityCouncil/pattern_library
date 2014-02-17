@@ -9,7 +9,7 @@
     <title>Panels - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/8746579a.master.css"/>
+    <link rel="stylesheet" href="./ui/css/e505b584.master.css"/>
     <script src="./ui/js/lib/modernizr.js"></script>
   </head>
   <body class="wr">
@@ -33,31 +33,28 @@
             <a href="./">Home</a>
           </li>
           <li class="">
+            <a href="general.html">General elements</a>
+          </li>
+          <li class="">
             <a href="grid.html">Grid</a>
           </li>
           <li class="">
-            <a href="typography.html">Typography</a>
-          </li>
-          <li class="">
-            <a href="lists.html">Lists</a>
-          </li>
-          <li class="">
             <a href="forms.html">Forms</a>
+          </li>
+          <li class="">
+            <a href="buttons.html">Buttons</a>
           </li>
           <li class="active">
             <a href="panels.html">Panels</a>
           </li>
           <li class="">
-            <a href="list-tables.html">List Tables</a>
-          </li>
-          <li class="">
-            <a href="tabs.html">Tabs</a>
-          </li>
-          <li class="">
-            <a href="address-lookup.html">Address Lookup</a>
+            <a href="tables.html">Tables</a>
           </li>
           <li class="">
             <a href="date-cards.html">Date Cards</a>
+          </li>
+          <li class="">
+            <a href="address-lookup.html">Address Lookup</a>
           </li>
           <li class="">
             <a href="overlays.html">Overlays</a>
@@ -76,6 +73,9 @@
           <option value="#sign-in">Sign in Panel</option>
           <option value="#affirm">Affirm Panel</option>
           <option value="#date">Date Panel</option>
+          <option value="#date-affirm">Date Affirm Panel</option>
+          <option value="#order">Order Panel</option>
+          <option value="#image">Image Panel</option>
         </select>
       </div>
       <div class="pattern" id="basic-panel">
@@ -107,13 +107,15 @@
               the main typographic flow.</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel&quot;&gt;
   &lt;h2 class=&quot;panel__title&quot;&gt;Panel title&lt;/h2&gt;
   &lt;div class=&quot;panel__copy&quot;&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
       <div class="pattern" id="concise">
         <p class="pattern__title">Concise panel</p>
@@ -135,10 +137,12 @@
               page</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel panel--concise&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--concise&quot;&gt;
   &lt;h2 class=&quot;panel__title&quot;&gt;You need a Bristol account to Order a New Bin&lt;/h2&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
       <div class="pattern" id="alert">
         <p class="pattern__title">Alert panel</p>
@@ -161,7 +165,8 @@
               and should be used very sparingly.</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel panel--alert&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--alert&quot;&gt;
   &lt;div class=&quot;ico ico-attention ico--large&quot;&gt;&lt;/div&gt;
   &lt;h2 class=&quot;panel__title&quot;&gt;Bad weather delays&lt;/h2&gt;
   &lt;div class=&quot;panel__copy&quot;&gt;
@@ -170,6 +175,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
       <div class="pattern" id="create">
         <p class="pattern__title">Create panel</p>
@@ -202,7 +208,8 @@
               page, or any other page where creating a new account is a major call-to-action.</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel panel--action panel--primary&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--action panel--primary&quot;&gt;
   &lt;div class=&quot;panel__inner&quot;&gt;
     &lt;div class=&quot;panel__vertical-centre&quot;&gt;
       &lt;h3 class=&quot;panel__title&quot;&gt;Create a new account&lt;/h3&gt;
@@ -216,6 +223,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
       <div class="pattern" id="sign-in">
         <p class="pattern__title">Sign in panel</p>
@@ -249,7 +257,8 @@
               page, or any other page where signing in is a major call-to-action.</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel panel--action panel--secondary&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--action panel--secondary&quot;&gt;
   &lt;div class=&quot;panel__inner&quot;&gt;
     &lt;div class=&quot;panel__vertical-centre&quot;&gt;
       &lt;h3 class=&quot;panel__title&quot;&gt;Already got an account?&lt;/h3&gt;
@@ -263,6 +272,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
       <div class="pattern" id="affirm">
         <p class="pattern__title">Affirm panel</p>
@@ -286,13 +296,15 @@
               such as date or address information</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel panel--affirm&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--affirm&quot;&gt;
   &lt;h2 class=&quot;panel__title&quot;&gt;Affirm&lt;/h2&gt;
   &lt;div class=&quot;panel__copy&quot;&gt;
     &lt;p&gt;Lorem ipsum dilor sit amet.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
       <div class="pattern" id="date">
         <p class="pattern__title">Date panel</p>
@@ -314,11 +326,117 @@
               panel</p>
           </div>
         </div>
-        <pre class="language-markup"><code>&lt;div class=&quot;panel&quot;&gt;
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel&quot;&gt;
   &lt;p class=&quot;panel__title--minor&quot;&gt;Delivery by:&lt;/p&gt;
   &lt;h2 class=&quot;panel__title&quot;&gt;Wednesday, 15 January&lt;/h2&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="date-affirm">
+        <p class="pattern__title">Date affirm panel</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="panel panel--affirm">
+            <p class="panel__title--minor">Delivery by:</p>
+            <h2 class="panel__title">Wednesday, 15 January</h2>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is a confirmation panel with a minor title followed by a main
+              title</p>
+          </div>
+          <div class="wr__notes__inner">
+            <p class="wr__title">Usage notes</p>
+            <p>This is used when the website is either confirming date information
+              for something the council is going to do (which has just been entered
+              by the user), or confirming date information which has been set at
+              some other time. This style should only ever appear once on any given
+              page.</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--affirm&quot;&gt;
+  &lt;p class=&quot;panel__title--minor&quot;&gt;Delivery by:&lt;/p&gt;
+  &lt;h2 class=&quot;panel__title&quot;&gt;Wednesday, 15 January&lt;/h2&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="order">
+        <p class="pattern__title">Order panel</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="panel panel--bare">
+            <p class="panel__title--alt">Your order <strong>#1926934</strong>
+              <span class="panel__small-link">(Quote this when contacting us)</span>
+            </p>
+            <p class="panel__advice"><a href="#">Track this order</a>
+            </p>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is a bare panel with content added to create an order note.</p>
+          </div>
+          <div class="wr__notes__inner">
+            <p class="wr__title">Usage notes</p>
+            <p>This is for important information which appears above another panel
+              detailing order information and the ability to track it.</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel panel--bare&quot;&gt;
+  &lt;p class=&quot;panel__title--alt&quot;&gt;Your order &lt;strong&gt;#1926934&lt;/strong&gt;
+    &lt;span class=&quot;panel__small-link&quot;&gt;(Quote this when contacting us)&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;panel__advice&quot;&gt;&lt;a href=&quot;#&quot;&gt;Track this order&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="image">
+        <p class="pattern__title">Image panel</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="panel media">
+            <img class="img" alt="Green wheelie bin" src="http://placehold.it/75x75/">
+            <div class="media__content">
+              <p class="panel__title--minor">Looking for the Green Wheelie Bin?</p>
+              <div class="panel__copy--small">
+                <p>These can be ordered from the <a href="#">Garden Waste</a> section.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is a standard panel with media content added to create an image
+              panel.</p>
+          </div>
+          <div class="wr__notes__inner">
+            <p class="wr__title">Usage notes</p>
+            <p>A boxout which promotes a crosslink, using an image to draw attention.</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;panel media&quot;&gt;
+  &lt;img class=&quot;img&quot; alt=&quot;Green wheelie bin&quot; src=&quot;http://placehold.it/75x75/&quot;&gt;
+  &lt;div class=&quot;media__content&quot;&gt;
+    &lt;p class=&quot;panel__title--minor&quot;&gt;Looking for the Green Wheelie Bin?&lt;/p&gt;
+    &lt;div class=&quot;panel__copy--small&quot;&gt;
+      &lt;p&gt;These can be ordered from the &lt;a href=&quot;#&quot;&gt;Garden Waste&lt;/a&gt; section.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
       </div>
     </div>
     <script>

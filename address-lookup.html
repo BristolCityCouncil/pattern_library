@@ -9,7 +9,7 @@
     <title>Address Lookup - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/8746579a.master.css"/>
+    <link rel="stylesheet" href="./ui/css/e505b584.master.css"/>
     <script src="./ui/js/lib/modernizr.js"></script>
   </head>
   <body class="wr">
@@ -33,31 +33,28 @@
             <a href="./">Home</a>
           </li>
           <li class="">
+            <a href="general.html">General elements</a>
+          </li>
+          <li class="">
             <a href="grid.html">Grid</a>
-          </li>
-          <li class="">
-            <a href="typography.html">Typography</a>
-          </li>
-          <li class="">
-            <a href="lists.html">Lists</a>
           </li>
           <li class="">
             <a href="forms.html">Forms</a>
           </li>
           <li class="">
+            <a href="buttons.html">Buttons</a>
+          </li>
+          <li class="">
             <a href="panels.html">Panels</a>
           </li>
           <li class="">
-            <a href="list-tables.html">List Tables</a>
-          </li>
-          <li class="">
-            <a href="tabs.html">Tabs</a>
-          </li>
-          <li class="active">
-            <a href="address-lookup.html">Address Lookup</a>
+            <a href="tables.html">Tables</a>
           </li>
           <li class="">
             <a href="date-cards.html">Date Cards</a>
+          </li>
+          <li class="active">
+            <a href="address-lookup.html">Address Lookup</a>
           </li>
           <li class="">
             <a href="overlays.html">Overlays</a>
@@ -66,6 +63,158 @@
       </div>
     </div>
     <div class="wr__page-content">
+      <div class="pattern" id="default">
+        <p class="pattern__title">Address lookup default</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="form__item form__item--string-action">
+            <label class="form__label">Your postcode</label>
+            <input class="form__field form__field--string" type="text" name="" />
+            <button class="btn btn--secondary" type="submit">Lookup address</button>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is the default address lookup before interaction, it is constructed
+              of standard form elements with a modifier on the wrapper.</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string-action&quot;&gt;
+  &lt;label class=&quot;form__label&quot;&gt;Your postcode&lt;/label&gt;
+  &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; /&gt;
+  &lt;button class=&quot;btn btn--secondary&quot; type=&quot;submit&quot;&gt;Lookup address&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="error">
+        <p class="pattern__title">Error returned</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="form__item form__item--string-action form__item--backend-error">
+            <label class="form__label">Your postcode</label>
+            <input class="form__field form__field--string" type="text" name="" />
+            <button class="btn btn--secondary" type="submit">Lookup address</button>
+            <em class="form__item__error">
+              <span class="ico ico-attention"></span>No results for this postcode / postcode invalid</em>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is the default address lookup if submitted with no results returned</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string-action form__item--backend-error&quot;&gt;
+  &lt;label class=&quot;form__label&quot;&gt;Your postcode&lt;/label&gt;
+  &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; /&gt;
+  &lt;button class=&quot;btn btn--secondary&quot; type=&quot;submit&quot;&gt;Lookup address&lt;/button&gt;
+  &lt;em class=&quot;form__item__error&quot;&gt;
+    &lt;span class=&quot;ico ico-attention&quot;&gt;&lt;/span&gt;No results for this postcode / postcode invalid&lt;/em&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="single-address">
+        <p class="pattern__title">Single address returned</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="form__item form__item--string-action">
+            <label class="form__label">Your postcode</label>
+            <input class="form__field form__field--string" type="text" name="" value="BS6 5AA"
+            />
+            <button class="btn btn--secondary" type="submit">Lookup address</button>
+          </div>
+          <!--/form__item-->
+          <div class="form__item form__item--select">
+            <select name="" class="form__field form__field--select">
+              <option>Please select...</option>
+              <option selected="selected">19 Redland Road, Bristol, BS6 5AA</option>
+            </select>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is the implementation for the address lookup when a single address
+              is returned after being submitted</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string-action&quot;&gt;
+  &lt;label class=&quot;form__label&quot;&gt;Your postcode&lt;/label&gt;
+  &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; value=&quot;BS6 5AA&quot;
+  /&gt;
+  &lt;button class=&quot;btn btn--secondary&quot; type=&quot;submit&quot;&gt;Lookup address&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--/form__item--&gt;
+&lt;div class=&quot;form__item form__item--select&quot;&gt;
+  &lt;select name=&quot;&quot; class=&quot;form__field form__field--select&quot;&gt;
+    &lt;option&gt;Please select...&lt;/option&gt;
+    &lt;option selected=&quot;selected&quot;&gt;19 Redland Road, Bristol, BS6 5AA&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="multiple-address">
+        <p class="pattern__title">Multiple address returned</p>
+        <div class="wr__example ">
+          <p class="wr__example__title">Example</p>
+          <div class="address-lookup js-address-lookup">
+            <div class="form__item form__item--string-action">
+              <label class="form__label">Your postcode</label>
+              <input class="form__field form__field--string" type="text" name="" value="BS6 5AA"
+              />
+              <button class="btn btn--secondary" type="submit">Lookup address</button>
+            </div>
+            <!--/form__item-->
+            <div class="form__item form__item--select">
+              <select name="" class="form__field form__field--select form__field--selectsize"
+              size="3">
+                <option selected="selected">Please select...</option>
+                <option>19 Redland Road, Bristol, BS6 5AA</option>
+                <option>20 Redland Road, Bristol, BS6 5AA</option>
+                <option>31 Redland Road, Bristol, BS6 5AA</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is the implementation for the address lookup when multiple addresses
+              are returned after being submitted, the selected address panel is
+              rendered with JS</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;address-lookup js-address-lookup&quot;&gt;
+  &lt;div class=&quot;form__item form__item--string-action&quot;&gt;
+    &lt;label class=&quot;form__label&quot;&gt;Your postcode&lt;/label&gt;
+    &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; value=&quot;BS6 5AA&quot;
+    /&gt;
+    &lt;button class=&quot;btn btn--secondary&quot; type=&quot;submit&quot;&gt;Lookup address&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;!--/form__item--&gt;
+  &lt;div class=&quot;form__item form__item--select&quot;&gt;
+    &lt;select name=&quot;&quot; class=&quot;form__field form__field--select form__field--selectsize&quot;
+    size=&quot;3&quot;&gt;
+      &lt;option selected=&quot;selected&quot;&gt;Please select...&lt;/option&gt;
+      &lt;option&gt;19 Redland Road, Bristol, BS6 5AA&lt;/option&gt;
+      &lt;option&gt;20 Redland Road, Bristol, BS6 5AA&lt;/option&gt;
+      &lt;option&gt;31 Redland Road, Bristol, BS6 5AA&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          <pre class="language-markup"><code>$('.js-address-lookup').addresslookup();
+</code></pre>
+        </div>
+      </div>
     </div>
     <script>
     var ie7 = false;
