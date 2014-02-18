@@ -123,6 +123,7 @@ html {
 }
 
 .pattern__title {
+  font-family: Georgia, serif;
   @include rem(font-size,20);
   font-family: $font-bold;
   @include rem(margin-bottom,10);
@@ -224,7 +225,7 @@ html {
 
 code[class*="language"] {
   background-color: #F5F2F0;
-
+  font-size: 12px;
   overflow: auto;
   position: relative;
   max-height:29em;

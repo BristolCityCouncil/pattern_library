@@ -175,6 +175,7 @@ html {
 
 /* line 125, ../scss/wrapper.scss */
 .pattern__title {
+  font-family: Georgia, serif;
   font-size: 20px ;
   font-size: 1.25rem ;
   font-family: "Thesans-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
@@ -182,7 +183,7 @@ html {
   margin-bottom: 0.625rem ;
 }
 
-/* line 131, ../scss/wrapper.scss */
+/* line 132, ../scss/wrapper.scss */
 .wr__example__title {
   text-transform: uppercase;
   font-size: 14px ;
@@ -191,13 +192,13 @@ html {
   color: #bc0031;
 }
 
-/* line 138, ../scss/wrapper.scss */
+/* line 139, ../scss/wrapper.scss */
 .wr__example {
   margin-bottom: 20px ;
   margin-bottom: 1.25rem ;
 }
 
-/* line 142, ../scss/wrapper.scss */
+/* line 143, ../scss/wrapper.scss */
 .wr__mobnav {
   height: 60px ;
   height: 3.75rem ;
@@ -210,18 +211,18 @@ html {
   left: 0;
 }
 @media screen and (min-width: 1000px) {
-  /* line 142, ../scss/wrapper.scss */
+  /* line 143, ../scss/wrapper.scss */
   .wr__mobnav {
     display: none;
   }
 }
-/* line 152, ../scss/wrapper.scss */
+/* line 153, ../scss/wrapper.scss */
 .visible-header .wr__mobnav {
   left: 245px ;
   left: 15.3125rem ;
 }
 
-/* line 157, ../scss/wrapper.scss */
+/* line 158, ../scss/wrapper.scss */
 .mini-logo {
   height: 45px ;
   height: 2.8125rem ;
@@ -234,7 +235,7 @@ html {
   position: absolute;
 }
 
-/* line 165, ../scss/wrapper.scss */
+/* line 166, ../scss/wrapper.scss */
 .nav-launch {
   background: url("../images/menu-icon.png") no-repeat 0 0;
   position: absolute;
@@ -247,7 +248,7 @@ html {
   cursor: pointer;
 }
 
-/* line 175, ../scss/wrapper.scss */
+/* line 176, ../scss/wrapper.scss */
 .wr__dropdown {
   font-family: "Thesans-Semi-Light-Select", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   position: absolute;
@@ -260,7 +261,7 @@ html {
   max-width: 16.25rem ;
   width: 100%;
 }
-/* line 180, ../scss/wrapper.scss */
+/* line 181, ../scss/wrapper.scss */
 .wr__dropdown p {
   display: block;
   text-align: right;
@@ -273,12 +274,12 @@ html {
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
  * @author Tim  Shedor
  */
-/* line 196, ../scss/wrapper.scss */
+/* line 197, ../scss/wrapper.scss */
 .wr__code {
   margin: 0 0 .5em 0;
 }
 @media screen and (min-width: 800px) {
-  /* line 196, ../scss/wrapper.scss */
+  /* line 197, ../scss/wrapper.scss */
   .wr__code {
     width: 48%;
     float: left;
@@ -286,13 +287,13 @@ html {
   }
 }
 
-/* line 206, ../scss/wrapper.scss */
+/* line 207, ../scss/wrapper.scss */
 .wr__code__text {
   font-family: "Thesans-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   margin: 20px 0 5px 0;
 }
 
-/* line 211, ../scss/wrapper.scss */
+/* line 212, ../scss/wrapper.scss */
 pre[class*="language-"] {
   position: relative;
   margin: 0;
@@ -303,15 +304,16 @@ pre[class*="language-"] {
   max-height: 30em;
 }
 @media screen and (max-width: 800px) {
-  /* line 211, ../scss/wrapper.scss */
+  /* line 212, ../scss/wrapper.scss */
   pre[class*="language-"] {
     margin-top: 20px;
   }
 }
 
-/* line 225, ../scss/wrapper.scss */
+/* line 226, ../scss/wrapper.scss */
 code[class*="language"] {
   background-color: #F5F2F0;
+  font-size: 12px;
   overflow: auto;
   position: relative;
   max-height: 29em;
@@ -328,12 +330,12 @@ code[class*="language"] {
   text-align: left;
 }
 
-/* line 245, ../scss/wrapper.scss */
+/* line 246, ../scss/wrapper.scss */
 .token {
   white-space: nowrap;
 }
 
-/* line 250, ../scss/wrapper.scss */
+/* line 251, ../scss/wrapper.scss */
 .token.comment,
 .token.block-comment,
 .token.prolog,
@@ -342,12 +344,12 @@ code[class*="language"] {
   color: #7D8B99;
 }
 
-/* line 258, ../scss/wrapper.scss */
+/* line 259, ../scss/wrapper.scss */
 .token.punctuation {
   color: #5F6364;
 }
 
-/* line 262, ../scss/wrapper.scss */
+/* line 263, ../scss/wrapper.scss */
 .token.property,
 .token.tag,
 .token.boolean,
@@ -358,7 +360,7 @@ code[class*="language"] {
   color: #c92c2c;
 }
 
-/* line 272, ../scss/wrapper.scss */
+/* line 273, ../scss/wrapper.scss */
 .token.selector,
 .token.attr-name,
 .token.string,
@@ -367,7 +369,7 @@ code[class*="language"] {
   color: #2f9c0a;
 }
 
-/* line 280, ../scss/wrapper.scss */
+/* line 281, ../scss/wrapper.scss */
 .token.operator,
 .token.entity,
 .token.url,
@@ -376,7 +378,7 @@ code[class*="language"] {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 288, ../scss/wrapper.scss */
+/* line 289, ../scss/wrapper.scss */
 .token.atrule,
 .token.attr-value,
 .token.keyword,
@@ -384,43 +386,43 @@ code[class*="language"] {
   color: #1990b8;
 }
 
-/* line 295, ../scss/wrapper.scss */
+/* line 296, ../scss/wrapper.scss */
 .token.regex,
 .token.important {
   color: #e90;
 }
 
-/* line 299, ../scss/wrapper.scss */
+/* line 300, ../scss/wrapper.scss */
 .language-css .token.string,
 .style .token.string {
   color: #a67f59;
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 305, ../scss/wrapper.scss */
+/* line 306, ../scss/wrapper.scss */
 .token.important {
   font-weight: normal;
 }
 
-/* line 309, ../scss/wrapper.scss */
+/* line 310, ../scss/wrapper.scss */
 .token.entity {
   cursor: help;
 }
 
-/* line 313, ../scss/wrapper.scss */
+/* line 314, ../scss/wrapper.scss */
 .namespace {
   opacity: .7;
 }
 
 /* Plugin styles */
-/* line 318, ../scss/wrapper.scss */
+/* line 319, ../scss/wrapper.scss */
 .token.tab:not(:empty):before,
 .token.cr:before,
 .token.lf:before {
   color: #e0d7d1;
 }
 
-/* line 326, ../scss/wrapper.scss */
+/* line 327, ../scss/wrapper.scss */
 .page-banner,
 .page-header {
   -webkit-box-shadow: none !important;
@@ -431,13 +433,13 @@ code[class*="language"] {
 }
 
 @media screen and (min-width: 769px) {
-  /* line 335, ../scss/wrapper.scss */
+  /* line 336, ../scss/wrapper.scss */
   .page-banner {
     margin-bottom: 130px;
   }
 }
 
-/* line 341, ../scss/wrapper.scss */
+/* line 342, ../scss/wrapper.scss */
 .page-footer {
   background: #2E3137;
 }
