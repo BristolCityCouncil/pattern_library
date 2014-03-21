@@ -1,6 +1,5 @@
 @import "compass";
-@import "core/mixins";
-@import "project/vendor/prism";
+@import "mixins";
 
 $font-regular: "Thesans-Semi-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
 $font-bold: "Thesans-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
@@ -24,6 +23,12 @@ html {
   @extend %cf;
   @media screen and (min-width: 1000px) {
     @include rem(margin-left,245);
+  }
+}
+
+.wr__page-content--simple {
+  @media screen and (min-width: 1000px) {
+    margin-left:0;
   }
 }
 

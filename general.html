@@ -9,7 +9,7 @@
     <title>General - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/e96c05a5.master.css"/>
+    <link rel="stylesheet" href="./ui/css/28373b99.master.css"/>
     <!--[if lte IE 8]>
       <script src="./ui/js/lib/respond.min.js"></script>
     <![endif]-->
@@ -42,7 +42,16 @@
             <a href="grid.html">Grid</a>
           </li>
           <li class="">
+            <a href="typography.html">Typography</a>
+          </li>
+          <li class="">
+            <a href="media.html">Media</a>
+          </li>
+          <li class="">
             <a href="forms.html">Forms</a>
+          </li>
+          <li class="">
+            <a href="profile-details.html">Profile Details</a>
           </li>
           <li class="">
             <a href="buttons.html">Buttons</a>
@@ -60,6 +69,12 @@
             <a href="address-lookup.html">Address Lookup</a>
           </li>
           <li class="">
+            <a href="in-page.html">In Page navigation</a>
+          </li>
+          <li class="">
+            <a href="tabs.html">Tabs</a>
+          </li>
+          <li class="">
             <a href="overlays.html">Overlays</a>
           </li>
         </ul>
@@ -72,6 +87,7 @@
           <option value="#header-signed-out">Header signed out</option>
           <option value="#header-signed-in">Header signed in</option>
           <option value="#header-with-icon">Header with Icon</option>
+          <option value="#beta-header">Beta header</option>
           <option value="#footer">Footer</option>
         </select>
       </div>
@@ -81,44 +97,32 @@
           <p class="wr__example__title">Example</p>
           <div class="page-header" role="banner">
             <div class="layout layout-constrained">
-              <div class="grid-wrap">
-                <div class="grid-col desktop-grid-one-sixth">
-                  <a class="logo" href="../" title="Homepage">
-                    <img src="ui/images/logo-bcc.png" alt="Bristol City Council logo">
-                  </a>
-                </div>
-                <!--/grid-col-->
-              </div>
-              <!--/grid-wrap-->
+              <a class="page-header__logo" href="../../" title="Homepage">
+                <img src="../../ui/images/logo-bcc.png" alt="Bristol City Council logo" />
+              </a>
             </div>
             <!--/layout-->
           </div>
+          <!--/page-header-->
           <div class="page-banner">
             <div class="layout layout-constrained">
               <div class="grid-wrap">
-                <div class="grid-col desktop-grid-one-sixth">
-                  <div class="ribbon">
-                    <div class="ribbon__hang">
-                      <div class="ribbon__hang__inner">
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ribbon-->
-                </div>
-                <!--/grid-col-->
-                <div class="grid-col desktop-grid-five-sixths">
+                <div class="grid-col desktop-grid-full-width">
                   <div class="breadcrumb-nav">
                     <ol class="linklist">
                       <!-- Temporarily hidden breadcrumb in Alpha -->
                       <li><a href="#">Home</a>
-                        <!--<span class="ico ico-right"></span>-->
                       </li>
-                      <!--<li><a href="#">Level 1 long page title</a> <span class="ico ico-right"></span></li>
-                <li>Level 2 longer page title</li>-->
                     </ol>
                   </div>
                   <!--/breadcrumb-nav-->
                   <div class="account-nav">
+                    <ul class="linklist">
+                      <li><a href="#" class="lnk-sign-in">Sign in</a>
+                      </li>
+                      <li><a href="#">Create an account</a>
+                      </li>
+                    </ul>
                   </div>
                   <!--/account-nav-->
                 </div>
@@ -128,6 +132,7 @@
             </div>
             <!--/layout-->
           </div>
+          <!--page-banner-->
         </div>
         <div class="wr__notes">
           <div class="wr__notes__inner">
@@ -139,44 +144,32 @@
         <div class="wr__code">
           <pre class="language-markup"><code>&lt;div class=&quot;page-header&quot; role=&quot;banner&quot;&gt;
   &lt;div class=&quot;layout layout-constrained&quot;&gt;
-    &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;a class=&quot;logo&quot; href=&quot;../&quot; title=&quot;Homepage&quot;&gt;
-          &lt;img src=&quot;../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot;&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-      &lt;!--/grid-col--&gt;
-    &lt;/div&gt;
-    &lt;!--/grid-wrap--&gt;
+    &lt;a class=&quot;page-header__logo&quot; href=&quot;../../&quot; title=&quot;Homepage&quot;&gt;
+      &lt;img src=&quot;../../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot; /&gt;
+    &lt;/a&gt;
   &lt;/div&gt;
   &lt;!--/layout--&gt;
 &lt;/div&gt;
+&lt;!--/page-header--&gt;
 &lt;div class=&quot;page-banner&quot;&gt;
   &lt;div class=&quot;layout layout-constrained&quot;&gt;
     &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;div class=&quot;ribbon&quot;&gt;
-          &lt;div class=&quot;ribbon__hang&quot;&gt;
-            &lt;div class=&quot;ribbon__hang__inner&quot;&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!--/ribbon--&gt;
-      &lt;/div&gt;
-      &lt;!--/grid-col--&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-sixths&quot;&gt;
+      &lt;div class=&quot;grid-col desktop-grid-full-width&quot;&gt;
         &lt;div class=&quot;breadcrumb-nav&quot;&gt;
           &lt;ol class=&quot;linklist&quot;&gt;
             &lt;!-- Temporarily hidden breadcrumb in Alpha --&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-              &lt;!--&lt;span class=&quot;ico ico-right&quot;&gt;&lt;/span&gt;--&gt;
             &lt;/li&gt;
-            &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Level 1 long page title&lt;/a&gt; &lt;span class=&quot;ico ico-right&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-                &lt;li&gt;Level 2 longer page title&lt;/li&gt;--&gt;
           &lt;/ol&gt;
         &lt;/div&gt;
         &lt;!--/breadcrumb-nav--&gt;
         &lt;div class=&quot;account-nav&quot;&gt;
+          &lt;ul class=&quot;linklist&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;lnk-sign-in&quot;&gt;Sign in&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Create an account&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
         &lt;/div&gt;
         &lt;!--/account-nav--&gt;
       &lt;/div&gt;
@@ -186,6 +179,7 @@
   &lt;/div&gt;
   &lt;!--/layout--&gt;
 &lt;/div&gt;
+&lt;!--page-banner--&gt;
 </code></pre>
         </div>
       </div>
@@ -195,40 +189,22 @@
           <p class="wr__example__title">Example</p>
           <div class="page-header" role="banner">
             <div class="layout layout-constrained">
-              <div class="grid-wrap">
-                <div class="grid-col desktop-grid-one-sixth">
-                  <a class="logo" href="../" title="Homepage">
-                    <img src="ui/images/logo-bcc.png" alt="Bristol City Council logo">
-                  </a>
-                </div>
-                <!--/grid-col-->
-              </div>
-              <!--/grid-wrap-->
+              <a class="page-header__logo" href="../../" title="Homepage">
+                <img src="../../ui/images/logo-bcc.png" alt="Bristol City Council logo" />
+              </a>
             </div>
             <!--/layout-->
           </div>
+          <!--/page-header-->
           <div class="page-banner">
             <div class="layout layout-constrained">
               <div class="grid-wrap">
-                <div class="grid-col desktop-grid-one-sixth">
-                  <div class="ribbon">
-                    <div class="ribbon__hang">
-                      <div class="ribbon__hang__inner">
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ribbon-->
-                </div>
-                <!--/grid-col-->
-                <div class="grid-col desktop-grid-five-sixths">
+                <div class="grid-col desktop-grid-full-width">
                   <div class="breadcrumb-nav">
                     <ol class="linklist">
                       <!-- Temporarily hidden breadcrumb in Alpha -->
                       <li><a href="#">Home</a>
-                        <!--<span class="ico ico-right"></span>-->
                       </li>
-                      <!--<li><a href="#">Level 1 long page title</a> <span class="ico ico-right"></span></li>
-                <li>Level 2 longer page title</li>-->
                     </ol>
                   </div>
                   <!--/breadcrumb-nav-->
@@ -250,6 +226,7 @@
             </div>
             <!--/layout-->
           </div>
+          <!--page-banner-->
         </div>
         <div class="wr__notes">
           <div class="wr__notes__inner">
@@ -260,40 +237,22 @@
         <div class="wr__code">
           <pre class="language-markup"><code>&lt;div class=&quot;page-header&quot; role=&quot;banner&quot;&gt;
   &lt;div class=&quot;layout layout-constrained&quot;&gt;
-    &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;a class=&quot;logo&quot; href=&quot;../&quot; title=&quot;Homepage&quot;&gt;
-          &lt;img src=&quot;../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot;&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-      &lt;!--/grid-col--&gt;
-    &lt;/div&gt;
-    &lt;!--/grid-wrap--&gt;
+    &lt;a class=&quot;page-header__logo&quot; href=&quot;../../&quot; title=&quot;Homepage&quot;&gt;
+      &lt;img src=&quot;../../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot; /&gt;
+    &lt;/a&gt;
   &lt;/div&gt;
   &lt;!--/layout--&gt;
 &lt;/div&gt;
+&lt;!--/page-header--&gt;
 &lt;div class=&quot;page-banner&quot;&gt;
   &lt;div class=&quot;layout layout-constrained&quot;&gt;
     &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;div class=&quot;ribbon&quot;&gt;
-          &lt;div class=&quot;ribbon__hang&quot;&gt;
-            &lt;div class=&quot;ribbon__hang__inner&quot;&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!--/ribbon--&gt;
-      &lt;/div&gt;
-      &lt;!--/grid-col--&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-sixths&quot;&gt;
+      &lt;div class=&quot;grid-col desktop-grid-full-width&quot;&gt;
         &lt;div class=&quot;breadcrumb-nav&quot;&gt;
           &lt;ol class=&quot;linklist&quot;&gt;
             &lt;!-- Temporarily hidden breadcrumb in Alpha --&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-              &lt;!--&lt;span class=&quot;ico ico-right&quot;&gt;&lt;/span&gt;--&gt;
             &lt;/li&gt;
-            &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Level 1 long page title&lt;/a&gt; &lt;span class=&quot;ico ico-right&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-                &lt;li&gt;Level 2 longer page title&lt;/li&gt;--&gt;
           &lt;/ol&gt;
         &lt;/div&gt;
         &lt;!--/breadcrumb-nav--&gt;
@@ -315,6 +274,7 @@
   &lt;/div&gt;
   &lt;!--/layout--&gt;
 &lt;/div&gt;
+&lt;!--page-banner--&gt;
 </code></pre>
         </div>
       </div>
@@ -324,22 +284,17 @@
           <p class="wr__example__title">Example</p>
           <div class="page-header" role="banner">
             <div class="layout layout-constrained">
-              <div class="grid-wrap">
-                <div class="grid-col desktop-grid-one-sixth">
-                  <a class="logo" href="../" title="Homepage">
-                    <img src="ui/images/logo-bcc.png" alt="Bristol City Council logo">
-                  </a>
-                </div>
-                <!--/grid-col-->
-              </div>
-              <!--/grid-wrap-->
+              <a class="page-header__logo" href="../../" title="Homepage">
+                <img src="../../ui/images/logo-bcc.png" alt="Bristol City Council logo" />
+              </a>
             </div>
             <!--/layout-->
           </div>
+          <!--/page-header-->
           <div class="page-banner">
             <div class="layout layout-constrained">
               <div class="grid-wrap">
-                <div class="grid-col desktop-grid-one-sixth">
+                <div class="grid-col desktop-grid-full-width">
                   <div class="ribbon">
                     <div class="ribbon__hang">
                       <div class="ribbon__hang__inner">
@@ -347,18 +302,11 @@
                       </div>
                     </div>
                   </div>
-                  <!--/ribbon-->
-                </div>
-                <!--/grid-col-->
-                <div class="grid-col desktop-grid-five-sixths">
                   <div class="breadcrumb-nav">
                     <ol class="linklist">
                       <!-- Temporarily hidden breadcrumb in Alpha -->
                       <li><a href="#">Home</a>
-                        <!--<span class="ico ico-right"></span>-->
                       </li>
-                      <!--<li><a href="#">Level 1 long page title</a> <span class="ico ico-right"></span></li>
-                <li>Level 2 longer page title</li>-->
                     </ol>
                   </div>
                   <!--/breadcrumb-nav-->
@@ -380,6 +328,7 @@
             </div>
             <!--/layout-->
           </div>
+          <!--page-banner-->
         </div>
         <div class="wr__notes">
           <div class="wr__notes__inner">
@@ -393,22 +342,17 @@
         <div class="wr__code">
           <pre class="language-markup"><code>&lt;div class=&quot;page-header&quot; role=&quot;banner&quot;&gt;
   &lt;div class=&quot;layout layout-constrained&quot;&gt;
-    &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;a class=&quot;logo&quot; href=&quot;../&quot; title=&quot;Homepage&quot;&gt;
-          &lt;img src=&quot;../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot;&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-      &lt;!--/grid-col--&gt;
-    &lt;/div&gt;
-    &lt;!--/grid-wrap--&gt;
+    &lt;a class=&quot;page-header__logo&quot; href=&quot;../../&quot; title=&quot;Homepage&quot;&gt;
+      &lt;img src=&quot;../../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot; /&gt;
+    &lt;/a&gt;
   &lt;/div&gt;
   &lt;!--/layout--&gt;
 &lt;/div&gt;
+&lt;!--/page-header--&gt;
 &lt;div class=&quot;page-banner&quot;&gt;
   &lt;div class=&quot;layout layout-constrained&quot;&gt;
     &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
+      &lt;div class=&quot;grid-col desktop-grid-full-width&quot;&gt;
         &lt;div class=&quot;ribbon&quot;&gt;
           &lt;div class=&quot;ribbon__hang&quot;&gt;
             &lt;div class=&quot;ribbon__hang__inner&quot;&gt;
@@ -416,18 +360,11 @@
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;!--/ribbon--&gt;
-      &lt;/div&gt;
-      &lt;!--/grid-col--&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-sixths&quot;&gt;
         &lt;div class=&quot;breadcrumb-nav&quot;&gt;
           &lt;ol class=&quot;linklist&quot;&gt;
             &lt;!-- Temporarily hidden breadcrumb in Alpha --&gt;
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
-              &lt;!--&lt;span class=&quot;ico ico-right&quot;&gt;&lt;/span&gt;--&gt;
             &lt;/li&gt;
-            &lt;!--&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Level 1 long page title&lt;/a&gt; &lt;span class=&quot;ico ico-right&quot;&gt;&lt;/span&gt;&lt;/li&gt;
-                &lt;li&gt;Level 2 longer page title&lt;/li&gt;--&gt;
           &lt;/ol&gt;
         &lt;/div&gt;
         &lt;!--/breadcrumb-nav--&gt;
@@ -449,6 +386,117 @@
   &lt;/div&gt;
   &lt;!--/layout--&gt;
 &lt;/div&gt;
+&lt;!--page-banner--&gt;
+</code></pre>
+        </div>
+      </div>
+      <div class="pattern" id="beta-header">
+        <p class="pattern__title">Beta Header</p>
+        <div class="wr__example">
+          <p class="wr__example__title">Example</p>
+          <div class="page-header beta-header" role="banner">
+            <div class="layout layout-constrained">
+              <a class="page-header__logo beta-header__logo" href="../../" title="Homepage">
+                <img src="../../ui/images/logo-bcc.png" alt="Bristol City Council logo">
+              </a>
+              <div class="beta-header__content">
+                <p class="beta-header__title">Bristol City Council
+                  <span>Beta</span>
+                </p>
+                <p class="beta-header__copy">This is a trial of our new website. If you prefer, you can still
+                  use the <a href="http://bristol.gov.uk">current site</a>
+                </p>
+              </div>
+            </div>
+            <!--/layout-->
+          </div>
+          <div class="page-banner">
+            <div class="layout layout-constrained">
+              <div class="grid-wrap">
+                <div class="grid-col desktop-grid-full-width">
+                  <div class="breadcrumb-nav">
+                    <ol class="linklist">
+                      <!-- Temporarily hidden breadcrumb in Alpha -->
+                      <li><a href="#">Home</a>
+                      </li>
+                    </ol>
+                  </div>
+                  <!--/breadcrumb-nav-->
+                  <div class="account-nav">
+                    <ul class="linklist">
+                      <li>Hi, Montgomery <a href="#" class="lnk-sign-out">Sign out</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="ico ico-cog"></span>Your account</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--/account-nav-->
+                </div>
+                <!--/grid-col-->
+              </div>
+              <!--/grid-wrap-->
+            </div>
+            <!--/layout-->
+          </div>
+          <!--page-banner-->
+        </div>
+        <div class="wr__notes">
+          <div class="wr__notes__inner">
+            <p class="wr__title">Developer notes</p>
+            <p>This is the header used on the beta site, differences include the beta
+              header class and adding the copy</p>
+          </div>
+        </div>
+        <div class="wr__code">
+          <pre class="language-markup"><code>&lt;div class=&quot;page-header beta-header&quot; role=&quot;banner&quot;&gt;
+  &lt;div class=&quot;layout layout-constrained&quot;&gt;
+    &lt;a class=&quot;page-header__logo beta-header__logo&quot; href=&quot;../../&quot; title=&quot;Homepage&quot;&gt;
+      &lt;img src=&quot;../../ui/images/logo-bcc.png&quot; alt=&quot;Bristol City Council logo&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;beta-header__content&quot;&gt;
+      &lt;p class=&quot;beta-header__title&quot;&gt;Bristol City Council
+        &lt;span&gt;Beta&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;beta-header__copy&quot;&gt;This is a trial of our new website. If you prefer, you can still use
+        the &lt;a href=&quot;http://bristol.gov.uk&quot;&gt;current site&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!--/layout--&gt;
+&lt;/div&gt;
+&lt;div class=&quot;page-banner&quot;&gt;
+  &lt;div class=&quot;layout layout-constrained&quot;&gt;
+    &lt;div class=&quot;grid-wrap&quot;&gt;
+      &lt;div class=&quot;grid-col desktop-grid-full-width&quot;&gt;
+        &lt;div class=&quot;breadcrumb-nav&quot;&gt;
+          &lt;ol class=&quot;linklist&quot;&gt;
+            &lt;!-- Temporarily hidden breadcrumb in Alpha --&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;!--/breadcrumb-nav--&gt;
+        &lt;div class=&quot;account-nav&quot;&gt;
+          &lt;ul class=&quot;linklist&quot;&gt;
+            &lt;li&gt;Hi, Montgomery &lt;a href=&quot;#&quot; class=&quot;lnk-sign-out&quot;&gt;Sign out&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot;&gt;
+                &lt;span class=&quot;ico ico-cog&quot;&gt;&lt;/span&gt;Your account&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;!--/account-nav--&gt;
+      &lt;/div&gt;
+      &lt;!--/grid-col--&gt;
+    &lt;/div&gt;
+    &lt;!--/grid-wrap--&gt;
+  &lt;/div&gt;
+  &lt;!--/layout--&gt;
+&lt;/div&gt;
+&lt;!--page-banner--&gt;
 </code></pre>
         </div>
       </div>
@@ -457,7 +505,7 @@
         <div class="wr__example">
           <p class="wr__example__title">Example</p>
           <div class="page-footer" role="contentinfo">
-            <div class="layout layout-constrained">
+            <div class="layout layout-constrained page-footer__top-bar">
               <div class="grid-wrap">
                 <div class="grid-col tablet-grid-two-thirds">
                   <div class="legal-nav">
@@ -479,15 +527,15 @@
                 <!--/grid-col-->
                 <div class="grid-col tablet-grid-one-third">
                   <div class="logo-nav">
-                    <ul class="linklist">
+                    <ul>
                       <li class="logo-gov-uk">
                         <a href="https://www.gov.uk/">
-                          <img src="ui/images/logo-gov-uk-white.png" alt="Gov.uk logo">
+                          <img src="../../ui/images/logo-gov-uk-white.png" alt="Gov.uk logo">
                         </a>
                       </li>
                       <li class="logo-bcc">
-                        <a href="../" title="Homepage">
-                          <img src="ui/images/logo-bcc-white.png" alt="Bristol City Council logo">
+                        <a href="../../" title="Homepage">
+                          <img src="../../ui/images/logo-bcc-white.png" alt="Bristol City Council logo">
                         </a>
                       </li>
                     </ul>
@@ -510,7 +558,7 @@
         </div>
         <div class="wr__code">
           <pre class="language-markup"><code>&lt;div class=&quot;page-footer&quot; role=&quot;contentinfo&quot;&gt;
-  &lt;div class=&quot;layout layout-constrained&quot;&gt;
+  &lt;div class=&quot;layout layout-constrained page-footer__top-bar&quot;&gt;
     &lt;div class=&quot;grid-wrap&quot;&gt;
       &lt;div class=&quot;grid-col tablet-grid-two-thirds&quot;&gt;
         &lt;div class=&quot;legal-nav&quot;&gt;
@@ -532,15 +580,15 @@
       &lt;!--/grid-col--&gt;
       &lt;div class=&quot;grid-col tablet-grid-one-third&quot;&gt;
         &lt;div class=&quot;logo-nav&quot;&gt;
-          &lt;ul class=&quot;linklist&quot;&gt;
+          &lt;ul&gt;
             &lt;li class=&quot;logo-gov-uk&quot;&gt;
               &lt;a href=&quot;https://www.gov.uk/&quot;&gt;
-                &lt;img src=&quot;../ui/images/logo-gov-uk-white.png&quot; alt=&quot;Gov.uk logo&quot;&gt;
+                &lt;img src=&quot;../../ui/images/logo-gov-uk-white.png&quot; alt=&quot;Gov.uk logo&quot;&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;logo-bcc&quot;&gt;
-              &lt;a href=&quot;../&quot; title=&quot;Homepage&quot;&gt;
-                &lt;img src=&quot;../ui/images/logo-bcc-white.png&quot; alt=&quot;Bristol City Council logo&quot;&gt;
+              &lt;a href=&quot;../../&quot; title=&quot;Homepage&quot;&gt;
+                &lt;img src=&quot;../../ui/images/logo-bcc-white.png&quot; alt=&quot;Bristol City Council logo&quot;&gt;
               &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;

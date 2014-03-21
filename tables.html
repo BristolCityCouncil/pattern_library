@@ -9,7 +9,7 @@
     <title>Tables - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/e96c05a5.master.css"/>
+    <link rel="stylesheet" href="./ui/css/28373b99.master.css"/>
     <!--[if lte IE 8]>
       <script src="./ui/js/lib/respond.min.js"></script>
     <![endif]-->
@@ -42,7 +42,16 @@
             <a href="grid.html">Grid</a>
           </li>
           <li class="">
+            <a href="typography.html">Typography</a>
+          </li>
+          <li class="">
+            <a href="media.html">Media</a>
+          </li>
+          <li class="">
             <a href="forms.html">Forms</a>
+          </li>
+          <li class="">
+            <a href="profile-details.html">Profile Details</a>
           </li>
           <li class="">
             <a href="buttons.html">Buttons</a>
@@ -58,6 +67,12 @@
           </li>
           <li class="">
             <a href="address-lookup.html">Address Lookup</a>
+          </li>
+          <li class="">
+            <a href="in-page.html">In Page navigation</a>
+          </li>
+          <li class="">
+            <a href="tabs.html">Tabs</a>
           </li>
           <li class="">
             <a href="overlays.html">Overlays</a>
@@ -76,7 +91,7 @@
         <p class="pattern__title">List “table”</p>
         <div class="wr__example">
           <p class="wr__example__title">Example</p>
-          <ol class="list-table">
+          <ol class="list-table js-list-table">
             <li class="list-table__row">
               <div class="grid-wrap">
                 <div class="grid-col desktop-grid-five-thirty-sixths">
@@ -94,8 +109,7 @@
                   <!-- 9/36 -->
                   <div class="list-table__row__item list-table__row__item--description">
                     <div class="list-table__row__item__inner">
-                      <p>You signed up for garden waste bin service for &pound;53
-                        for 1 year</p>
+                      <p>Information about what you've done</p>
                     </div>
                   </div>
                 </div>
@@ -105,7 +119,7 @@
                     <div class="list-table__row__item__inner list-table__row__item__inner--collapse-bottom">
                       <dl class="list-table__row__item__list list-table__row__item__list--collapse">
                         <dt>Service</dt>
-                        <dd>Waste Management</dd>
+                        <dd>Service name</dd>
                       </dl>
                     </div>
                   </div>
@@ -149,7 +163,7 @@
                 <div class="grid-col desktop-grid-three-twelfths">
                   <div class="list-table__row__item list-table__row__item--description">
                     <div class="list-table__row__item__inner">
-                      <p>You ordered a new black recycling bin.</p>
+                      <p>Different information about what you've done.</p>
                     </div>
                   </div>
                 </div>
@@ -158,7 +172,7 @@
                     <div class="list-table__row__item__inner list-table__row__item__inner--collapse-bottom">
                       <dl class="list-table__row__item__list list-table__row__item__list--collapse">
                         <dt>Service</dt>
-                        <dd>Waste Management</dd>
+                        <dd>Another service</dd>
                       </dl>
                     </div>
                   </div>
@@ -198,123 +212,122 @@
           </div>
         </div>
         <div class="wr__code">
-          <pre class="language-markup"><code>&lt;ol class=&quot;list-table&quot;&gt;
-  &lt;li class=&quot;list-table__row&quot;&gt;
-    &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-thirty-sixths&quot;&gt;
-        &lt;!-- 5/36 --&gt;
-        &lt;div class=&quot;list-table__row__item list-table__row__item--date&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
-            &lt;p&gt;
-              &lt;span&gt;6 Dec&lt;/span&gt;
-              &lt;span&gt;2013&lt;/span&gt;
-            &lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-three-twelfths&quot;&gt;
-        &lt;!-- 9/36 --&gt;
-        &lt;div class=&quot;list-table__row__item list-table__row__item--description&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
-            &lt;p&gt;You signed up for garden waste bin service for &amp;pound;53
-              for 1 year&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;!-- 6/36 --&gt;
-        &lt;div class=&quot;list-table__row__item&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-bottom&quot;&gt;
-            &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
-              &lt;dt&gt;Service&lt;/dt&gt;
-              &lt;dd&gt;Waste Management&lt;/dd&gt;
-            &lt;/dl&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;!-- 6/36 --&gt;
-        &lt;div class=&quot;list-table__row__item&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-top&quot;&gt;
-            &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
-              &lt;dt&gt;Reference&lt;/dt&gt;
-              &lt;dd&gt;#1926888&lt;/dd&gt;
-            &lt;/dl&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-eightenths&quot;&gt;
-        &lt;!-- 10/36 --&gt;
-        &lt;div class=&quot;list-table__row__item list-table__row__item--last&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
-            &lt;dl class=&quot;list-table__row__item__list&quot;&gt;
-              &lt;dt&gt;Status&lt;/dt&gt;
-              &lt;dd&gt;We are working on it. Delivery expected 14 Dec 2013.&lt;/dd&gt;
-            &lt;/dl&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;list-table__row list-table__row--complete&quot;&gt;
-    &lt;div class=&quot;grid-wrap&quot;&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-thirty-sixths&quot;&gt;
-        &lt;div class=&quot;list-table__row__item list-table__row__item--date&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
-            &lt;p&gt;
-              &lt;span&gt;6 Dec&lt;/span&gt;
-              &lt;span&gt;2013&lt;/span&gt;
-            &lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-three-twelfths&quot;&gt;
-        &lt;div class=&quot;list-table__row__item list-table__row__item--description&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
-            &lt;p&gt;You ordered a new black recycling bin.&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;div class=&quot;list-table__row__item&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-bottom&quot;&gt;
-            &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
-              &lt;dt&gt;Service&lt;/dt&gt;
-              &lt;dd&gt;Waste Management&lt;/dd&gt;
-            &lt;/dl&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
-        &lt;div class=&quot;list-table__row__item&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-top&quot;&gt;
-            &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
-              &lt;dt&gt;Reference&lt;/dt&gt;
-              &lt;dd&gt;#1926888&lt;/dd&gt;
-            &lt;/dl&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;grid-col desktop-grid-five-eightenths&quot;&gt;
-        &lt;div class=&quot;list-table__row__item list-table__row__item--last&quot;&gt;
-          &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
-            &lt;dl class=&quot;list-table__row__item__list&quot;&gt;
-              &lt;dt&gt;Status&lt;/dt&gt;
-              &lt;!-- @OPTIMIZE - change icon for circle tick --&gt;
-              &lt;dd class=&quot;list-table__row__item__list__complete&quot;&gt;
-                &lt;span class=&quot;ico ico-check icon&quot;&gt;&lt;/span&gt;Complete&lt;/dd&gt;
-            &lt;/dl&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
+          <pre class="language-markup"><code>&lt;ol class=&quot;list-table js-list-table&quot;&gt;
+ &lt;li class=&quot;list-table__row&quot;&gt;
+   &lt;div class=&quot;grid-wrap&quot;&gt;
+     &lt;div class=&quot;grid-col desktop-grid-five-thirty-sixths&quot;&gt;
+       &lt;!-- 5/36 --&gt;
+       &lt;div class=&quot;list-table__row__item list-table__row__item--date&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
+           &lt;p&gt;
+             &lt;span&gt;6 Dec&lt;/span&gt;
+             &lt;span&gt;2013&lt;/span&gt;
+           &lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-three-twelfths&quot;&gt;
+       &lt;!-- 9/36 --&gt;
+       &lt;div class=&quot;list-table__row__item list-table__row__item--description&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
+           &lt;p&gt;Information about what you've done&lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
+       &lt;!-- 6/36 --&gt;
+       &lt;div class=&quot;list-table__row__item&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-bottom&quot;&gt;
+           &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
+             &lt;dt&gt;Service&lt;/dt&gt;
+             &lt;dd&gt;Service name&lt;/dd&gt;
+           &lt;/dl&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
+       &lt;!-- 6/36 --&gt;
+       &lt;div class=&quot;list-table__row__item&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-top&quot;&gt;
+           &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
+             &lt;dt&gt;Reference&lt;/dt&gt;
+             &lt;dd&gt;#1926888&lt;/dd&gt;
+           &lt;/dl&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-five-eightenths&quot;&gt;
+       &lt;!-- 10/36 --&gt;
+       &lt;div class=&quot;list-table__row__item list-table__row__item--last&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
+           &lt;dl class=&quot;list-table__row__item__list&quot;&gt;
+             &lt;dt&gt;Status&lt;/dt&gt;
+             &lt;dd&gt;We are working on it. Delivery expected 14 Dec 2013.&lt;/dd&gt;
+           &lt;/dl&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/li&gt;
+ &lt;li class=&quot;list-table__row list-table__row--complete&quot;&gt;
+   &lt;div class=&quot;grid-wrap&quot;&gt;
+     &lt;div class=&quot;grid-col desktop-grid-five-thirty-sixths&quot;&gt;
+       &lt;div class=&quot;list-table__row__item list-table__row__item--date&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
+           &lt;p&gt;
+             &lt;span&gt;6 Dec&lt;/span&gt;
+             &lt;span&gt;2013&lt;/span&gt;
+           &lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-three-twelfths&quot;&gt;
+       &lt;div class=&quot;list-table__row__item list-table__row__item--description&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
+           &lt;p&gt;Different information about what you've done.&lt;/p&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
+       &lt;div class=&quot;list-table__row__item&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-bottom&quot;&gt;
+           &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
+             &lt;dt&gt;Service&lt;/dt&gt;
+             &lt;dd&gt;Another service&lt;/dd&gt;
+           &lt;/dl&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-one-sixth&quot;&gt;
+       &lt;div class=&quot;list-table__row__item&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner list-table__row__item__inner--collapse-top&quot;&gt;
+           &lt;dl class=&quot;list-table__row__item__list list-table__row__item__list--collapse&quot;&gt;
+             &lt;dt&gt;Reference&lt;/dt&gt;
+             &lt;dd&gt;#1926888&lt;/dd&gt;
+           &lt;/dl&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;grid-col desktop-grid-five-eightenths&quot;&gt;
+       &lt;div class=&quot;list-table__row__item list-table__row__item--last&quot;&gt;
+         &lt;div class=&quot;list-table__row__item__inner&quot;&gt;
+           &lt;dl class=&quot;list-table__row__item__list&quot;&gt;
+             &lt;dt&gt;Status&lt;/dt&gt;
+             &lt;!-- @OPTIMIZE - change icon for circle tick --&gt;
+             &lt;dd class=&quot;list-table__row__item__list__complete&quot;&gt;
+               &lt;span class=&quot;ico ico-check icon&quot;&gt;&lt;/span&gt;Complete&lt;/dd&gt;
+           &lt;/dl&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/li&gt;
 &lt;/ol&gt;
 </code></pre>
           <pre class="language-markup"><code>if (!ie7) {
-    $('.list-table').listtable();
+    $('.js-list-table').listtable();
     $(window).resize(function () {
-      $('.list-table').listtable('setHeight');
+      $('.js-list-table').listtable('setHeight');
     });
   }
 </code></pre>
