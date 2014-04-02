@@ -1,6 +1,5 @@
 @import "compass";
-@import "core/mixins";
-@import "project/vendor/prism";
+@import "mixins";
 
 $font-regular: "Thesans-Semi-Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
 $font-bold: "Thesans-Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
@@ -24,6 +23,12 @@ html {
   @extend %cf;
   @media screen and (min-width: 1000px) {
     @include rem(margin-left,245);
+  }
+}
+
+.wr__page-content--simple {
+  @media screen and (min-width: 1000px) {
+    margin-left:0;
   }
 }
 
@@ -59,6 +64,10 @@ html {
     position: relative;
     top: 50%;
     @include translateY(-50%);
+    .lt-ie9 & {
+      top: 20px;
+      @include translateY(0);
+    }
   }
 }
 
@@ -123,6 +132,7 @@ html {
 }
 
 .pattern__title {
+  font-family: Georgia, serif;
   @include rem(font-size,20);
   font-family: $font-bold;
   @include rem(margin-bottom,10);
@@ -173,6 +183,8 @@ html {
 
 }
 .wr__dropdown {
+  left: auto;
+  float: right;
   font-family: $font-select;
   position: absolute;
   @include rem(top, 30);
@@ -185,6 +197,9 @@ html {
   text-align: left;
   @include rem(max-width, 260);
   width: 100%;
+  .lt-ie9 & {
+    @include rem(width,260);
+  }
 }
 
 /**
@@ -208,7 +223,8 @@ html {
   margin: 20px 0 5px 0;
 }
 
- pre[class*="language-"] {
+ pre[class*="language-"],
+ .lt-ie9 pre {
   position:relative;
   margin: 0;
   margin-bottom: 10px;
@@ -222,9 +238,10 @@ html {
   }
 }
 
-code[class*="language"] {
+code[class*="language"],
+.lt-ie9 code {
   background-color: #F5F2F0;
-
+  font-size: 12px;
   overflow: auto;
   position: relative;
   max-height:29em;

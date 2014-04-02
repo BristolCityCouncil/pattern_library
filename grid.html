@@ -9,7 +9,10 @@
     <title>Grid - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/e505b584.master.css"/>
+    <link rel="stylesheet" href="./ui/css/28373b99.master.css"/>
+    <!--[if lte IE 8]>
+      <script src="./ui/js/lib/respond.min.js"></script>
+    <![endif]-->
     <script src="./ui/js/lib/modernizr.js"></script>
   </head>
   <body class="wr">
@@ -39,7 +42,16 @@
             <a href="grid.html">Grid</a>
           </li>
           <li class="">
+            <a href="typography.html">Typography</a>
+          </li>
+          <li class="">
+            <a href="media.html">Media</a>
+          </li>
+          <li class="">
             <a href="forms.html">Forms</a>
+          </li>
+          <li class="">
+            <a href="profile-details.html">Profile Details</a>
           </li>
           <li class="">
             <a href="buttons.html">Buttons</a>
@@ -57,11 +69,29 @@
             <a href="address-lookup.html">Address Lookup</a>
           </li>
           <li class="">
+            <a href="in-page.html">In Page navigation</a>
+          </li>
+          <li class="">
+            <a href="tabs.html">Tabs</a>
+          </li>
+          <li class="">
             <a href="overlays.html">Overlays</a>
           </li>
         </ul>
       </div>
     </div>
+    <style>
+    .grid-col .example-grid,
+    .mobile-grid-col .example-grid {
+      display: block;
+      border: 1px dotted #3c4147;
+      margin-bottom: 20px;
+      font-size: 11px;
+      font-size: .6875rem;
+      background: #f1f1f1;
+      padding: 10px 0;
+    }
+    </style>
     <div class="wr__page-content">
       <div class="wr__dropdown">
         <select class="form__field form__field--select">
@@ -77,10 +107,10 @@
           <p class="wr__example__title">Example</p>
           <div class="grid-wrap">
             <div class="grid-col tablet-grid-one-half desktop-grid-one-third">
-              <code>Column 1</code>
+              <code class="example-grid">Column 1</code>
             </div>
             <div class="grid-col tablet-grid-one-half desktop-grid-two-thirds">
-              <code>Column 2</code>
+              <code class="example-grid">Column 2</code>
             </div>
           </div>
         </div>
@@ -110,55 +140,55 @@
           <p class="wr__example__title">Example</p>
           <div class="grid-wrap">
             <div class="grid-col grid-one-twelfth">
-              <code>1/12</code>
+              <code class="example-grid">1/12</code>
             </div>
             <div class="grid-col grid-eleven-twelfths">
-              <code>11/12</code>
+              <code class="example-grid">11/12</code>
             </div>
           </div>
           <div class="grid-wrap">
             <div class="grid-col grid-one-sixth">
-              <code>1/6</code>
+              <code class="example-grid">1/6</code>
             </div>
             <div class="grid-col grid-five-sixths">
-              <code>5/6</code>
+              <code class="example-grid">5/6</code>
             </div>
           </div>
           <div class="grid-wrap">
             <div class="grid-col grid-one-quarter">
-              <code>1/4</code>
+              <code class="example-grid">1/4</code>
             </div>
             <div class="grid-col grid-three-quarters">
-              <code>3/4</code>
+              <code class="example-grid">3/4</code>
             </div>
           </div>
           <div class="grid-wrap">
             <div class="grid-col grid-one-third">
-              <code>1/3</code>
+              <code class="example-grid">1/3</code>
             </div>
             <div class="grid-col grid-two-thirds">
-              <code>2/3</code>
+              <code class="example-grid">2/3</code>
             </div>
           </div>
           <div class="grid-wrap">
             <div class="grid-col grid-five-twelfths">
-              <code>5/12</code>
+              <code class="example-grid">5/12</code>
             </div>
             <div class="grid-col grid-seven-twelfths">
-              <code>7/12</code>
+              <code class="example-grid">7/12</code>
             </div>
           </div>
           <div class="grid-wrap">
             <div class="grid-col grid-one-half">
-              <code>1/2</code>
+              <code class="example-grid">1/2</code>
             </div>
             <div class="grid-col grid-one-half">
-              <code>1/2</code>
+              <code class="example-grid">1/2</code>
             </div>
           </div>
           <div class="grid-wrap">
             <div class="grid-col grid-full">
-              <code>1/1</code>
+              <code class="example-grid">1/1</code>
             </div>
           </div>
         </div>
@@ -232,27 +262,27 @@
           <p class="wr__example__title">Example</p>
           <div class="grid-wrap">
             <div class="grid-col grid-one-half">
-              <code>1/2</code>
+              <code class="example-grid">1/2</code>
               <div class="grid-wrap">
                 <div class="grid-col grid-one-third">
-                  <code>1/3</code>
+                  <code class="example-grid">1/3</code>
                 </div>
                 <div class="grid-col grid-two-thirds">
-                  <code>2/3</code>
+                  <code class="example-grid">2/3</code>
                 </div>
               </div>
             </div>
             <div class="grid-col grid-one-half">
-              <code>1/2</code>
+              <code class="example-grid">1/2</code>
               <div class="grid-wrap">
                 <div class="grid-col grid-one-sixth">
-                  <code>1/6</code>
+                  <code class="example-grid">1/6</code>
                 </div>
                 <div class="grid-col grid-two-thirds">
-                  <code>1/3</code>
+                  <code class="example-grid">1/3</code>
                 </div>
                 <div class="grid-col grid-one-sixth">
-                  <code>1/6</code>
+                  <code class="example-grid">1/6</code>
                 </div>
               </div>
             </div>
@@ -261,26 +291,26 @@
             <div class="grid-col grid-one-half">
               <div class="grid-wrap">
                 <div class="grid-col grid-five-twelfths">
-                  <code>5/12</code>
+                  <code class="example-grid">5/12</code>
                 </div>
                 <div class="grid-col grid-seven-twelfths">
-                  <code>7/12</code>
+                  <code class="example-grid">7/12</code>
                 </div>
               </div>
             </div>
             <div class="grid-col grid-one-half">
               <div class="grid-wrap">
                 <div class="grid-col grid-one-quarter">
-                  <code>1/4</code>
+                  <code class="example-grid">1/4</code>
                 </div>
                 <div class="grid-col grid-one-quarter">
-                  <code>1/4</code>
+                  <code class="example-grid">1/4</code>
                 </div>
                 <div class="grid-col grid-one-quarter">
-                  <code>1/4</code>
+                  <code class="example-grid">1/4</code>
                 </div>
                 <div class="grid-col grid-one-quarter">
-                  <code>1/4</code>
+                  <code class="example-grid">1/4</code>
                 </div>
               </div>
             </div>
