@@ -1,0 +1,34 @@
+{
+  "name": "BCC-Pattern-Source",
+  "version": "0.1.0",
+  "description": "BCC Pattern Source\r ===============",
+  "main": "public/index.php",
+  "repository": {
+    "type": "git",
+    "url": "git@codebasehq.com:cxpartners/bcc/pattern-source.git"
+  },
+  "author": "CX Partners",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-compass": "~0.2.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-liquid": "Koded/grunt-liquid",
+    "grunt-prettify": "0.3.1",
+    "q": ">= 0.8.12",
+    "grunt-string-replace": "~0.2.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-relative-root": "~0.1.0",
+    "grunt-usemin": "~2.0.2",
+    "grunt-contrib-uglify": "~0.3.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-rev": "~0.1.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-prompt": "~0.2.0",
+    "postmark": "~0.2.0"
+  }
+}

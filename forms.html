@@ -1,133 +1,153 @@
-<!doctype html>
+
+
+  
+  <!doctype html>
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7 front-end" lang="en"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9 ie8 front-end" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><!-->
-<html class="no-js" lang="en">
-  <!--<![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
   <head>
+
     <meta charset="utf-8" />
     <title>Forms - BCC Pattern Library</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./ui/css/28373b99.master.css"/>
+    <!-- build:css /ui/css/master.css-->
+      <link rel="stylesheet" href="ui/css/master.css" />
+      <link rel="stylesheet" href="ui/css/wrapper.css" />
+    <!-- endbuild -->
     <!--[if lte IE 8]>
-      <script src="./ui/js/lib/respond.min.js"></script>
+      <script src="ui/js/lib/respond.min.js"></script>
     <![endif]-->
-    <script src="./ui/js/lib/modernizr.js"></script>
+    <script src="ui/js/lib/modernizr.js"></script>
   </head>
   <body class="wr">
+
     <div class="wr__mobnav">
       <div class="mini-logo">
-        <a href="./">
-          <img src="./content/logo-bcc-white.png" alt="">
-        </a>
-      </div>
+  <a href="index.html">
+    <img src="content/logo-bcc-white.png" alt="">
+  </a>
+</div>
+
       <div class="nav-launch"></div>
+
     </div>
     <div class="wr__header">
       <div class="wr__logo">
-        <a href="./">
-          <img src="./content/logo-bcc.png" alt="">
-        </a>
-      </div>
+  <a href="index.html">
+    <img src="content/logo-bcc.png" alt="">
+  </a>
+</div>
+
       <div class="wr__nav">
-        <ul>
-          <li class="">
-            <a href="./">Home</a>
-          </li>
-          <li class="">
-            <a href="general.html">General elements</a>
-          </li>
-          <li class="">
-            <a href="grid.html">Grid</a>
-          </li>
-          <li class="">
-            <a href="typography.html">Typography</a>
-          </li>
-          <li class="">
-            <a href="media.html">Media</a>
-          </li>
-          <li class="active">
-            <a href="forms.html">Forms</a>
-          </li>
-          <li class="">
-            <a href="profile-details.html">Profile Details</a>
-          </li>
-          <li class="">
-            <a href="buttons.html">Buttons</a>
-          </li>
-          <li class="">
-            <a href="panels.html">Panels</a>
-          </li>
-          <li class="">
-            <a href="tables.html">Tables</a>
-          </li>
-          <li class="">
-            <a href="date-cards.html">Date Cards</a>
-          </li>
-          <li class="">
-            <a href="address-lookup.html">Address Lookup</a>
-          </li>
-          <li class="">
-            <a href="in-page.html">In Page navigation</a>
-          </li>
-          <li class="">
-            <a href="tabs.html">Tabs</a>
-          </li>
-          <li class="">
-            <a href="overlays.html">Overlays</a>
-          </li>
-        </ul>
-      </div>
+  <ul>
+    <li class="">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="">
+      <a href="general.html">General elements</a>
+    </li>
+    <li class="">
+      <a href="grid.html">Grid</a>
+    </li>
+    <li class="">
+      <a href="typography.html">Typography</a>
+    </li>
+    <li class="">
+      <a href="media.html">Media</a>
+    </li>
+    <li class="active">
+      <a href="forms.html">Forms</a>
+    </li>
+    <li class="">
+      <a href="profile-details.html">Profile Details</a>
+    </li>
+    <li class="">
+      <a href="buttons.html">Buttons</a>
+    </li>
+    <li class="">
+      <a href="panels.html">Panels</a>
+    </li>
+    <li class="">
+      <a href="tables.html">Tables</a>
+    </li>
+    <li class="">
+      <a href="date-cards.html">Date Cards</a>
+    </li>
+    <li class="">
+      <a href="address-lookup.html">Address Lookup</a>
+    </li>
+    <li class="">
+      <a href="in-page.html">In Page navigation</a>
+    </li>
+    <li class="">
+      <a href="tabs.html">Tabs</a>
+    </li>
+    <li class="">
+      <a href="overlays.html">Overlays</a>
+    </li>
+
+
+
+  </ul>
+</div>
+
     </div>
-    <div class="wr__page-content">
-      <div class="wr__dropdown">
-        <select class="form__field form__field--select">
-          <option value="">Jump to…</option>
-          <option value="#error-panel">Error panel</option>
-          <option value="#confirmation-panel">Confirmation panel</option>
-          <option value="#form-title">Form section title</option>
-          <option value="#text-input">Text input</option>
-          <option value="#required-text-input">Required text input</option>
-          <option value="#number-input">Number input</option>
-          <option value="#email-input">Email input</option>
-          <option value="#textarea">Textarea</option>
-          <option value="#multiselect">Multiselect</option>
-          <option value="#select-dropdown">Select dropdown</option>
-          <option value="#password-box">Password box</option>
-          <option value="#checkbox">Checkbox</option>
-          <option value="#large-checkbox">Large checkbox</option>
-          <option value="#radio">Radio buttons</option>
-          <option value="#backend">Backend errors</option>
-        </select>
-      </div>
-      <div class="pattern" id="error-panel">
-        <p class="pattern__title">Error panel</p>
-        <div class="wr__example">
-          <p class="wr__example__title">Example</p>
-          <div class="form__feedback form__feedback--failure">
-            <h2 class="form__feedback__title">
-              <span class="ico ico-attention ico--first"></span>There were some problems submitting your form</h2>
-            <div class="form__feedback__summary">
-              <ul class="form__feedback__summary__list">
-                <li>Lorem ipsum dolor sit amet <a href="#ff-text-1-container">go to error</a>
-                </li>
-                <li>Lorem ipsum dolor sit amet</li>
-              </ul>
-            </div>
-            <!--/form__feedback__summary-->
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is an error panel for the forms, this appears on form submit only
-              at the top of the page. They should contain links to specific errors
-              as shown.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__feedback form__feedback--failure&quot;&gt;
+
+
+
+
+
+  <div class="wr__page-content">
+    <div class="wr__dropdown">
+  <select class="form__field form__field--select">
+    <option value="">Jump to…</option>
+    <option value="#error-panel">Error panel</option>
+    <option value="#confirmation-panel">Confirmation panel</option>
+    <option value="#fieldset-legend">Fieldset legend</option>
+    <option value="#text-input">Text input</option>
+    <option value="#required-text-input">Required text input</option>
+    <option value="#number-input">Number input</option>
+    <option value="#email-input">Email input</option>
+    <option value="#textarea">Textarea</option>
+    <option value="#multiselect">Multiselect</option>
+    <option value="#select-dropdown">Select dropdown</option>
+    <option value="#password-box">Password box</option>
+    <option value="#checkbox">Checkbox</option>
+    <option value="#large-checkbox">Large checkbox</option>
+    <option value="#radio">Radio buttons</option>
+    <option value="#backend">Backend errors</option>
+  </select>
+</div>
+
+    <div class="pattern" id="error-panel">
+  <p class="pattern__title">Error panel</p>
+  <div class="wr__example">
+    <p class="wr__example__title">Example</p>
+    <div class="form__feedback form__feedback--failure">
+  <h2 class="form__feedback__title">
+    <span class="ico ico-attention ico--first"></span>There were some problems submitting your form</h2>
+  <div class="form__feedback__summary">
+    <ul class="form__feedback__summary__list">
+      <li>Lorem ipsum dolor sit amet <a href="#ff-text-1-container">go to error</a>
+      </li>
+      <li>Lorem ipsum dolor sit amet</li>
+    </ul>
+  </div>
+  <!--/form__feedback__summary-->
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is an error panel for the forms, this appears on form submit only at the top of the page. They should contain links to specific errors as shown.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__feedback form__feedback--failure&quot;&gt;
   &lt;h2 class=&quot;form__feedback__title&quot;&gt;
     &lt;span class=&quot;ico ico-attention ico--first&quot;&gt;&lt;/span&gt;There were some problems submitting your form&lt;/h2&gt;
   &lt;div class=&quot;form__feedback__summary&quot;&gt;
@@ -140,30 +160,32 @@
   &lt;!--/form__feedback__summary--&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="confirmation-panel">
-        <p class="pattern__title">Confirmation panel</p>
-        <div class="wr__example">
-          <p class="wr__example__title">Example</p>
-          <div class="form__feedback form__feedback--success">
-            <h2 class="form__feedback__title">
-              <span class="ico ico-check"></span>Thank you, your submission was successful</h2>
-            <div class="form__feedback__summary">
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-            </div>
-            <!--/form__feedback__summary-->
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a confirmation panel for the forms, this should be displayed
-              on form submit at the top of the page to confirm sending of the form</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__feedback form__feedback--success&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="confirmation-panel">
+  <p class="pattern__title">Confirmation panel</p>
+  <div class="wr__example">
+    <p class="wr__example__title">Example</p>
+    <div class="form__feedback form__feedback--success">
+  <h2 class="form__feedback__title">
+    <span class="ico ico-check"></span>Thank you, your submission was successful</h2>
+  <div class="form__feedback__summary">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  </div>
+  <!--/form__feedback__summary-->
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a confirmation panel for the forms, this should be displayed on form submit at the top of the page to confirm sending of the form. The use of a h2 in the code here is just an indication that it can be a heading, the class adds the style and as such, the correct level heading should be used based on the page hierarchy</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__feedback form__feedback--success&quot;&gt;
   &lt;h2 class=&quot;form__feedback__title&quot;&gt;
     &lt;span class=&quot;ico ico-check&quot;&gt;&lt;/span&gt;Thank you, your submission was successful&lt;/h2&gt;
   &lt;div class=&quot;form__feedback__summary&quot;&gt;
@@ -172,119 +194,126 @@
   &lt;!--/form__feedback__summary--&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="form-title">
-        <p class="pattern__title">Form section title</p>
-        <div class="wr__example">
-          <p class="wr__example__title">Example</p>
-          <legend class="form__section__title">
-            <span class="form__section__title__text">Section title</span>
-          </legend>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a form section title, it is a legend for accessibility purposes,
-              while the styles are added to the internal element.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;legend class=&quot;form__section__title&quot;&gt;
-  &lt;span class=&quot;form__section__title__text&quot;&gt;Section title&lt;/span&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="fieldset-legend">
+  <p class="pattern__title">Fieldset legend</p>
+  <div class="wr__example">
+    <p class="wr__example__title">Example</p>
+    <legend class="form__section__title">
+  <span class="form__section__title__text">Fieldset legend</span>
+</legend>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a fieldset legend for accessibility purposes, while the styles are added to the internal element.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;legend class=&quot;form__section__title&quot;&gt;
+  &lt;span class=&quot;form__section__title__text&quot;&gt;Fieldset legend&lt;/span&gt;
 &lt;/legend&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="text-input">
-        <p class="pattern__title">Text Input</p>
-        <div class="wr__example">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string" id="ff-text-1-container">
-            <label class="form__label" for="ff-text-1">Text field label</label>
-            <input class="form__field form__field--string" type="text" name="" placeholder="E.g. example"
-            id="ff-text-1">
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a standard text input field. This version isn't required for
-              form submission.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot; id=&quot;ff-text-1-container&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="text-input">
+  <p class="pattern__title">Text Input</p>
+  <div class="wr__example">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string" id="ff-text-1-container">
+  <label class="form__label" for="ff-text-1">Text field label</label>
+  <input class="form__field form__field--string" type="text" name="" placeholder="E.g. example" id="ff-text-1">
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a standard text input field. This version isn't required for form submission.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot; id=&quot;ff-text-1-container&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-text-1&quot;&gt;Text field label&lt;/label&gt;
   &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;E.g. example&quot; id=&quot;ff-text-1&quot;&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="required-text-input">
-        <p class="pattern__title">Required text Input</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string">
-            <label class="form__label" for="ff-text-validate-1">Required field
-              <span class="form__label__asterix">*</span>
-            </label>
-            <input class="form__field form__field--string" type="text" name="" placeholder=""
-            id="ff-text-validate-1" data-error-message="Required field" required
-            />
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a standard text input field. This version is required for form
-              submission, losing focus of the form field checks if the field has
-              been completed, and reveals it if it hasn't.</p>
-            <p>To turn validation on, the js-validation wrapper needs the validate
-              function ran on it (shown in JavaScript code panel). This is only
-              needed once per form.</p>
-            <p>You can change the error message on by changing the data attribute
-              on the field.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="required-text-input">
+  <p class="pattern__title">Required text Input</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string">
+  <label class="form__label" for="ff-text-validate-1">Required field
+    <span class="form__label__asterix">*</span>
+  </label>
+  <input class="form__field form__field--string" type="text" name="" placeholder=""
+  id="ff-text-validate-1" data-error-message="Required field"
+  required />
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a standard text input field. This version is required for form submission, losing focus of the form field checks if the field has been completed, and reveals it if it hasn't.</p>
+<p>To turn validation on, the js-validation wrapper needs the validate function ran on it (shown in JavaScript code panel). This is only needed once per form.</p>
+<p>You can change the error message on by changing the data attribute on the field.</p>
+
+    </div>
+    <div class="wr__notes__inner">
+      <p class="wr__title">Usage notes</p>
+<p>At the beginning of the form, it is necessary to clearly state that some form fields are required, and inform the user you are using an asterisk to mark these.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-text-validate-1&quot;&gt;Required field
     &lt;span class=&quot;form__label__asterix&quot;&gt;*&lt;/span&gt;
   &lt;/label&gt;
   &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;&quot; id=&quot;ff-text-validate-1&quot; data-error-message=&quot;Required field&quot; required /&gt;
 &lt;/div&gt;
 </code></pre>
-          <p class="wr__code__text">JavaScript</p>
-          <pre class="language-markup"><code>$('.js-validation').validate({
+    <p class="wr__code__text">JavaScript</p>
+    <pre class="language-markup"><code>$('.js-validation').validate({
    'keyUpValidation': true
  });
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="number-input">
-        <p class="pattern__title">Number Input</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string">
-            <label class="form__label" for="ff-text-validate-2">Number that is 10 digits
-              <span class="form__label__asterix">*</span>
-            </label>
-            <input class="form__field form__field--string" type="text" name="" placeholder="e.g. 1111111111"
-            id="ff-text-validate-2" data-error-message="Must be a 10 digit number"
-            required pattern="\d{10}" />
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a number input field. This has validation to check the number
-              of characters controlled by the validation function implemented on
-              the required text field.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="number-input">
+  <p class="pattern__title">Number Input</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string">
+  <label class="form__label" for="ff-text-validate-2">Number that is 10 digits
+    <span class="form__label__asterix">*</span>
+  </label>
+  <input class="form__field form__field--string" type="text" name="" placeholder="e.g. 1111111111"
+  id="ff-text-validate-2" data-error-message="Must be a 10 digit number"
+  required pattern="\d{10}" />
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a number input field. This has validation to check the number of characters controlled by the validation function implemented on the required text field.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-text-validate-2&quot;&gt;Number that is 10 digits
     &lt;span class=&quot;form__label__asterix&quot;&gt;*&lt;/span&gt;
   &lt;/label&gt;
@@ -293,85 +322,91 @@
   required pattern=&quot;\d{10}&quot; /&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="email-input">
-        <p class="pattern__title">Email Input</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string">
-            <label class="form__label" for="ff-text-validate-3">Email (uses pattern on input)
-              <span class="form__label__asterix">*</span>
-            </label>
-            <input class="form__field form__field--string" type="email" name="" placeholder="e.g. test@test.co.uk"
-            id="ff-text-validate-3" data-error-message="Must be a valid email address"
-            required pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is an email input field. This has validation to check that it
-              is a valid email address, controlled by the regex in the data attribute</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="email-input">
+  <p class="pattern__title">Email Input</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string">
+  <label class="form__label" for="ff-text-validate-3">Email (uses pattern on input)
+    <span class="form__label__asterix">*</span>
+  </label>
+  <input class="form__field form__field--string" type="email" name="" placeholder="e.g. test@test.co.uk" id="ff-text-validate-3" data-error-message="Must be a valid email address" required pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is an email input field. This has validation to check that it is a valid email address, controlled by the regex in the data attribute</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-text-validate-3&quot;&gt;Email (uses pattern on input)
     &lt;span class=&quot;form__label__asterix&quot;&gt;*&lt;/span&gt;
   &lt;/label&gt;
   &lt;input class=&quot;form__field form__field--string&quot; type=&quot;email&quot; name=&quot;&quot; placeholder=&quot;e.g. test@test.co.uk&quot; id=&quot;ff-text-validate-3&quot; data-error-message=&quot;Must be a valid email address&quot; required pattern=&quot;\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*&quot; /&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="textarea">
-        <p class="pattern__title">Textarea</p>
-        <div class="wr__example">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string">
-            <label class="form__label" for="ff-textarea-2">Textarea field label</label>
-            <textarea class="form__field form__field--string form__field--textarea" name=""
-            rows="5" placeholder="e.g. example" id="ff-textarea-2"></textarea>
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a standard textarea field with placeholder text.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="textarea">
+  <p class="pattern__title">Textarea</p>
+  <div class="wr__example">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string">
+  <label class="form__label" for="ff-textarea-2">Textarea field label</label>
+  <textarea class="form__field form__field--string form__field--textarea" name=""
+  rows="5" placeholder="e.g. example" id="ff-textarea-2"></textarea>
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a standard textarea field with placeholder text.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-textarea-2&quot;&gt;Textarea field label&lt;/label&gt;
   &lt;textarea class=&quot;form__field form__field--string form__field--textarea&quot; name=&quot;&quot;
   rows=&quot;5&quot; placeholder=&quot;e.g. example&quot; id=&quot;ff-textarea-2&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="multiselect">
-        <p class="pattern__title">Multiselect Field</p>
-        <div class="wr__example">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--select">
-            <label class="form__label" for="ff-select-2">Multi-select field label</label>
-            <select multiple class="form__field form__field--select form__field--multiselect"
-            name="" id="ff-select-2">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a multi-select field enabling user to choose multiple options.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--select&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="multiselect">
+  <p class="pattern__title">Multiselect Field</p>
+  <div class="wr__example">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--select">
+  <label class="form__label" for="ff-select-2">Multi-select field label</label>
+  <select multiple class="form__field form__field--select form__field--multiselect"
+  name="" id="ff-select-2">
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a multi-select field enabling user to choose multiple options.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--select&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-select-2&quot;&gt;Multi-select field label&lt;/label&gt;
   &lt;select multiple class=&quot;form__field form__field--select form__field--multiselect&quot;
   name=&quot;&quot; id=&quot;ff-select-2&quot;&gt;
@@ -381,38 +416,39 @@
   &lt;/select&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="select-dropdown">
-        <p class="pattern__title">Select dropdown</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--select">
-            <label class="form__label" for="ff-select-validate">Select field validate (first selection invalid)
-              <span class="form__label__asterix">*</span>
-            </label>
-            <select class="form__field form__field--select form__field--select--validate" name=""
-            id="ff-select-validate" data-error-message="Please select a valid option">
-              <option>This is a longer option</option>
-              <option>Redland</option>
-              <option>Scarborough</option>
-              <option>Southmead</option>
-              <option>Sunderland</option>
-              <option>Swansea</option>
-              <option>Tiverton</option>
-            </select>
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a standard select box which requires the user to change from
-              the initial option. As with others, error messaging is contained
-              within data attributes, and the validate function needs initialising.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--select&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="select-dropdown">
+  <p class="pattern__title">Select dropdown</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--select">
+  <label class="form__label" for="ff-select-validate">Select field validate (first selection invalid)
+    <span class="form__label__asterix">*</span>
+  </label>
+  <select class="form__field form__field--select form__field--select--validate" name=""
+  id="ff-select-validate" data-error-message="Please select a valid option">
+    <option>This is a longer option</option>
+    <option>Redland</option>
+    <option>Scarborough</option>
+    <option>Southmead</option>
+    <option>Sunderland</option>
+    <option>Swansea</option>
+    <option>Tiverton</option>
+  </select>
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a standard select box which requires the user to change from the initial option. As with others, error messaging is contained within data attributes, and the validate function needs initialising.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--select&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-select-validate&quot;&gt;Select field validate (first selection invalid)
     &lt;span class=&quot;form__label__asterix&quot;&gt;*&lt;/span&gt;
   &lt;/label&gt;
@@ -428,36 +464,39 @@
   &lt;/select&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="password-box">
-        <p class="pattern__title">Password box</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string">
-            <label class="form__label" for="ff-text-password">Password</label>
-            <input class="form__field form__field--string form__field--password-strength" type="password"
-            name="" placeholder="" id="ff-text-password" data-error-message="Please enter a valid password"
-            />
-            <span class="form__note">8 to 20 characters, including 1 letter and 1 number</span>
-          </div>
-          <div class="form__item form__item--string">
-            <label class="form__label" for="ff-text-password-confirm">Confirm Password</label>
-            <input class="form__field form__field--string form__field--match" type="password"
-            name="" placeholder="" id="ff-text-password-confirm" data-match="ff-text-password"
-            data-error-message="This password must match the above password" />
-            <span class="form__note">Must match above password</span>
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a set of password fields that match the first and second box
-              as well as making sure that a set of criteria are kept to.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="password-box">
+  <p class="pattern__title">Password box</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string">
+  <label class="form__label" for="ff-text-password">Password</label>
+  <input class="form__field form__field--string form__field--password-strength" type="password"
+  name="" placeholder="" id="ff-text-password" data-error-message="Please enter a valid password"
+  />
+  <span class="form__note">8 to 20 characters, including 1 letter and 1 number</span>
+</div>
+<div class="form__item form__item--string">
+  <label class="form__label" for="ff-text-password-confirm">Confirm Password</label>
+  <input class="form__field form__field--string form__field--match" type="password"
+  name="" placeholder="" id="ff-text-password-confirm" data-match="ff-text-password"
+  data-error-message="This password must match the above password"
+  />
+  <span class="form__note">Must match above password</span>
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a set of password fields that match the first and second box as well as making sure that a set of criteria are kept to.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-text-password&quot;&gt;Password&lt;/label&gt;
   &lt;input class=&quot;form__field form__field--string form__field--password-strength&quot; type=&quot;password&quot;
   name=&quot;&quot; placeholder=&quot;&quot; id=&quot;ff-text-password&quot; data-error-message=&quot;Please enter a valid password&quot;
@@ -473,28 +512,31 @@
   &lt;span class=&quot;form__note&quot;&gt;Must match above password&lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="checkbox">
-        <p class="pattern__title">Standard checkbox</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--boolean">
-            <input class="form__field form__field--boolean form__field--boolean--validate form__field--checkbox"
-            type="checkbox" name="" id="ff-terms-validate" value="Agree" data-error-message="Please agree to the terms and conditions"
-            />
-            <label class="form__label form__label--boolean" for="ff-terms-validate">I agree to the terms and conditions</label>
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a standard checkbox which is required to be selected before
-              form submission.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--boolean&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="checkbox">
+  <p class="pattern__title">Standard checkbox</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--boolean">
+  <input class="form__field form__field--boolean form__field--boolean--validate form__field--checkbox"
+  type="checkbox" name="" id="ff-terms-validate" value="Agree"
+  data-error-message="Please agree to the terms and conditions"
+  />
+  <label class="form__label form__label--boolean" for="ff-terms-validate">I agree to the terms and conditions</label>
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a standard checkbox which is required to be selected before form submission.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--boolean&quot;&gt;
   &lt;input class=&quot;form__field form__field--boolean form__field--boolean--validate form__field--checkbox&quot;
   type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;ff-terms-validate&quot; value=&quot;Agree&quot;
   data-error-message=&quot;Please agree to the terms and conditions&quot;
@@ -502,74 +544,80 @@
   &lt;label class=&quot;form__label form__label--boolean&quot; for=&quot;ff-terms-validate&quot;&gt;I agree to the terms and conditions&lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="large-checkbox">
-        <p class="pattern__title">Large checkbox</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--boolean">
-            <input class="form__field form__field--boolean form__field--checkbox form__field--checkbox-large"
-            type="checkbox" name="" id="ff-terms-large" value="Agree" />
-            <label class="form__label form__label--boolean" for="ff-terms-large">Large Checkbox</label>
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a large checkbox, implemented via the checkbox-large modifier.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--boolean&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="large-checkbox">
+  <p class="pattern__title">Large checkbox</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--boolean">
+  <input class="form__field form__field--boolean form__field--checkbox form__field--checkbox-large"
+ type="checkbox" name="" id="ff-terms-large" value="Agree" />
+  <label class="form__label form__label--boolean" for="ff-terms-large">Large Checkbox</label>
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a large checkbox, implemented via the checkbox-large modifier.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--boolean&quot;&gt;
   &lt;input class=&quot;form__field form__field--boolean form__field--checkbox form__field--checkbox-large&quot;
  type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;ff-terms-large&quot; value=&quot;Agree&quot; /&gt;
   &lt;label class=&quot;form__label form__label--boolean&quot; for=&quot;ff-terms-large&quot;&gt;Large Checkbox&lt;/label&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="radio">
-        <p class="pattern__title">Radio list</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <fieldset class="form__group">
-            <legend class="form__group__title">
-              <span class="form__group__title__text">Label for group of radio items</span>
-            </legend>
-            <em class="form__item__error" style="display: none;">
-              <span class="ico ico-right ico--first"></span>Please choose an option</em>
-            <div class="form__item form__item--boolean form__item--group">
-              <input class="form__field form__field--boolean form__field--radio" type="radio"
-              name="radio-group-validate-2" id="ff-radio-validate-4" value="1"
-              required />
-              <label class="form__label form__label--boolean form__label--group" for="ff-radio-validate-4">Option 1</label>
-            </div>
-            <!--/form__item-->
-            <div class="form__item form__item--boolean form__item--group">
-              <input class="form__field form__field--boolean form__field--radio" type="radio"
-              name="radio-group-validate-2" id="ff-radio-validate-5" value="2"
-              required />
-              <label class="form__label form__label--boolean form__label--group" for="ff-radio-validate-5">Option 2</label>
-            </div>
-            <!--/form__item-->
-            <div class="form__item form__item--boolean form__item--group">
-              <input class="form__field form__field--boolean form__field--radio" type="radio"
-              name="radio-group-validate-2" id="ff-radio-validate-6" value="3"
-              required />
-              <label class="form__label form__label--boolean form__label--group" for="ff-radio-validate-6">Option 3</label>
-            </div>
-            <!--/form__item-->
-          </fieldset>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>This is a set of radio buttons with no default set.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;fieldset class=&quot;form__group&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="radio">
+  <p class="pattern__title">Radio list</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <fieldset class="form__group">
+  <legend class="form__group__title">
+    <span class="form__group__title__text">Label for group of radio items</span>
+  </legend>
+  <em class="form__item__error" style="display: none;">
+    <span class="ico ico-right ico--first"></span>Please choose an option</em>
+  <div class="form__item form__item--boolean form__item--group">
+    <input class="form__field form__field--boolean form__field--radio" type="radio"
+    name="radio-group-validate-2" id="ff-radio-validate-4" value="1"
+    required />
+    <label class="form__label form__label--boolean form__label--group" for="ff-radio-validate-4">Option 1</label>
+  </div>
+  <!--/form__item-->
+  <div class="form__item form__item--boolean form__item--group">
+    <input class="form__field form__field--boolean form__field--radio" type="radio"
+    name="radio-group-validate-2" id="ff-radio-validate-5" value="2"
+    required />
+    <label class="form__label form__label--boolean form__label--group" for="ff-radio-validate-5">Option 2</label>
+  </div>
+  <!--/form__item-->
+  <div class="form__item form__item--boolean form__item--group">
+    <input class="form__field form__field--boolean form__field--radio" type="radio"
+    name="radio-group-validate-2" id="ff-radio-validate-6" value="3"
+    required />
+    <label class="form__label form__label--boolean form__label--group" for="ff-radio-validate-6">Option 3</label>
+  </div>
+  <!--/form__item-->
+</fieldset>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>This is a set of radio buttons with no default set.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;fieldset class=&quot;form__group&quot;&gt;
   &lt;legend class=&quot;form__group__title&quot;&gt;
     &lt;span class=&quot;form__group__title__text&quot;&gt;Label for group of radio items&lt;/span&gt;
   &lt;/legend&gt;
@@ -598,44 +646,53 @@
   &lt;!--/form__item--&gt;
 &lt;/fieldset&gt;
 </code></pre>
-        </div>
-      </div>
-      <div class="pattern" id="backend">
-        <p class="pattern__title">Backend error</p>
-        <div class="wr__example js-validation">
-          <p class="wr__example__title">Example</p>
-          <div class="form__item form__item--string form__item--backend-error">
-            <label class="form__label" for="ff-text-backend-error">Backend error</label>
-            <input class="form__field form__field--string" type="text" name="" placeholder="E.g. example"
-            id="ff-text-backend-error" data-error-message="Required field" required
-            />
-          </div>
-        </div>
-        <div class="wr__notes">
-          <div class="wr__notes__inner">
-            <p class="wr__title">Developer notes</p>
-            <p>Backend errors are shown by adding a class of "form__item--backend-error"
-              to the appropriate "form__item". After interacting with an element
-              this class is removed and the front end takes over.</p>
-          </div>
-        </div>
-        <div class="wr__code">
-          <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string form__item--backend-error&quot;&gt;
+  </div>
+</div>
+
+    <div class="pattern" id="backend">
+  <p class="pattern__title">Backend error</p>
+  <div class="wr__example js-validation">
+    <p class="wr__example__title">Example</p>
+    <div class="form__item form__item--string form__item--backend-error">
+  <label class="form__label" for="ff-text-backend-error">Backend error</label>
+  <input class="form__field form__field--string" type="text" name="" placeholder="E.g. example"
+  id="ff-text-backend-error" data-error-message="Required field"
+  required />
+</div>
+
+  </div>
+  <div class="wr__notes">
+    <div class="wr__notes__inner">
+      <p class="wr__title">Developer notes</p>
+<p>Backend errors are shown by adding a class of "form__item--backend-error" to the appropriate "form__item". After interacting with an element this class is removed and the front end takes over.</p>
+
+    </div>
+  </div>
+  <div class="wr__code">
+    <pre class="language-markup"><code>&lt;div class=&quot;form__item form__item--string form__item--backend-error&quot;&gt;
   &lt;label class=&quot;form__label&quot; for=&quot;ff-text-backend-error&quot;&gt;Backend error&lt;/label&gt;
   &lt;input class=&quot;form__field form__field--string&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;E.g. example&quot;
   id=&quot;ff-text-backend-error&quot; data-error-message=&quot;Required field&quot;
   required /&gt;
 &lt;/div&gt;
 </code></pre>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
+
+  </div>
     <script>
     var ie7 = false;
-    </script>
-    <!--[if IE 7]>
+  </script>
+  <!--[if IE 7]>
     <script>ie7 = true;</script>
   <![endif]-->
-    <script src="./ui/js/bcc-pattern.js"></script>
+  <!-- build:js /ui/js/bcc-pattern.js-->
+
+    <script src="./ui/js/bcc-cpp.js"></script>
+    <script src="./ui/js/lib/prism.js"></script>
+    <script src="./ui/js/app/app.js"></script>
+  <!-- endbuild -->
   </body>
 </html>
+
+
