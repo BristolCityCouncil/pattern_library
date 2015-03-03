@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js aui bcc-aui" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Development Environment</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<link rel="stylesheet" href="/css/common.css">
+	<script>ga=function(){};</script>
+</head>
+
+<body>
+	<div class="wr__mobnav">
+    	<div class="mini-logo">
+			<a href="/">
+				<img src="/images/logo-bcc-white.png" alt="">
+			</a>
+		</div>
+		<div class="nav-launch"></div>
+	</div>
+    <div class="wr__header">
+    	<div class="wr__logo">
+			<a href="/">
+				<img src="/images/logo-bcc.png" alt="">
+			</a>
+		</div>
+
+    	<div class="wr__nav">
+    		<div class="wr__group">
+	    		
+				<ul>
+					<li>
+				        <a href="/">
+				            Home
+				        </a>
+				    </li>
+
+			  
+				</ul>
+			</div>
+
+			<div class="wr__group">
+	    		<header>
+	    			<span>Patterns</span>
+	    		</header>
+				<ul>
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			        	<a href="/documentation/_installation"> installation</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/creating_pages">Creating pages</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/creating_tags">Creating tags</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/exporting_css">Exporting css</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/exporting_javascript">Exporting javascript</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/extending_css">Extending css</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/extending_javascript">Extending javascript</a>
+			        </li>
+				</ul>
+			</div>
+
+			<div class="wr__group">
+				<header>
+	    			<span>Examples</span>
+	    		</header>
+				<ul>
+				    <!-- Optional / Configurable -->
+				    <li>
+				        <a href="/example/emails">
+				            Emails
+				        </a>
+				    </li>
+				    <li>
+				        <a href="/example/project">
+				            Project
+				        </a>
+				    </li>
+				    
+				</ul>
+			</div>
+			
+			<!-- <div class="wr__group">
+				<header>
+	    			<span>Custom</span>
+	    		</header>
+				<ul>
+				    <li>
+				        <a href="/custom/patterns">
+				            Patterns
+				        </a>
+					</li>
+				    <li>
+				        <a href="/custom/pages">
+				            Pages
+				        </a>
+				    </li>
+				</ul>
+			</div> -->
+
+			
+			<br>
+			<br>
+			<br>
+
+		</div>
+	</div>
+
+    <div class="wr__page-content">
+  
+ 
+ <h1 class="pl__title">
+	Installation
+</h1>
+<hr class="pl__rule" />
+<h3>Repository</h3>
+<p>
+To get started using the Bristol Frontend SDK, head to <a href="https://github.com/BristolCityCouncil">our GitHub</a> and clone our repository "Bristol Frontend SDK" into your workspace.
+</p>
+<pre><code>$ git clone https://github.com/BristolCityCouncil/Bristol-Frontend-SDK.git .</code></pre>
+<hr/>
+<h3>Dependencies</h3>
+<p>Our framework requires a few dependencies to run.</p>
+<br/>
+<h4>Composer</h4>
+<p>From the command line, run composer to install dependencies.</p>
+<pre><code>$ composer install</code></pre>
+<p>or if you do not have composer in the /usr/bin</p>
+<pre><code>$  php composer.phar install</code></pre>
+<br/>
+<h4>Task runner (development only)</h4>
+<p>If you wish to edit and add code to the library, you will have to install the development dependencies.</p>
+<pre><code>$ npm install</code></pre>
+<p class="light">Note: you may need to add sudo before the command on linux systems.</p>
+<p>To ensure everything was installed correctly, you can run</p>
+<pre><code>$ grunt </code></pre>
+<p>From your project folder. Hit "cmd+c", or "ctrl+c" on windows, to exit grunt.</p>
+<a class="newcta newcta--icon newcta--primary newcta--next" href="/documentation/creating_pages">Creating pages</a>
+
+
+    </div>
+
+    <script>
+        var ie7 = false;
+    </script>
+    <!--[if IE 7]> <script>ie7=true;</script> <![endif]-->
+  <!--   <script src="/bcc-beta-theme/dev.js"></script>
+    <script src="/bcc-beta-theme/js/main.js"></script> -->
+   
+    <script src="/bcc-beta-theme/js/main.pack.js"></script>
+    <!-- <script src="/js/vendor/prism.js"></script> -->
+
+    <script>
+
+        // you can register settings like this before require.js is loaded
+
+        $(function() {
+
+            // console.log("load");
+
+            $('.nav-launch').on('click', function() {
+                $('body').toggleClass('visible-header');
+            });
+
+            $('.wr__dropdown select').change(function() {
+
+                //console.log("change: .wr__dropdown <select>");
+
+                var targetVal = $(this).val();
+                var targetPosition = $(targetVal).offset().top;
+                $('html,body').animate({
+                    scrollTop: targetPosition
+                }, 'slow');
+                window.location.hash = targetVal;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

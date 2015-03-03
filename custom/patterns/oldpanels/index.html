@@ -1,0 +1,1153 @@
+<!doctype html>
+<html class="no-js aui bcc-aui" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Development Environment</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<link rel="stylesheet" href="/css/custom.pack.css">
+	<script>ga=function(){};</script>
+</head>
+
+<body>
+	<div class="wr__mobnav">
+    	<div class="mini-logo">
+			<a href="/">
+				<img src="/images/logo-bcc-white.png" alt="">
+			</a>
+		</div>
+		<div class="nav-launch"></div>
+	</div>
+    <div class="wr__header">
+    	<div class="wr__logo">
+			<a href="/">
+				<img src="/images/logo-bcc.png" alt="">
+			</a>
+		</div>
+
+    	<div class="wr__nav">
+    		<div class="wr__group">
+	    		
+				<ul>
+					<li>
+				        <a href="/">
+				            Home
+				        </a>
+				    </li>
+				</ul>
+			</div>
+
+			<div class="wr__group">
+	    		<header>
+	    			<span>Custom Patterns</span>
+	    		</header>
+				<ul>
+					
+
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			        	<a href="/custom/patterns/oldpanels">Oldpanels</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/custom/patterns/parking">Parking</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/custom/patterns/waste">Waste</a>
+			        </li>
+				</ul>
+			</div>
+
+		
+			
+			<div class="wr__group">
+				<header>
+	    			<span>Custom pages</span>
+	    		</header>
+				<ul>
+				   <!--  
+				    <li>
+				        <a href="/custom/patterns">
+				            Patterns
+				        </a>
+					</li> -->
+				    <li>
+				        <a href="/custom/pages">
+				            Pages
+				        </a>
+				    </li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+
+    <div class="wr__page-content">
+  
+ 
+ <div class="wr__dropdown">
+	<select class="form__field form__field--select">
+		<option value="">Jump to…</option>
+
+		<option value="#panels-panel">Panel</option>
+		<option value="#panels-panel-affirm">Panel Affirm</option>
+		<option value="#panels-panel-affirm-date">Panel Affirm Date</option>
+		<option value="#panels-panel-affirm-extra">Panel Affirm Extra</option>
+		<option value="#panels-panel-1of2">Panel 1of2</option>
+		<option value="#panels-panel-feedback">Panel Feedback</option>
+		<option value="#panels-panel-errors">Panel Errors</option>
+		<option value="#panels-panel-warning">Panel Warning</option>
+
+		<option value="#panels-slab">Slab</option>
+		<option value="#panels-slab-primary">Slab Primary</option>
+		<option value="#panels-slab-outline">Slab Outline</option>
+		<option value="#panels-slab-white-outline">Slab White Outline</option>
+		<option value="#panels-slab-additional">Slab Additional</option>
+
+		<option value="#panels-alert-warning">Alert Warning</option>
+		<option value="#panels-alert-error">Alert Error</option>
+		
+	</select>
+</div>
+
+<h1 class="pl__title">
+	Panels <small class="light">Olde</small>
+</h1>
+<hr class="pl__rule" />
+
+
+
+
+<div class="pattern" id="panels-panel">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="panel">
+			    <div class="panel__title">
+			    	Panel
+			    </div>
+			    <div class="panel__copy">
+			        <p>
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ex veritatis sit eos, id iure, qui.
+			        </p>
+			    </div>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	&lt;div class="panel__title"&gt;
+	    This is a panel
+	&lt;/div&gt; 
+	&lt;div class="panel__copy"&gt; 
+		&lt;p&gt; 
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ex veritatis sit eos, id iure, qui.
+		&lt;/p&gt; 
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+
+</div><div class="pattern" id="panels-panel-affirm">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel Affirm
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="panel panel--affirm">
+		    <div class="panel__title">
+		    	Whatever updated
+		    </div>
+		    <div class="panel__copy">
+		        Lyorem ipsum dolor sit amet, consectetur adipiscing elit.
+		    </div>
+		</div>		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel panel--affirm"&gt;
+	&lt;div class="panel__title"&gt;
+	    This is a panel
+	&lt;/div&gt; 
+	&lt;div class="panel__copy"&gt; 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ex veritatis sit eos, id iure, qui.
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-panel-affirm-date">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel Affirm Date
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="panel panel--affirm">
+		    <div class="panel__title">
+		    	Delivery by
+		    </div>
+		    <div class="panel__copy">
+		        Weds, 15th January between 7am and 6pm
+		    </div>
+		</div>		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-panel-affirm-extra">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel Affirm Extra
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="panel panel--affirm panel--date">
+		    <span class="panel__title">
+		    	Your selected address
+		    </span>
+		    <span class="panel__copy">
+		       19 Redland Road, Bristol BS6 5AA
+		    </span>
+		    <a href="">Change address</a>
+		</div>		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-panel-1of2">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel 1of2
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="panel panel--affirm panel--date panel--1of2">
+		    <div class="panel__title">
+		    	Email updated
+		    </div>
+		    <div class="panel__copy">
+		        justine.longnamerson@emailaddress.com
+		    </div>
+		</div>
+		<div class="panel panel--affirm panel--date panel--2of2">
+		    <div class="panel__title">
+		    	and
+		    </div>
+		    <div class="panel__copy">
+		    	234 Some Street, Somewhere, Some City, G12 2ND
+		    </div>
+		</div>		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-panel-feedback">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel Feedback
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="panel panel--feedback">		
+				<h2 class="panel__title">
+					Is this page helpful and free from errors?
+				</h2>
+				<div class="panel__copy">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit commodo justo.
+						<br> 
+						Aenean quis <a href="#">feedback survey</a>. 
+					</p>	
+				</div>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-panel-errors">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel Errors
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="panel panel--errors">
+		    <div class="panel__title">
+		    	We have a few errors
+		    </div>
+		    <div class="panel__copy">
+		        <li>
+		        	<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>.
+				</li>
+				<li>
+		        	<a href="">Pariatur ex veritatis sit eos, id iure, qui</a>.
+		        </li>
+		        <li>
+		        	<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>.
+				</li>
+				<li>
+		        	<a href="">Pariatur ex veritatis sit eos, id iure, qui</a>.
+		        </li>
+		    </div>
+		</div>		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel panel--errors"&gt;
+	&lt;div class="panel__title"&gt;
+	    This is a panel
+	&lt;/div&gt; 
+	&lt;div class="panel__copy"&gt; 
+		&lt;ul&gt; 
+			&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/li&gt;
+			&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/li&gt;
+			&lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/li&gt;
+		&lt;/ul&gt; 
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-panel-warning">
+
+	
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Panel Warning
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<h2 class="panel panel--warning">
+				<span class="panel__icon"></span>
+				<span class="panel__copy">
+					This is a warning about some kind of liability on your part or something like that.
+				</span>	  
+			</h2>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div>
+
+<div class="pattern" id="panels-slab">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Slab
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="slab">
+			    <div class="slab__title">
+			    	
+			    </div>
+			    <div class="slab__copy">
+			        <p>
+			        	
+			        </p>
+			    </div>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="slab"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-slab-primary">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Slab Primary
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="slab slab--primary">
+			    <div class="slab__title">
+			    	
+			    </div>
+			    <div class="slab__copy">
+			        <p>
+			        	
+			        </p>
+			    </div>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="slab"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-slab-outline">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Slab Outline
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="slab slab--outline">
+			    <div class="slab__title">
+			    	
+			    </div>
+			    <div class="slab__copy">
+			        <p>
+			        	
+			        </p>
+			    </div>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="slab"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-slab-white-outline">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Slab White Outline
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="slab slab--white slab--outline">
+			    <div class="slab__title">
+			    	
+			    </div>
+			    <div class="slab__copy">
+			        <p>
+			        	
+			        </p>
+			    </div>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="slab"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-slab-additional">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Slab Additional
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="slab slab--additional">
+			    <button class="btn btn-link" type="submit">
+					+ Add another car
+				</button>
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="slab"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div>
+<div class="pattern" id="panels-alert-warning">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Alert Warning
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="alert alert-warning">
+				bcc-boilerplate is temporarily unavailable.
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><div class="pattern" id="panels-alert-warning">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Alert Error
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<div class="alert alert-error">
+				bcc-boilerplate is temporarily unavailable.
+			</div>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p>
+		                This is a usage note
+		            </p>
+		    </div>
+		     
+		
+		
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Developer notes
+		        </p>
+		        
+		        <p>
+		This is a developer note        </p>
+		        
+		    </div>
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="panel"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div>
+
+
+
+
+
+    </div>
+
+    <script>
+        var ie7 = false;
+    </script>
+    <!--[if IE 7]> <script>ie7=true;</script> <![endif]-->
+  <!--   <script src="/bcc-beta-theme/dev.js"></script>
+    <script src="/bcc-beta-theme/js/main.js"></script> -->
+   
+    <script src="/bcc-beta-theme/js/main.pack.js"></script>
+    <!-- <script src="/js/vendor/prism.js"></script> -->
+
+    <script>
+
+        // you can register settings like this before require.js is loaded
+
+        $(function() {
+
+            // console.log("load");
+
+            $('.nav-launch').on('click', function() {
+                $('body').toggleClass('visible-header');
+            });
+
+            $('.wr__dropdown select').change(function() {
+
+                //console.log("change: .wr__dropdown <select>");
+
+                var targetVal = $(this).val();
+                var targetPosition = $(targetVal).offset().top;
+                $('html,body').animate({
+                    scrollTop: targetPosition
+                }, 'slow');
+                window.location.hash = targetVal;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

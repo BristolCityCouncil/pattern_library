@@ -1,0 +1,404 @@
+// FORMS
+
+.form {
+
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// Fix for <select> not honouring max-width
+// http://codepen.io/iamkeir/pen/bsCru
+// http://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content
+fieldset { min-width: 0; }
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell;
+  }
+}
+
+// Fix for legends appearing partially outside fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content
+legend {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+
+
+// Feedback
+
+.form__feedback {
+  position: relative;
+  border: 3px solid;
+  @include rem(margin,32 0);
+  @include rem(padding, 18 15 4 48);
+}
+
+.form__feedback__title {
+  @include font-size($h4-font-size);
+  margin-top: 0;
+  .ico {
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    @include font-size(24);
+  }
+
+}
+
+.form__feedback__summary__list {
+  @include rem(margin, 0 0 16 0);
+  li {
+    margin: 0;
+  }
+}
+
+.form__feedback--success {
+  border-color: $bcc-green;
+}
+
+.form__feedback--failure {
+  border-color: $bcc-red;
+
+  .form__feedback__title {
+    color: $bcc-red;
+  }
+  a {
+    color: $bcc-red;
+  }
+
+}
+
+// Form items
+
+.form__item {
+  @include rem(margin-bottom,13);
+  @extend %cf;
+  clear: both;
+
+  @include respond-min($bp-tablet-min) {
+    @include rem(margin-bottom,29);
+  }
+
+}
+
+.form__item--marginless {
+  margin: 0;
+}
+
+.form__item--group {
+  @include rem(margin,10 0);
+}
+
+.form__item--compact {
+  margin-bottom: 0;
+}
+
+.form__item--string-action {
+  .form__field--string {
+    @include rem(margin, 0 0 10 0);
+  }
+  .form__item__error {
+    @include rem(padding, 2 0 0 0);
+  }
+  @include respond-min($bp-desktop-min) {
+    .form__label {
+      display: block;
+    }
+    .form__field--string {
+      @include rem(width,160);
+      float: left;
+      @include rem(margin, 0 15 0 0);
+    }
+    .form__field--string--longer {
+      @include rem(width,360);
+    }
+
+    .btn {
+      float: left;
+    }
+  }
+}
+
+
+// Labels
+
+.form__label {
+  cursor: pointer;
+  @include inline-block;
+  @include rem(margin-bottom,10);
+  font-family: $font-bold;
+
+  @include respond-min($bp-tablet-min) {
+    @include font-size($form-font-size);
+  }
+
+}
+
+.form__label--boolean {
+  @include rem(padding-top,8);
+  font-family: $font-regular;
+  @include font-size($small-font-size);
+  cursor: pointer;
+  max-width: 80%;
+
+  .form__label--small {
+    @include rem(padding-top,2);
+  }
+
+}
+
+.form__label--group {
+  @include rem(padding-top,2);
+  @include inline-block;
+  cursor: pointer;
+}
+
+.form__label--error {
+  color: $bcc-red;
+}
+
+.form__label__optional {
+  color: $bcc-grey-darker;
+  font-family: $font-regular;
+}
+
+.form__label--small {
+  font-family: $font-regular;
+  @include font-size($small-print-font-size);
+}
+
+// Notes
+
+.form__note {
+  @include inline-block;
+  @include font-size($small-print-font-size);
+
+  @include respond-min($bp-tablet-min) {
+    @include font-size($small-font-size);
+  }
+
+}
+
+// Errors (inline)
+
+.form__item__error {
+  @include font-size($small-font-size);
+  color: $bcc-red;
+  font-family: $font-bold;
+  font-style: normal;
+  display: none;
+  clear: both;
+  .ico {
+    position: relative;
+    bottom: -3px;
+    @include rem(margin-right,5);
+  }
+}
+
+.form__item--backend-error label {
+  color: $bcc-red;
+}
+
+.form__item--backend-error .form__item__error {
+  display: block;
+}
+
+// Fields
+
+.form__field,
+%form__field {
+  @include placeholder {
+    color: $light-copy-on-light-grey;
+  }
+
+  @include respond-min($bp-tablet-min) {
+    @include font-size($form-font-size);
+  }
+  //font-family: $font-form;
+}
+
+.form__field {
+  @include rem(margin-bottom,5);
+}
+
+.form__field--string {
+  display: block;
+  background: $input-bg;
+  border: 0;
+  @include border-radius(3px);
+  padding: 0.6em;
+  @include box-shadow($input-shadow 0 4px 0 -2px inset);
+  width: 100%;
+  @include rem(max-width,477);
+  .ie7 & {
+    padding: 0.6em 0;
+  }
+  &:focus {
+    // @TODO: Should focus colour be black? and should focus be displayed differently for different links dotted, solid ?
+    outline: 3px solid #2e3137;
+  }
+
+}
+
+.ie7 .form__field--string {
+  border: 3px solid #cc0000;
+}
+.ie7 #ff-text-validate-1 {
+  border: 3px solid #00cc00;
+}
+.ie7 #ff-text-validate-1:focus {
+  border: 3px solid #0000cc;
+}
+
+
+.form__field--boolean {
+  @include inline-block;
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
+
+
+.form__field--select {
+  // Combined field and Uniform styles
+  display: block;
+  @include rem(max-width,477);
+  width: 100%;
+  min-width: 60px;
+  @include respond-min($bp-tablet-min) {
+    @include font-size($form-font-size);
+  }
+  font-family: $font-select;
+}
+
+.uniform__select span {
+  font-family: $font-select;
+}
+
+.form__field--select {
+  // Field-only
+  border: 1px solid #ccc;
+}
+
+.form__field--select:focus,
+.form__field--string:focus,
+.form__field--checkbox:focus {
+  /*border: 3px solid #2e3137;*/
+}
+
+.form__field--multiselect,
+.form__field--selectsize {
+  @extend .form__field--string;
+  padding: 0.6em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ipad .form__field--multiselect {
+  padding: 10px;
+}
+
+.form__field--error,
+.form__item--backend-error .form__field--string,
+.form__item--backend-error .form__field--select {
+  outline: 3px solid $bcc-red;
+  .ie7 & {
+    border: 3px solid $bcc-red;
+  }
+  @include box-shadow(none);
+  color: $bcc-red;
+}
+
+// Sections
+
+.form__section {
+  //margin-bottom: 2em;
+  @extend %cf;
+}
+
+.form__section__title__text {
+  display: block;
+  margin-bottom: 1em;
+  @include font-size($h3-font-size);
+}
+
+// Groups
+
+.form__group {
+  @extend .form__item;
+  margin-bottom: 1.4em;
+}
+
+.form__group__title__text {
+  display: block;
+  @extend .form__label;
+}
+
+.form__group__title__text--error {
+  @extend .form__label--error;
+}
+
+// Form actions
+
+.form__actions,
+.page__actions {
+  @include rem(padding-bottom,20);
+}
+
+.form__actions {
+  @include rem(padding-top,8);
+}
+
+// Form list
+
+.form__item__list {
+  margin: 0;
+  padding: 0;
+  .form__item__list__field {
+    @extend %cf;
+    margin: 0;
+  }
+  .form__field--string {
+    @include box-shadow(none);
+    @include respond-min($bp-desktop-min) {
+      float: left;
+    }
+  }
+  .form__field--string--verified {
+    background: $recyling-green-light;
+    position: relative;
+  }
+  .form__field--string--verified__value {
+    display: block;
+    padding-right: 85px;
+  }
+  .form__field--string--verified__message {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    color: $main-green;
+    @include font-size($small-font-size);
+  }
+  .form__field--string--verified__message__inner {
+    position: relative;
+    top: -5px;
+  }
+  .form__field__row {
+    display: block;
+  }
+  .form__item__list__field__action {
+    @include font-size($small-font-size);
+    @include respond-min($bp-desktop-min) {
+      float: left;
+      margin: 0 0 0 20px;
+      position: relative;
+      bottom: -12px;
+    }
+  }
+}

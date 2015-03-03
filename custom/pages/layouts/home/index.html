@@ -1,0 +1,308 @@
+<!doctype html>
+<html class="no-js aui bcc-aui" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Development Environment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <link rel="stylesheet" href="/css/common.min.css">
+    <script>ga=function()use($sp){};</script>
+</head>
+
+<body>
+
+    <div class="bcc-header">
+        <div class="bcc-header__primary">
+            <a id="skip-to-content" href="#main-content" tabindex="1"> <span>Skip to Content</span></a>
+            <div class="bcc-header__primary-inner">
+                <div class="bcc-header__brand">
+                    <div class="bcc-header__logo"></div>
+                    <a class="bcc-header__sitename" href="/">bristol.gov.uk</a>
+                </div>
+                <div class="bcc-header__search">
+                    <input class="bcc-header__search-box" placeholder="Search Bristol City Council" type="text" />
+                    <button class="bcc-header__search-button" type="submit"><span class="icon--bcc icon--bcc--search"></span></button>
+                </div>
+                <div class="bcc-header__actions">
+                    <ul>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Create an account</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bcc-header__secondry">
+            <div class="bcc-header__primary-inner">
+                <div class="bcc-header__mobile-actions">
+                    <a class="bcc-header__mobile-nav bcc-header__mobile-nav--menu" href="#"><span class="icon--bcc icon--bcc--menu"></span> Menu</a>
+                    <a class="bcc-header__mobile-nav bcc-header__mobile-nav--search" href="#"><span class="icon--bcc icon--bcc--search"></span> Search</a>
+                </div>
+                <div class="bcc-header__menu"  style="display:none" >
+                    <ul>
+                    </ul>
+                </div>
+                <div class="bcc-header__search bcc-header__search--mobile">
+                    <input class="bcc-header__search-box" type="text" />
+                    <button class="bcc-header__search-button" type="submit"><span class="icon--bcc icon--bcc--search"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    <header role="banner" id="header">
+        <div class="row-fluid">
+            <a id="skip-to-content" href="#main-content" tabindex="1"> <span>Skip to Content</span> 
+            </a>
+        </div>
+        <div id="header__inner" class="row-fluid">
+            <div id="logo">
+                <p> <a href="http://www.bristol.gov.uk" title="Go to Liferay homepage"> Liferay </a> </p> 
+            </div>
+            <div id="nav">
+                <p class=""> <a href="/issues">Issues </a> /  <a href="/boilerplate">Boilerplate </a> 
+                </p>
+            </div>
+            <div class="myaccount">
+                <div class="myaccount_links"> <a id="myaccount__sign-in" data-redirect="true" href="http://localhost:8080/c/portal/login?p_l_id=11318" rel="nofollow">Sign&nbsp;in</a> &nbsp;<span class="pipe"></span>&nbsp; <a id="myaccount__create-an-account" href="/create-account">Create&nbsp;an&nbsp;account</a> 
+                </div>
+            </div>
+        </div>
+    </header>
+    -->
+
+    <main id="main">
+        <div class="page-content" id="content">
+
+            <div class="columns-1" id="main-content" role="main" tabindex="0">
+                <div class="portlet-layout row-fluid">
+                    <div class="portlet-column portlet-column-only span12" id="column-1">
+                        <div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+                            <div class="portlet-boundary portlet-boundary_bcccontentportlet_WAR_bccportalapps101BUILDSNAPSHOT_ portlet-static portlet-static-end portlet-borderless " id="p_p_id_bcccontentportlet_WAR_bccportalapps101BUILDSNAPSHOT_"> <span id="p_bcccontentportlet_WAR_bccportalapps101BUILDSNAPSHOT"></span> 
+                                <div class="portlet-borderless-container">
+<!--START Portlet -->
+<!--START Portlet -->
+<!--START Portlet -->
+
+<h1>
+	Online services
+</h1>
+<p class="lead">
+	We're making online services easier and quicker to use. More services will be available here in the future.
+</p>
+
+
+	<p class="lead">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</p>
+
+
+<div class="services">
+	
+	<div class="half">
+		<div class="panel panel--tile" data-mh="half">
+			<h2>
+				Parking permits
+			</h2>
+			<p>
+				Apply or renew online for St Paul's residents parking permits. Find information on costs, restrictions and where you can park.
+			</p>
+
+			<ul>
+				<li>
+					<a href="#">
+						Get residents or visitors parking permits
+					</a>
+				</li>
+				<li>
+					<a href="#"> 
+						Renew a residents parking permit
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="half">
+		<div class="panel panel--tile" data-mh="half">
+			<h2>
+				Older persons bus pass
+			</h2>
+			<p>
+				Apply for an older person's bus pass. Find information on pass renewals, replacements and companion cards.
+			</p>
+			<ul>
+				<li>
+					<a href="#">
+						Apply for an older person's bus pass
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="half">
+		<div class="panel panel--tile" data-mh="half">
+			<h2>
+				Complaints and feedback
+			</h2>
+			<p>
+				Use the online forms to make a complaint or give feedback about Bristol City Council.
+			</p>
+			<ul>
+				<li>
+					<a href="">
+						Make a complaint or give feedback
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="half">
+		<div class="panel panel--tile" data-mh="half">
+			<h2>
+				Freedom of information
+			</h2>
+			<p>
+				Make a request to see any information we hold on paper or as computer files.
+			</p>
+			<ul>
+				<li>
+					<a href="#">
+						Submit a freedom of information request
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="half">
+		<div class="panel panel--tile" data-mh="half">
+			<h2>
+				Births and deaths
+			</h2>
+			<p>
+				Book an appointment online to register a birth or death at a register office in Bristol.
+			</p>
+			<ul>
+				<li>
+					<a href="#">
+						Book to register a birth
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Book to register a death
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="services services--info">
+	<div class="slab">
+		<div class="half">
+			<h2 class="slab__title">
+				Looking for another service?
+			</h2>
+			<p>
+				If you are looking for one of our existing online services, you may need to use the <a href="http://www.bristol.gov.uk/">bristol.gov.uk</a> website.
+			</p>
+		</div>
+		<div class="half divider">
+			<p>
+				As part of the ongoing work, the new services that we are looking to release soon are:
+			</p>
+			<ul>
+				<li>Registering births and deaths</li>
+				<li>Paying for council tax</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="panel panel--feedback">
+	<h2 class="panel__title">
+		Give feedback on this new online service
+	</h2>
+	<div class="panel__copy">
+		<p>
+			<a href="https://www.bristol.gov.uk/node/24282" target="_blank">Give feedback</a> <small>[opens new window]</small> and help improve this service.
+			<br>
+			It only takes a minute and you won't lose any details.
+		</p>
+	</div>
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="bcc-footer" role="contentinfo">
+        <div class="bcc-footer__inner">
+            <div class="bcc-footer__menu bcc-footer__menu--left">
+                <ul>
+                    <li>
+                        <a href="https://www.bristol.gov.uk/complaints" title="Complaints and feedback">Complaints and feedback</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bristol.gov.uk/cookies" title="Cookies">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bristol.gov.uk/privacy" title="Privacy">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bcc-footer__menu bcc-footer__menu--right">
+                <ul>
+                    <li>
+                        <a href="https://www.bristol.gov.uk/contact" title="Contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bristol.gov.uk/copyright" title="Copyright">Copyright</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var ie7 = false;
+    </script>
+    <!--[if IE 7]> <script>ie7=true;</script> <![endif]-->
+  <!--   <script src="/bcc-beta-theme/dev.js"></script>
+    <script src="/bcc-beta-theme/js/main.js"></script> -->
+   
+    <script src="/bcc-beta-theme/js/main.pack.js"></script>
+    <script>
+    // you can register settings like this before require.js is loaded
+    
+    </script>
+</body>
+
+</html>
+<!--END Portlet -->
+<!--END Portlet -->
+<!--END Portlet -->

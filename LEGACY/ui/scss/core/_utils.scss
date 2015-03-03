@@ -1,0 +1,71 @@
+// CORE: HELPERS
+// Helper classes for common style patterns
+
+// Clearfix (h5bp.com/q)
+@mixin cf {
+  @include pie-clearfix;
+}
+%cf,
+.cf {
+  @include cf;
+}
+
+
+// Accessible skiplinks
+.skiplinks {
+
+  &:focus {
+    display: block;
+    position: absolute !important;
+    text-decoration: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    border: 0;
+    outline: none;
+    z-index: 700;
+
+    span {
+      display: block;
+      margin: 0 auto;
+      width: 30%;
+      @include rem(padding, 8 0);
+      text-align: center;
+      background: #333;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+// Link-list helper
+// Inspired by https://github.com/csswizardry/inuit.css/blob/master/objects/_nav.scss
+
+.linklist,
+%linklist {
+  padding: 0;
+  margin: 0;
+  @extend %cf;
+
+  li {
+    @extend .normal-list-item;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+}
+
+.media, .media__content {
+    overflow:hidden;
+    _overflow:visible;
+    zoom:1;
+  }
+
+.media .img {
+  float:left;
+  @include rem(margin-right,10);
+}

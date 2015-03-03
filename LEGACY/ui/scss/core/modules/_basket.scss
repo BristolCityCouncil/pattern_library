@@ -1,0 +1,215 @@
+// BASKET
+
+.basket {
+
+}
+
+.basket__header {
+  @extend %cf;
+}
+
+.basket__title {
+  @include font-size($h2-font-size);
+  margin: 0;
+}
+
+.basket__change {
+  @include rem(margin,10 0);
+  @include font-size($small-font-size);
+}
+
+.basket__list {
+  @include rem(margin-bottom,40);
+}
+
+.basket__item {
+  border: 2px solid $grey-boxout;
+  // Fake border collapse (this may be insanity...)
+  margin-top: -2px;
+  &:first-child { margin-top: 0; }
+  display: block;
+}
+
+.basket__item__description {
+  @include rem(padding, 15);
+  //@extend %cf;
+
+  @include respond-min($bp-tablet-min) {
+    position: relative;
+    @include rem(padding-left,100);
+    @include rem(min-height,105);
+  }
+
+  .basket__item--fields & {//Modified version of basket__item__description for basket__item--fields
+    border-right: 0;
+  }
+  .basket__item--total & { //Modified version of basket__item__description for basket__item--total
+    @include respond-min($bp-tablet-min) {
+      border-right: 2px solid $grey-boxout;
+    }
+  }
+
+}
+
+
+
+.basket__item__image {
+  text-align: center;
+
+  @include respond-min($bp-tablet-min) {
+    position: absolute;
+    @include rem(top,15);
+    @include rem(left,10);
+  }
+
+  img {
+    width: 100%;
+    max-width: 95px;
+
+    @include respond-min($bp-tablet-min) {
+      max-width: 75px;
+    }
+
+  }
+
+}
+
+.basket__item__title {
+  @include font-size($h3-font-size);
+  @include rem(margin, 0 0 0 3);
+  text-align: center;
+
+  @include respond-min($bp-tablet-min) {
+    text-align: left;
+    @include rem(margin-top,10);
+  }
+
+}
+
+.basket__item__info {
+  @include font-size($small-print-font-size);
+  text-align: center;
+
+  @include respond-min($bp-tablet-min) {
+    @include font-size($small-font-size);
+    text-align: left;
+  }
+
+}
+
+.basket__item__details {
+  @include rem(padding, 0 15 15);
+  @extend %cf;
+
+  @include respond-min($bp-desktop-min) {
+    @include rem(padding, 15 0);
+    margin-left: -20px; // Shift grid, allow for centering
+
+    .basket__item--fields & {
+      @include rem(padding-right, 20);
+    }
+
+  }
+
+}
+
+.basket__item__qty {
+  @include font-size($h3-font-size);
+  @include rem(margin, 10 0);
+  text-align: center;
+}
+
+.basket__item__field {
+  @include rem(margin, 11 0 8 0);
+}
+
+.basket__summary {
+  @include rem(margin-bottom,40);
+}
+
+.basket__summary__title {
+  margin-bottom: 0;
+}
+
+.basket__summary__list {
+  margin-top: 0;
+}
+
+.basket__actions {
+  @include rem(padding-bottom,20);
+  @include rem(padding-top,8);
+}
+
+ .grid-col-check {
+    text-align: center;
+    @include rem(padding-top,15);
+  }
+
+.grid-col-check {
+      text-align: center;
+      @include rem(padding-top,25);
+      .uniform__checkbox {
+        position: relative;
+        right: -15px;
+      }
+    }
+
+.basket--advanced {
+
+  .desktop-grid-two-fifths {
+    display: none;
+  }
+  .basket__item--is-selected {
+    background: $grey-boxout;
+    .desktop-grid-two-fifths {
+      display: block;
+    }
+  }
+
+
+
+  .basket__item__field--old {
+      display: none;
+    }
+
+  @include respond-min($bp-desktop-min) {
+
+    .desktop-grid-three-fifths,
+    .desktop-grid-two-fifths {
+      @extend .desktop-grid-four-ninths;
+    }
+
+
+  }
+
+  .basket__item__field--hide {
+    @extend .visuallyhidden;
+  }
+}
+
+.basket--with-checks {
+  @include respond-min($bp-desktop-min) {
+    .basket__item {
+      background: url(../images/waste/1by1-border.png) repeat-y 11.1111% 0;
+    }
+
+    .basket__item--is-selected {
+      background: $grey-boxout url(../images/waste/1by1-border.png) repeat-y 11.1111% 0;
+    }
+
+
+  }
+}
+
+.basket__item__is-disabled {
+  border: 2px solid $bcc-red;
+
+  .basket__item__title,
+  .basket__item__info {
+    color: $bcc-red;
+  }
+}
+
+
+
+
