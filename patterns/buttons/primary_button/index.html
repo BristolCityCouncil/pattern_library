@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js aui bcc-aui" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Development Environment</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<link rel="stylesheet" href="/css/common.min.css">
+	<script>ga=function(){};</script>
+</head>
+
+<body>
+	<div class="wr__mobnav">
+    	<div class="mini-logo">
+			<a href="/">
+				<img src="/images/logo-bcc-white.png" alt="">
+			</a>
+		</div>
+		<div class="nav-launch"></div>
+	</div>
+    <div class="wr__header">
+    	<div class="wr__logo">
+			<a href="/">
+				<img src="/images/logo-bcc.png" alt="">
+			</a>
+		</div>
+
+    	<div class="wr__nav">
+    		<div class="wr__group">
+	    		
+				<ul>
+					<li>
+				        <a href="/">
+				            Home
+				        </a>
+				    </li>
+
+			  
+				</ul>
+			</div>
+
+			<div class="wr__group">
+	    		<header>
+	    			<span>Patterns</span>
+	    		</header>
+				<ul>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/brand">Brand</a>
+			        </li>
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			        	<a href="/patterns/buttons">Buttons</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/colours">Colours</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/icons">Icons</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/navigation">Navigation</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/panels">Panels</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/type">Type</a>
+			        </li>
+				</ul>
+			</div>
+
+			<div class="wr__group">
+				<header>
+	    			<span>Examples</span>
+	    		</header>
+				<ul>
+				    <!-- Optional / Configurable -->
+				    <li>
+				        <a href="/example/emails">
+				            Emails
+				        </a>
+				    </li>
+				    <li>
+				        <a href="/example/project">
+				            Project
+				        </a>
+				    </li>
+				    
+				</ul>
+			</div>
+			
+			<!-- <div class="wr__group">
+				<header>
+	    			<span>Custom</span>
+	    		</header>
+				<ul>
+				    <li>
+				        <a href="/custom/patterns">
+				            Patterns
+				        </a>
+					</li>
+				    <li>
+				        <a href="/custom/pages">
+				            Pages
+				        </a>
+				    </li>
+				</ul>
+			</div> -->
+
+			
+			<br>
+			<br>
+			<br>
+
+		</div>
+	</div>
+
+    <div class="wr__page-content">
+  
+ 
+ <div class="pattern" id="panel">
+
+
+        <div class="wr__example">
+        	<p class="wr__example__title">
+        		Primary Button
+        
+        		<!-- <span class="wr__controls"> 
+        			<span>
+        				<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+        				<span class="wr__controls__txt">Search</span>
+        			</span> 
+        			<span>
+        				<span class="icon icon--bcc icon--bcc--cog"></span>
+        				<span class="wr__controls__txt">Code</span>
+        			</span>
+        		</span> -->
+        	</p>
+        </div>
+        <div>
+            <button type="button" class="newcta newcta--icon newcta--primary newcta--next">Primary Button</button>            <br/><br/>
+        </div>
+        
+
+        <div class="wr__code">&nbsp;</div>
+
+
+</div>
+
+
+    </div>
+
+    <script>
+        var ie7 = false;
+    </script>
+    <!--[if IE 7]> <script>ie7=true;</script> <![endif]-->
+  <!--   <script src="/bcc-beta-theme/dev.js"></script>
+    <script src="/bcc-beta-theme/js/main.js"></script> -->
+   
+    <script src="/bcc-beta-theme/js/main.pack.js"></script>
+    <!-- <script src="/js/vendor/prism.js"></script> -->
+
+    <script>
+
+        // you can register settings like this before require.js is loaded
+
+        $(function() {
+
+            // console.log("load");
+
+            $('.nav-launch').on('click', function() {
+                $('body').toggleClass('visible-header');
+            });
+
+            $('.wr__dropdown select').change(function() {
+
+                //console.log("change: .wr__dropdown <select>");
+
+                var targetVal = $(this).val();
+                var targetPosition = $(targetVal).offset().top;
+                $('html,body').animate({
+                    scrollTop: targetPosition
+                }, 'slow');
+                window.location.hash = targetVal;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

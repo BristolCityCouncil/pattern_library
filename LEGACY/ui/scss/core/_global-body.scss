@@ -1,0 +1,44 @@
+/* ======================================================
+   BODY
+   ======================================================*/
+// @TODO: Consider refactoring the file structure so that global/body/layout are normalised
+
+.page-body {
+  @extend %cf;
+}
+
+.page-content {
+  @include rem(padding-top,60);
+  @include rem(margin-bottom,20);
+}
+
+.content {
+  //margin-bottom: 1.5em;
+}
+
+.content-header {
+
+}
+
+.content-header__title {
+  @include rem(margin-bottom,30);
+}
+
+.content-header__title-extra {
+  font-style: normal;
+  color: $bcc-red;
+}
+
+.content-header__byline {
+  color: $grey-9;
+  @include font-size($h3-font-size);
+  @include rem(margin-top,-16);
+}
+
+.content-main {
+
+}
+
+.content-sub {
+
+}

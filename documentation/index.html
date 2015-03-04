@@ -1,0 +1,201 @@
+<!doctype html>
+<html class="no-js aui bcc-aui" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Development Environment</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<link rel="stylesheet" href="/css/common.css">
+	<script>ga=function(){};</script>
+</head>
+
+<body>
+	<div class="wr__mobnav">
+    	<div class="mini-logo">
+			<a href="/">
+				<img src="/images/logo-bcc-white.png" alt="">
+			</a>
+		</div>
+		<div class="nav-launch"></div>
+	</div>
+    <div class="wr__header">
+    	<div class="wr__logo">
+			<a href="/">
+				<img src="/images/logo-bcc.png" alt="">
+			</a>
+		</div>
+
+    	<div class="wr__nav">
+    		<div class="wr__group">
+	    		
+				<ul>
+					<li>
+				        <a href="/">
+				            Home
+				        </a>
+				    </li>
+
+			  
+				</ul>
+			</div>
+
+			<div class="wr__group">
+	    		<header>
+	    			<span>Patterns</span>
+	    		</header>
+				<ul>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/_installation"> installation</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/creating_pages">Creating pages</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/creating_tags">Creating tags</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/exporting_css">Exporting css</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/exporting_javascript">Exporting javascript</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/extending_css">Extending css</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/documentation/extending_javascript">Extending javascript</a>
+			        </li>
+				</ul>
+			</div>
+
+			<div class="wr__group">
+				<header>
+	    			<span>Examples</span>
+	    		</header>
+				<ul>
+				    <!-- Optional / Configurable -->
+				    <li>
+				        <a href="/example/emails">
+				            Emails
+				        </a>
+				    </li>
+				    <li>
+				        <a href="/example/project">
+				            Project
+				        </a>
+				    </li>
+				    
+				</ul>
+			</div>
+			
+			<!-- <div class="wr__group">
+				<header>
+	    			<span>Custom</span>
+	    		</header>
+				<ul>
+				    <li>
+				        <a href="/custom/patterns">
+				            Patterns
+				        </a>
+					</li>
+				    <li>
+				        <a href="/custom/pages">
+				            Pages
+				        </a>
+				    </li>
+				</ul>
+			</div> -->
+
+			
+			<br>
+			<br>
+			<br>
+
+		</div>
+	</div>
+
+    <div class="wr__page-content">
+  
+ 
+ <!-- Add classes across PL -->
+
+<h1 class="pl__title">
+	Getting started
+</h1>
+<hr class="pl__rule" />
+
+<h3>Requirements</h3>
+<p>The requirements for running the Frontend SDK are
+	<ul>
+		<li>PHP 5.5+ (Tested with 5.6 - <a target="_blank" href="http://php.net/manual/en/install.php">Visit Site</a>)</li>
+		<li>Composer Package manager (<a target="_blank" href="https://getcomposer.org/download/">Visit Website</a>)</li>
+	</ul>
+</p>
+<h3>Developer Requirements</h3>
+<p>
+	<ul>
+		<li>PHP CLI (<a target="_blank" href="http://php.net/manual/en/install.windows.commandline.php">Windows CLI</a>)</li>
+		<li>NodeJS (<a target="_blank" href="http://nodejs.org/download/">Visit Website</a>)</li>
+		<li>Grunt CLI (<a target="_blank" href="http://gruntjs.com/installing-grunt">Visit Website</a>)</li>
+		<li>Ruby (<a target="_blank" href="https://www.ruby-lang.org/en/documentation/installation/">Visit Website</a>)</li>
+		<li>Compass 0.12.7 (<a target="_blank" href="https://rubygems.org/gems/compass/versions/0.12.7">Visit Website</a>)</li>
+	</ul>
+</p>
+<p class="light">NOTE: To install compass 0.12.7 you must first uninstall any previous version.</p>
+<pre><code>$ gem uninstall compass</code></pre>
+<p>And then...</p>
+<pre><code>$ gem install compass -v 0.12.7</code></pre>
+<br/>
+<a class="newcta newcta--icon newcta--primary newcta--next" href="/documentation/_installation">Continue to installation</a>
+
+
+    </div>
+
+    <script>
+        var ie7 = false;
+    </script>
+    <!--[if IE 7]> <script>ie7=true;</script> <![endif]-->
+  <!--   <script src="/bcc-beta-theme/dev.js"></script>
+    <script src="/bcc-beta-theme/js/main.js"></script> -->
+   
+    <script src="/bcc-beta-theme/js/main.pack.js"></script>
+    <!-- <script src="/js/vendor/prism.js"></script> -->
+
+    <script>
+
+        // you can register settings like this before require.js is loaded
+
+        $(function() {
+
+            // console.log("load");
+
+            $('.nav-launch').on('click', function() {
+                $('body').toggleClass('visible-header');
+            });
+
+            $('.wr__dropdown select').change(function() {
+
+                //console.log("change: .wr__dropdown <select>");
+
+                var targetVal = $(this).val();
+                var targetPosition = $(targetVal).offset().top;
+                $('html,body').animate({
+                    scrollTop: targetPosition
+                }, 'slow');
+                window.location.hash = targetVal;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

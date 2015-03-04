@@ -1,0 +1,79 @@
+// Includes styling for date-card and also date-card-list
+
+.date-card {
+  background: $rubbish-grey-light;
+  @include inline-block;
+  text-align: center;
+  line-height: 1.1;
+  font-family: $font-regular;
+}
+
+.date-card__weekday {
+  @include font-size($body-font-size);
+  color: $white;
+  display: block;
+  text-transform: uppercase;
+  background: $rubbish-grey;
+  @include rem(padding, 7 12 4);
+}
+
+.date-card__day {
+  display: block;
+  @include font-size($h2-font-size);
+  @include rem(margin-top,10);
+}
+
+.date-card__month {
+  @include font-size($body-font-size);
+  display: block;
+  text-transform: uppercase;
+  @include rem(margin-bottom,10);
+}
+
+.date-card__note {
+  @include rem(padding,8 12 7);
+  display: block;
+  border-top: 2px solid $white;
+  @include font-size($small-font-size);
+}
+
+.date-card--recycling {
+  color: $recyling-green;
+  background: $recyling-green-light;
+  .date-card__weekday {
+    background: $recyling-green;
+    &:after { border-left-color: $recyling-green; }
+  }
+}
+
+.date-card--bulky {
+  color: $bulky-waste;
+  background: lighten($bulky-waste, 33%);
+  .date-card__weekday {
+    background: $bulky-waste;
+    &:after { border-left-color: $bulky-waste; }
+  }
+}
+
+.date-card-list {
+  @include rem(margin-bottom, 40);
+  padding: 0;
+  @extend %cf;
+  @include respond-min(700px) {
+    margin-left: -1%;
+  }
+
+  .date-card {
+    list-style: none;
+    @extend .normal-list-item;
+    width: 100%;
+    @include respond-min(700px) {
+      width: 19%;
+      float: left;
+      margin: 0 0 0 1%;
+      .ie7 & {
+        width: 18.9%;
+      }
+    }
+  }
+}

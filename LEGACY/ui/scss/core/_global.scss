@@ -1,0 +1,253 @@
+/* ======================================================
+   GLOBAL
+   ======================================================*/
+// @OPTIMIZE: Work out what parts of this should be pulled out in to the normalize
+
+body {
+  @include font-size($body-font-size);
+  color: $copy;
+  background: $white;
+  line-height: $body-line-height;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-regular;
+}
+
+select {
+  font-family: $font-select;
+}
+
+a {
+  color: $link;
+
+  .no-touch &:hover {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: lighten($link, 25%);
+  }
+
+  &:focus {
+    font-family: $font-bold !important;
+    text-decoration: none !important;
+  }
+
+}
+
+code {
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+p, dt, dd {
+  @include rem(margin, 0 0 16);
+}
+
+strong, b, dt, legend {
+  font-family: $font-bold;
+  font-weight: normal;
+}
+
+li {
+  @include rem(margin, 8 0);
+}
+
+ul, ol {
+  // @TODO: refactor this to Rems
+  margin: 1.4em 0;
+  padding-left: 1.2em;
+
+  ul, ol {
+    margin: 0.5em 0 1em;
+  }
+
+}
+
+ul {
+  list-style: none;
+  @include rem(padding-left,20);
+  li {
+    position: relative;
+    &:before {
+      content: '\2022  ';
+      font-family: Arial, sans-serif;
+      @include font-size($h3-font-size);
+      position: absolute;
+      @include rem(left,-20);
+      @include rem(top,-7);
+    }
+  }
+}
+
+hr {
+  margin: 1.5em 0;
+}
+
+dl {
+
+
+}
+
+dt, dd {}
+
+table {
+
+}
+
+table td,
+table th {
+  @include rem(padding,10 20);
+  text-align: center;
+}
+
+.quote {
+	position: relative;
+  @include font-size($body-font-size);
+  line-height: $body-line-height;
+  @include rem(padding,5 0 5 30);
+  border-top: 6px solid $bcc-red;
+  border-bottom: 6px solid $bcc-red;
+  padding: 1em 1em 1em 3em;
+  @include rem(margin, 0 0 19 0);
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+	.quote__copy {
+		@extend %gamma;
+	}
+  .quote__credit {
+  	@extend %smallprint;
+  }
+
+	@include respond-min($bp-desktop-min) {
+  	padding-left: 8em;
+	}
+
+	&:before {
+		@extend %ico;
+		content: "\e60d";
+		color: $grey-light;
+		font-size: 32px;
+		padding-left: 1em;
+		position: absolute;
+		top: 12px;
+		left: -24px;
+
+		@include respond-min($bp-desktop-min) {
+
+			left: 0;
+			top: 33%;
+
+	  	}
+  }
+}
+
+.normal-list-item {
+  position: static;
+  &:before {
+    content: '';
+
+  }
+}
+
+.no-generatedcontent ul {
+  list-style: disc;
+  li {
+    position: static;
+  }
+}
+
+
+// Helpers
+
+.quiet {
+  &, #{headings()} {
+    color: $quiet-body-color !important;
+  }
+}
+
+.divider-top {
+  // @TODO: How can rem have importants?
+  padding-top: 40px !important;
+  border-top: 1px solid $grey-boxout !important;
+}
+
+.divider-bottom {
+  padding-bottom: 25px !important;
+  margin-bottom: 40px;
+  border-bottom: 2px solid $grey-boxout !important;
+}
+
+.level {
+  width: 100%;
+}
+
+.level .text-right {
+  text-align: right;
+  float: right;
+}
+.level .text-left {
+  text-align: left;
+  float: left;
+}
+
+.error {
+  color: $bcc-red;
+}
+
+
+/*
+ *  BUBBLE WITH A BORDER AND TRIANGLE
+ */
+
+.note {
+  position:relative;
+  padding:20px;
+  margin:1em 0 3em 0;
+  border:2px solid #eaeaea;
+  color:#333;
+  background:#fff;
+  @extend %smallprint;
+
+  @include respond-min($bp-desktop-min) {
+
+    &:before {
+    content:"";
+    position:absolute;
+    border-style:solid;
+    display:block;
+    width:0;
+    top:14px; /* controls vertical position */
+    bottom:auto;
+    left:-14px; /* value = - border-left-width - border-right-width */
+    border-width:11px 12px 11px 0;
+    border-color:transparent #eaeaea;
+  }
+
+  &:after {
+    content:"";
+    position:absolute;
+    border-style:solid;
+    display:block;
+    width:0;
+    top:7px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+    bottom:auto;
+    left:-11px; /* value = - border-left-width - border-right-width */
+    border-width:18px 21px 18px 0;
+    border-color:transparent #fff;
+  }
+
+  }
+
+
+}
+
+
+
+

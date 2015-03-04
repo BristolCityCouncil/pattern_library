@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js aui bcc-aui" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Development Environment</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<link rel="stylesheet" href="/css/common.css">
+	<script>ga=function()use($sp){};</script>
+</head>
+
+<body>
+	<div class="wr__mobnav">
+    	<div class="mini-logo">
+			<a href="/">
+				<img src="/images/logo-bcc-white.png" alt="">
+			</a>
+		</div>
+		<div class="nav-launch"></div>
+	</div>
+    <div class="wr__header">
+    	<div class="wr__logo">
+			<a href="/">
+				<img src="/images/logo-bcc.png" alt="">
+			</a>
+		</div>
+
+    	<div class="wr__nav">
+    		<div class="wr__group">
+	    		
+				<ul>
+					<li>
+				        <a href="/">
+				            Home
+				        </a>
+				    </li>
+
+			  
+				</ul>
+			</div>
+
+			<div class="wr__group">
+	    		<header>
+	    			<span>Patterns</span>
+	    		</header>
+				<ul>
+				</ul>
+			</div>
+
+			<div class="wr__group">
+				<header>
+	    			<span>Examples</span>
+	    		</header>
+				<ul>
+				    <!-- Optional / Configurable -->
+				    <li>
+				        <a href="/example/emails">
+				            Emails
+				        </a>
+				    </li>
+				    <li>
+				        <a href="/example/project">
+				            Project
+				        </a>
+				    </li>
+				    
+				</ul>
+			</div>
+			
+			<!-- <div class="wr__group">
+				<header>
+	    			<span>Custom</span>
+	    		</header>
+				<ul>
+				    <li>
+				        <a href="/custom/patterns">
+				            Patterns
+				        </a>
+					</li>
+				    <li>
+				        <a href="/custom/pages">
+				            Pages
+				        </a>
+				    </li>
+				</ul>
+			</div> -->
+
+			
+			<br>
+			<br>
+			<br>
+
+		</div>
+	</div>
+
+    <div class="wr__page-content">
+  
+ 
+ 
+<h1 class="pl__title">
+	Pages
+</h1>
+<hr class="pl__rule" />
+
+<ul>
+	<li>
+		<strong>Layouts</strong>
+		<a href="/pages/layouts/leadin">Leadin</a> <span class="light">|</span> 
+
+
+		<a href="/pages/layouts/home">Home</a> <span class="light">|</span> 
+		<a href="/pages/layouts/iag">IAG</a> <span class="light">|</span> 
+		<a href="/pages/layouts/listing">Listing</a> <span class="light">|</span> 
+		<a href="/pages/layouts/routing">Routing</a> <span class="light">|</span>
+		<a href="/pages/layouts/thanks">Thanks</a>
+	</li>
+
+	<li>
+		<strong>Brand</strong>
+		<a href="/pages/layouts/header">Header</a> <span class="light">|</span> 
+		<a href="/pages/layouts/header">Header</a>
+	</li>
+
+	<li>
+		<strong>Parking</strong> 
+		<a href="/pages/parking/intro">Intro</a> <span class="light">|</span> 
+		<a href="/pages/parking/step1">1</a> <span class="light">|</span> 
+		<a href="/pages/parking/step2">2</a> <span class="light">|</span> 
+		<a href="/pages/parking/step3">3</a> <span class="light">|</span> 
+		<a href="/pages/parking/step4">4</a> <span class="light">|</span> 
+		<a href="/pages/parking/step5">5</a> <span class="light">|</span> 
+		<a href="/pages/parking/thanks">Thanks</a>
+	</li>
+
+	<li>
+		<strong>Renewals</strong> 
+		<a href="/pages/renewals/intro">Intro</a> <span class="light">|</span> 
+		<a href="/pages/renewals/step1">1</a> <span class="light">|</span> 
+		<a href="/pages/renewals/step2">2</a> <span class="light">|</span> 
+		<a href="/pages/renewals/step3">3</a> <span class="light">|</span> 
+		<a href="/pages/renewals/thanks">Thanks</a>
+	</li>
+</ul>
+
+
+
+
+    </div>
+
+    <script>
+        var ie7 = false;
+    </script>
+    <!--[if IE 7]> <script>ie7=true;</script> <![endif]-->
+  <!--   <script src="/bcc-beta-theme/dev.js"></script>
+    <script src="/bcc-beta-theme/js/main.js"></script> -->
+   
+    <script src="/bcc-beta-theme/js/main.pack.js"></script>
+    <!-- <script src="/js/vendor/prism.js"></script> -->
+
+    <script>
+
+        // you can register settings like this before require.js is loaded
+
+        $(function()use($sp){
+
+            // console.log("load");
+
+            $('.nav-launch').on('click', function()use($sp){
+                $('body').toggleClass('visible-header');
+            });
+
+            $('.wr__dropdown select').change(function()use($sp){
+
+                //console.log("change: .wr__dropdown <select>");
+
+                var targetVal = $(this).val();
+                var targetPosition = $(targetVal).offset().top;
+                $('html,body').animate({
+                    scrollTop: targetPosition
+                }, 'slow');
+                window.location.hash = targetVal;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
