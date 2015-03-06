@@ -10878,13 +10878,6 @@ pre[class*="language-"],
 	display: none !important;
 }
 
-/* line 1372, ../scss/common/_bootstrap.scss */
-
-body {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
 /* line 1377, ../scss/common/_bootstrap.scss */
 
 .navbar-fixed-top,
