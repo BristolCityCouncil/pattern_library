@@ -6325,8 +6325,7 @@ input.bcc-header__search-box {
 
 input.bcc-header__search-box:focus {
 	box-shadow: inset 0px 0px 0px 0px #eaeaea;
-	border-bottom: 3px solid #ff9600;
-	border-top: 3px solid #FFF;
+	outline: 3px solid #ff9600;
 }
 
 /* line 195, ../scss/brand/inc/_header.scss */

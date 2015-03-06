@@ -11531,8 +11531,7 @@ div.uniform__select--inline.focus.active span {
 
 .aui input.bcc-header__search-box:focus {
 	box-shadow: inset 0px 0px 0px 0px #eaeaea;
-	border-bottom: 3px solid #ff9600;
-	border-top: 3px solid #FFF;
+	outline: 3px solid #ff9600;
 }
 
 /* line 195, ../scss/brand/inc/_header.scss */
