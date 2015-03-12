@@ -29,12 +29,12 @@
         </div>
         <div id="header__inner" class="row-fluid">
             <div id="logo">
-                <p> <a href="http://www.bristol.gov.uk" title="Go to Liferay homepage"> Liferay </a> </p> 
+                <p> <a href="http://services.bristol.gov.uk" title="Go to Liferay homepage"> Liferay </a> </p> 
             </div>
             <div id="nav">
                 <p>
                     <!-- <a href="/issues">Issues </a> /  <a href="/boilerplate">Boilerplate </a>  -->
-                    <a href="/">Online services </a> 
+                    <a href="http://services.bristol.gov.uk">Online services </a> 
                 </p>
             </div>
             <!-- START .account -->
@@ -71,6 +71,25 @@
                         </label>        <input class="field__input" type="text" name="textOptionsName" id="i001" >    </div>
     <div class="field " required>        <label class="field__label field__label--block" for="i002">    What is your last name
                         </label>        <input class="field__input" type="text" name="textOptionsName" id="i002" >    </div>
+
+    
+    <div class="field field--group" data-validate-password>
+        <label class="field__label field__label--block" for="pwdf">
+            Please choose a password
+            <div class="field__instructions">
+                This will validate for an 8 character long password and for matching passwords.
+            </div>
+        </label>
+
+        <input class="field__input" type="password" name="passOptionsName" id="pwdf">
+        <input class="field__input" type="password" name="passcrmOptionsName">
+
+        <div class="field__message field__message--error alternate">This is the most generic error</div>
+
+    </div>
+
+
+
     <div class="field " required>        <label class="field__label field__label--block" for="i004">    Your email
                     	<div class="field__instructions">
     		We normally send our response by email

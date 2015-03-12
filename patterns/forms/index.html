@@ -157,7 +157,7 @@
     </div>
 
 
-    <div class="field " required>        <label class="field__label field__label--block" for="i001">    What is your first name
+    <div class="field " >        <label class="field__label field__label--block" for="i001">    What is your first name?
                         </label>        <input class="field__input" type="text" name="textOptionsName" id="i001" >    </div>    
     <br/>
     <br/>
@@ -170,8 +170,60 @@
                 Usage notes
             </p>
                 <p>
-                    Allows the user to enter a value. It is mandatory by default.
-                </p>
+    Allows the user to enter a value. It is mandatory by default, so there is no need to show any indication of a required field (most commonly an asterix *)            </p>
+        </div>
+         
+    
+    
+    
+       
+    
+    </div>
+    
+    <div class="wr__code">
+        <pre>
+            
+        </pre>
+    </div>
+
+</div>
+
+<div class="pattern">
+    
+    <div class="wr__example">
+    	<p class="wr__example__title">
+    		Optional field
+    
+    		<!-- <span class="wr__controls"> 
+    			<span>
+    				<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+    				<span class="wr__controls__txt">Search</span>
+    			</span> 
+    			<span>
+    				<span class="icon icon--bcc icon--bcc--cog"></span>
+    				<span class="wr__controls__txt">Code</span>
+    			</span>
+    		</span> -->
+    	</p>
+    </div>    
+
+    <div class="field " >        <label class="field__label field__label--block" for="i005">            Do you have a middle name?
+            	<span class="field__option">(Optional)</span>
+                      
+        </label>
+        <input class="field__input" type="text" name="textOptionsName" id="i005" >
+    </div>    
+    <br><br>
+
+    <div class="wr__notes">
+    
+     
+        <div class="wr__notes__inner">
+            <p class="wr__title">
+                Usage notes
+            </p>
+                <p>
+    An optional field. You are not required to enter any details.            </p>
         </div>
          
     
@@ -207,7 +259,7 @@
     		</span> -->
     	</p>
     </div>    
-    <div class="field " required>        <label class="field__label field__label--block" for="i002">    What is your first name
+    <div class="field " >        <label class="field__label field__label--block" for="i002">    What is your first name
                     	<div class="field__instructions">
     		We normally send our response by email
     
@@ -222,8 +274,7 @@
                 Usage notes
             </p>
                 <p>
-                    Use if the question being asked requires a specific format E.G. dd/mm/yyy or if we need to justify the question to the user E.G. &quot;Providing a phone number means we will be able to respond quicker&quot; or additional instructions E.G. &quot;Must match password above&quot;
-                </p>
+    Use if the question being asked requires a specific format E.G. dd/mm/yyy or if we need to justify the question to the user E.G. &quot;Providing a phone number means we will be able to respond quicker&quot; or additional instructions E.G. &quot;Must match password above&quot;            </p>
         </div>
          
     
@@ -264,8 +315,9 @@
     	</p>
     </div>    
 
-    <div class="field " required>        <label class="field__label field__label--block" for="i003">            What is your first name
-            	<strong class="field__status"> 
+    <div class="field " >        <label class="field__label field__label--block" for="i003">            What is your first name
+            	<span class="field__option">(Optional)</span>
+                        	<strong class="field__status"> 
             		<span class="icon icon--bcc icon--bcc--verified"></span> Confirmed 
             	</strong>
                         <div class="field__instructions">                <p>
@@ -278,17 +330,17 @@
                     <li>Your council tax number</li>
                 </ul>
             </div>
-            <div class="guidance">                <strong>
+            <div class="guideline">                <strong>
                     "Total amount spent on road maintenance in 2013" 
-                    <span class="guidance__status guidance__status--affirmed">
-                        <span class="icon icon--bcc icon--bcc--tick guidance__status__icon"></span> Good
+                    <span class="guideline__status guideline__status--affirmed">
+                        <span class="icon icon--bcc icon--bcc--tick guideline__status__icon"></span> Good
                     </span>
                 </strong>
                 <br>
                 <strong>
                     "All information about roads" 
-                    <span class="guidance__status guidance__status--rejected">
-                        <span class="icon icon--bcc icon--bcc--cross guidance__status__icon"></span> Too general
+                    <span class="guideline__status guideline__status--rejected">
+                        <span class="icon icon--bcc icon--bcc--cross guideline__status__icon"></span> Too general
                     </span>
                 </strong>
             </div>
@@ -306,8 +358,9 @@
                 Usage notes
             </p>
                 <p>
-                    Use with large input feilds where we need to specify several pieces of information that you would like provided.
-                </p>
+    Use with large input feilds where we need to specify several pieces of information that you would like provided.            </p>
+                <p>
+    Use for providing good and bad example answers for an input feild. This allows the user to make a request that is more likely to be actionable.             </p>
         </div>
          
     
@@ -365,8 +418,7 @@
                 Usage notes
             </p>
                 <p>
-                    Use if the question being asked requires a large amount of text to enter E.G. writing a complaint.
-                </p>
+    Use if the question being asked requires a large amount of text to enter E.G. writing a complaint.            </p>
         </div>
          
     
@@ -403,7 +455,7 @@
     		</span> -->
     	</p>
     </div>    
-    <div class="field " required>        <label class="field__label field__label--block" for="i004">    Their email
+    <div class="field " >        <label class="field__label field__label--block" for="i004">    Their email
                     	<div class="field__instructions">
     		We normally send our response by email
     
@@ -420,8 +472,7 @@
                 Usage notes
             </p>
                 <p>
-                    Used for when the checkbox and the input related to each other.
-                </p>
+    Used for when the checkbox and the input related to each other.            </p>
         </div>
          
     
@@ -459,7 +510,7 @@
     		</span> -->
     	</p>
     </div>    
-    <div class="field " required>        <label class="field__label field__label--block" for="d001">    Inline
+    <div class="field " >        <label class="field__label field__label--block" for="d001">    Inline
                         </label>        <div class="drop ">
             <select id="d001">
                 <option value="def" selected="selected">Please select...</option>
@@ -480,8 +531,7 @@
                 Usage notes
             </p>
                 <p>
-                    Use when you want the user to select one option form a list that is too long to be appropriate for radio buttons. 
-                </p>
+    Use when you want the user to select one option form a list that is too long to be appropriate for radio buttons.             </p>
         </div>
          
     
@@ -522,7 +572,7 @@
     		</span> -->
     	</p>
     </div>
-    <div class="field " required>        <label class="field__label field__label--block" for="d002">    Inline
+    <div class="field " >        <label class="field__label field__label--block" for="d002">    Inline
                         </label>        <div class="drop drop--block">
             <select id="d002">
                 <option value="def" selected="selected">Please select...</option>
@@ -543,8 +593,7 @@
                 Usage notes
             </p>
                 <p>
-                    To be used for short text in a dropdown, such as a title (Mr, Mrs, etc).
-                </p>
+    To be used for short text in a dropdown, such as a title (Mr, Mrs, etc).            </p>
         </div>
          
     
@@ -583,13 +632,14 @@
     	</p>
     </div>    
 
-    <div class="field js--address-lookup" required>        <label class="field__label field__label--block" for="d003">    Address lookup
+    <div class="field js--address-lookup" >
+        <label class="field__label field__label--block" for="d003">    Address lookup
                     	<div class="field__instructions">
     		This is using the updated address lookup widget
     
     	</div>    </label>        <div class="drop drop--block">
-            <select id="d003">
-                <option value="def" selected="selected">Select your address</option>
+            <select id="003">
+                <option value="def" selected="selected">Select address</option>
                 	<option value="000000106069">2 Baldwin Street Bristol BS1 1SA</option>
                 	<option value="000000353708">3 Baldwin Street Bristol BS1 1SA</option>
                 	<option value="000000299768">4 Baldwin Street Bristol BS1 1SA</option>
@@ -602,8 +652,18 @@
                 	<option value="000000324641">Third Floor Alliance House Baldwin Street Bristol BS1 1SA</option>
             </select>
             <div class="drop__background"></div>
-        </div>        <div class="field__message"><a href="javascript:void(0)">Cannot find address?</a></div>
-    </div>    
+        </div>
+        <div class="field__message field__message--error">
+            This is an address lookup error message
+        </div>
+
+        <div class="field__message">
+            <a href="#">Address not listed?</a>
+        </div>
+
+    </div>
+   
+    
     <br><br>
 
     <div class="wr__notes">
@@ -614,8 +674,7 @@
                 Usage notes
             </p>
                 <p>
-                    Use whenever a transaction requires the user to live in a Bristol or other geofenced address.
-                </p>
+    Use whenever a transaction requires the user to live in a Bristol or other geofenced address.            </p>
         </div>
          
     
@@ -653,7 +712,7 @@
     		</span> -->
     	</p>
     </div>    
-    <fieldset class="field field--set " required>
+    <fieldset class="field field--set " >
             <legend class="field__label field__label--block">
                 Choose
             </legend>        
@@ -662,7 +721,9 @@
         <input class="field__input" type="checkbox" name="v" id="v002">        <label class="field__label field__label--block" for="v002">    Carrot
                 	<span class="field__extra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies venenatis ex, dignissim.</span>
             </label>    
-        <input class="field__input" type="checkbox" name="v" id="v003">        <label class="field__label field__label--block" for="v003">    Mango
+        <input class="field__input" type="checkbox" name="v" id="v004">        <label class="field__label field__label--block" for="v004">    Mango
+                        </label>
+        <input class="field__input" type="checkbox" name="v" id="v004" disabled="disabled">        <label class="field__label field__label--block" for="v004">    Disabled
                         </label>
     </fieldset>
 
@@ -677,8 +738,11 @@
                 Usage notes
             </p>
                 <p>
-                    Use when you want the user to select multiple options form a list.
-                </p>
+    Use when you want the user to select multiple options form a list.            </p>
+                <p>
+    Microcopy text can be used if one of your checkbox options needs further explanation or justification.            </p>
+                <p>
+    Use disabled style only if the page is in a state where interacting with the checkbox will cause the form to break.            </p>
         </div>
          
     
@@ -715,7 +779,7 @@
     		</span> -->
     	</p>
     </div>    
-    <fieldset class="field field--set " required>
+    <fieldset class="field field--set " >
             <legend class="field__label field__label--block">
                 Accept terms and conditions
                 		<div class="field__instructions">
@@ -736,8 +800,7 @@
                 Usage notes
             </p>
                 <p>
-                    Use for questions with Yes/No answers.
-                </p>
+    Use for questions with Yes/No answers.            </p>
         </div>
          
     
@@ -757,7 +820,7 @@
 </div>
 <div class="pattern">
 
-    <fieldset class="field field--set " required>
+    <fieldset class="field field--set " >
             <legend class="field__label field__label--block">
                 Choose One
             </legend>        <input class="field__input" type="radio" name="y" id="y001" checked="checked">        <label class="field__label field__label--block" for="y001">    This is my radio
@@ -782,8 +845,11 @@
                 Usage notes
             </p>
                 <p>
-                    Use when you want the user to make a single selection from a small list of options.
-                </p>
+    Use when you want the user to make a single selection from a small list of options.            </p>
+                <p>
+    Microcopy text can be used if one of your radio options needs further explanation or justification            </p>
+                <p>
+    Use disabled style only if one of your radio options needs further explanation or justification.             </p>
         </div>
          
     
@@ -800,6 +866,7 @@
     </div>
 
 </div>
+
 
 
     </div>
