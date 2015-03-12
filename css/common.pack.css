@@ -5550,7 +5550,7 @@ html .newcta--primary[type]:after {
 	-webkit-font-smoothing: antialiased;
 }
 
-/* line 258, ../scss/common/beta/_buttons.beta.scss */
+/* line 262, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta,
 html .newcta[type] { /* [type] required for overriding AUI */
@@ -5666,14 +5666,14 @@ html .newcta[type].newcta--download:hover:after {
 	color: #FFF;
 }
 
-/* line 266, ../scss/common/beta/_buttons.beta.scss */
+/* line 270, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--block,
 html .newcta[type].newcta--block {
 	width: 100%;
 }
 
-/* line 276, ../scss/common/beta/_buttons.beta.scss */
+/* line 280, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta--primary,
 html .newcta--primary[type] { /* [type] required for overriding AUI */
@@ -5809,7 +5809,7 @@ html .newcta--primary[type].newcta--next:hover:after {
 	color: #FFF;
 }
 
-/* line 301, ../scss/common/beta/_buttons.beta.scss */
+/* line 305, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--link,
 html .newcta.newcta--link[type] {
@@ -5826,14 +5826,15 @@ html .newcta.newcta--link[type] {
 	-moz-user-select: text;
 	vertical-align: baseline;
 	box-shadow: none;
-	text-shadow: none; /* Remove mystery padding in Gecko browsers.
+	text-shadow: none;
+	outline: none; /* Remove mystery padding in Gecko browsers.
    * See https://bugzilla.mozilla.org/show_bug.cgi?id=140562
    */
 	font-size: 16px;
 	width: auto;
 }
 
-/* line 227, ../scss/common/beta/_buttons.beta.scss */
+/* line 228, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--link::-moz-focus-inner,
 html .newcta.newcta--link[type]::-moz-focus-inner {
@@ -5841,16 +5842,16 @@ html .newcta.newcta--link[type]::-moz-focus-inner {
 	border: 0;
 }
 
-/* line 231, ../scss/common/beta/_buttons.beta.scss */
+/* line 232, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--link:focus,
 html .newcta.newcta--link[type]:focus {
-	background-color: #ff9600;
+	background-color: transparent;
 	outline: 3px solid #ff9600;
 	border-radius: 0;
 }
 
-/* line 236, ../scss/common/beta/_buttons.beta.scss */
+/* line 237, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--link:hover,
 html .newcta.newcta--link[type]:hover {
@@ -5860,26 +5861,33 @@ html .newcta.newcta--link[type]:hover {
 	top: 0;
 }
 
-/* line 243, ../scss/common/beta/_buttons.beta.scss */
+/* line 244, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--link:active:hover,
 html .newcta.newcta--link[type]:active:hover {
 	top: 0;
 }
 
-/* line 317, ../scss/common/beta/_buttons.beta.scss */
+/* line 247, ../scss/common/beta/_buttons.beta.scss */
+
+html .newcta.newcta--link:active,
+html .newcta.newcta--link[type]:active {
+	top: 0;
+}
+
+/* line 321, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group__primary {
 	display: block;
 }
 
-/* line 320, ../scss/common/beta/_buttons.beta.scss */
+/* line 324, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group__secondly {
 	display: block;
 }
 
-/* line 322, ../scss/common/beta/_buttons.beta.scss */
+/* line 326, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group__secondly a,
 html .newcta-group__secondly .newcta.newcta--link,
@@ -5888,7 +5896,7 @@ html .newcta-group__secondly .docupload .cta.cta--link,
 	font-family: "Thesans-Bold","Helvetica Neue",Helvetica,sans-serif;
 }
 
-/* line 342, ../scss/common/beta/_buttons.beta.scss */
+/* line 346, ../scss/common/beta/_buttons.beta.scss */
 
 html.ie9 .newcta,
 html.ie9 .newcta[type],
@@ -5899,7 +5907,7 @@ html.ie9 .newcta--primary[type] {
 	        filter: none;
 }
 
-/* line 345, ../scss/common/beta/_buttons.beta.scss */
+/* line 349, ../scss/common/beta/_buttons.beta.scss */
 
 html.ie9 .newcta:focus:hover,
 html.ie9 .newcta[type]:focus:hover,
@@ -5910,7 +5918,7 @@ html.ie9 .newcta--primary[type]:focus:hover {
 	        filter: none;
 }
 
-/* line 355, ../scss/common/beta/_buttons.beta.scss */
+/* line 359, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-box {
 	font-size: 16px;
@@ -5926,7 +5934,7 @@ html .newcta-box {
 	position: relative;
 }
 
-/* line 369, ../scss/common/beta/_buttons.beta.scss */
+/* line 373, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-box:hover {
 	left: calc(50% + 20.42px);
@@ -5936,26 +5944,26 @@ html .newcta-box:hover {
 	box-shadow: inset 0 0 0 1px #F00;
 }
 
-/* line 378, ../scss/common/beta/_buttons.beta.scss */
+/* line 382, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group {
 	margin-top: 30px;
 	margin-bottom: 50px;
 }
 
-/* line 387, ../scss/common/beta/_buttons.beta.scss */
+/* line 391, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group .newcta-group__firstly {
 	margin-bottom: 15px;
 }
 
-/* line 395, ../scss/common/beta/_buttons.beta.scss */
+/* line 399, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group .newcta-group__secondly {
 	text-align: center;
 }
 
-/* line 461, ../scss/common/beta/_buttons.beta.scss */
+/* line 465, ../scss/common/beta/_buttons.beta.scss */
 
 html .additional {
 	text-align: center;
@@ -5964,7 +5972,7 @@ html .additional {
 	padding: 10px;
 }
 
-/* line 467, ../scss/common/beta/_buttons.beta.scss */
+/* line 471, ../scss/common/beta/_buttons.beta.scss */
 
 html .additional .btn-link {
 	text-decoration: underline;
@@ -9916,7 +9924,7 @@ html .newcta--primary[type] {
 	width: auto;
 }
 
-/* line 258, ../scss/common/beta/_buttons.beta.scss */
+/* line 262, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta,
 html .newcta[type] {
@@ -9941,7 +9949,7 @@ html .newcta[type].newcta--icon {
 	padding-right: 56.5px;
 }
 
-/* line 276, ../scss/common/beta/_buttons.beta.scss */
+/* line 280, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta--primary,
 html .newcta--primary[type] {
@@ -9966,20 +9974,20 @@ html .newcta--primary[type].newcta--icon {
 	padding-right: 60px;
 }
 
-/* line 301, ../scss/common/beta/_buttons.beta.scss */
+/* line 305, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta.newcta--link,
 html .newcta.newcta--link[type] {
 	font-size: 19px;
 }
 
-/* line 387, ../scss/common/beta/_buttons.beta.scss */
+/* line 391, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group .newcta-group__firstly {
 	margin-bottom: 20px;
 }
 
-/* line 395, ../scss/common/beta/_buttons.beta.scss */
+/* line 399, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group .newcta-group__secondly {
 	text-align: left;
@@ -10604,7 +10612,7 @@ html .field__message {
 	margin-top: 15px;
 }
 
-/* line 378, ../scss/common/beta/_buttons.beta.scss */
+/* line 382, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta-group {
 	margin-top: 40px;

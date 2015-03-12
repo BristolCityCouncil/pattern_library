@@ -4009,7 +4009,7 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-/* line 258, ../scss/common/beta/_buttons.beta.scss */
+/* line 262, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta,
 .aui .newcta[type] { /* [type] required for overriding AUI */
@@ -4127,14 +4127,14 @@
 	color: #FFF;
 }
 
-/* line 266, ../scss/common/beta/_buttons.beta.scss */
+/* line 270, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--block,
 .aui .newcta[type].newcta--block {
 	width: 100%;
 }
 
-/* line 276, ../scss/common/beta/_buttons.beta.scss */
+/* line 280, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta--primary,
 .aui .newcta--primary[type] { /* [type] required for overriding AUI */
@@ -4273,7 +4273,7 @@
 	color: #FFF;
 }
 
-/* line 301, ../scss/common/beta/_buttons.beta.scss */
+/* line 305, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--link,
 .aui .newcta.newcta--link[type] {
@@ -4290,14 +4290,15 @@
 	-moz-user-select: text;
 	vertical-align: baseline;
 	box-shadow: none;
-	text-shadow: none; /* Remove mystery padding in Gecko browsers.
+	text-shadow: none;
+	outline: none; /* Remove mystery padding in Gecko browsers.
    * See https://bugzilla.mozilla.org/show_bug.cgi?id=140562
    */
 	font-size: 16px;
 	width: auto;
 }
 
-/* line 227, ../scss/common/beta/_buttons.beta.scss */
+/* line 228, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--link::-moz-focus-inner,
 .aui .newcta.newcta--link[type]::-moz-focus-inner {
@@ -4305,16 +4306,16 @@
 	border: 0;
 }
 
-/* line 231, ../scss/common/beta/_buttons.beta.scss */
+/* line 232, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--link:focus,
 .aui .newcta.newcta--link[type]:focus {
-	background-color: #ff9600;
+	background-color: transparent;
 	outline: 3px solid #ff9600;
 	border-radius: 0;
 }
 
-/* line 236, ../scss/common/beta/_buttons.beta.scss */
+/* line 237, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--link:hover,
 .aui .newcta.newcta--link[type]:hover {
@@ -4324,26 +4325,33 @@
 	top: 0;
 }
 
-/* line 243, ../scss/common/beta/_buttons.beta.scss */
+/* line 244, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--link:active:hover,
 .aui .newcta.newcta--link[type]:active:hover {
 	top: 0;
 }
 
-/* line 317, ../scss/common/beta/_buttons.beta.scss */
+/* line 247, ../scss/common/beta/_buttons.beta.scss */
+
+.aui .newcta.newcta--link:active,
+.aui .newcta.newcta--link[type]:active {
+	top: 0;
+}
+
+/* line 321, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group__primary {
 	display: block;
 }
 
-/* line 320, ../scss/common/beta/_buttons.beta.scss */
+/* line 324, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group__secondly {
 	display: block;
 }
 
-/* line 322, ../scss/common/beta/_buttons.beta.scss */
+/* line 326, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group__secondly a,
 .aui .newcta-group__secondly .newcta.newcta--link,
@@ -4352,7 +4360,7 @@
 	font-family: "Thesans-Bold","Helvetica Neue",Helvetica,sans-serif;
 }
 
-/* line 342, ../scss/common/beta/_buttons.beta.scss */
+/* line 346, ../scss/common/beta/_buttons.beta.scss */
 
 .aui.ie9 .newcta,
 .aui.ie9 .newcta[type],
@@ -4362,7 +4370,7 @@
 	filter: none;
 }
 
-/* line 345, ../scss/common/beta/_buttons.beta.scss */
+/* line 349, ../scss/common/beta/_buttons.beta.scss */
 
 .aui.ie9 .newcta:focus:hover,
 .aui.ie9 .newcta[type]:focus:hover,
@@ -4372,7 +4380,7 @@
 	filter: none;
 }
 
-/* line 355, ../scss/common/beta/_buttons.beta.scss */
+/* line 359, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-box {
 	font-size: 16px;
@@ -4389,7 +4397,7 @@
 	position: relative;
 }
 
-/* line 369, ../scss/common/beta/_buttons.beta.scss */
+/* line 373, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-box:hover {
 	left: calc(50% + 20.42px);
@@ -4399,26 +4407,26 @@
 	box-shadow: inset 0 0 0 1px #F00;
 }
 
-/* line 378, ../scss/common/beta/_buttons.beta.scss */
+/* line 382, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group {
 	margin-top: 30px;
 	margin-bottom: 50px;
 }
 
-/* line 387, ../scss/common/beta/_buttons.beta.scss */
+/* line 391, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group .newcta-group__firstly {
 	margin-bottom: 15px;
 }
 
-/* line 395, ../scss/common/beta/_buttons.beta.scss */
+/* line 399, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group .newcta-group__secondly {
 	text-align: center;
 }
 
-/* line 461, ../scss/common/beta/_buttons.beta.scss */
+/* line 465, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .additional {
 	text-align: center;
@@ -4427,7 +4435,7 @@
 	padding: 10px;
 }
 
-/* line 467, ../scss/common/beta/_buttons.beta.scss */
+/* line 471, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .additional .btn-link {
 	text-decoration: underline;
@@ -10022,7 +10030,7 @@ code[class*="language"],
 	width: auto;
 }
 
-/* line 258, ../scss/common/beta/_buttons.beta.scss */
+/* line 262, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta,
 .aui .newcta[type] {
@@ -10047,7 +10055,7 @@ code[class*="language"],
 	padding-right: 56.5px;
 }
 
-/* line 276, ../scss/common/beta/_buttons.beta.scss */
+/* line 280, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta--primary,
 .aui .newcta--primary[type] {
@@ -10072,20 +10080,20 @@ code[class*="language"],
 	padding-right: 60px;
 }
 
-/* line 301, ../scss/common/beta/_buttons.beta.scss */
+/* line 305, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta.newcta--link,
 .aui .newcta.newcta--link[type] {
 	font-size: 19px;
 }
 
-/* line 387, ../scss/common/beta/_buttons.beta.scss */
+/* line 391, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group .newcta-group__firstly {
 	margin-bottom: 20px;
 }
 
-/* line 395, ../scss/common/beta/_buttons.beta.scss */
+/* line 399, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group .newcta-group__secondly {
 	text-align: left;
@@ -11182,7 +11190,7 @@ code[class*="language"],
 	margin-top: 15px;
 }
 
-/* line 378, ../scss/common/beta/_buttons.beta.scss */
+/* line 382, ../scss/common/beta/_buttons.beta.scss */
 
 .aui .newcta-group {
 	margin-top: 40px;
