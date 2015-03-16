@@ -723,7 +723,7 @@
             </label>    
         <input class="field__input" type="checkbox" name="v" id="v004">        <label class="field__label field__label--block" for="v004">    Mango
                         </label>
-        <input class="field__input" type="checkbox" name="v" id="v004" disabled="disabled">        <label class="field__label field__label--block" for="v004">    Disabled
+        <input class="field__input" type="checkbox" name="v" id="v004h" disabled="disabled">        <label class="field__label field__label--block" for="v004h">    Disabled
                         </label>
     </fieldset>
 
@@ -820,6 +820,22 @@
 </div>
 <div class="pattern">
 
+    <div class="wr__example">
+    	<p class="wr__example__title">
+    		Various Radios continued
+    
+    		<!-- <span class="wr__controls"> 
+    			<span>
+    				<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+    				<span class="wr__controls__txt">Search</span>
+    			</span> 
+    			<span>
+    				<span class="icon icon--bcc icon--bcc--cog"></span>
+    				<span class="wr__controls__txt">Code</span>
+    			</span>
+    		</span> -->
+    	</p>
+    </div>
     <fieldset class="field field--set " >
             <legend class="field__label field__label--block">
                 Choose One
@@ -832,7 +848,7 @@
                         </label>
         <input class="field__input" type="radio" name="ya" id="y004" checked="checked">        <label class="field__label field__label--block" for="y004">    This is my radio
                         </label>
-        <input class="field__input" type="radio" name="ya" id="y004" disabled="disabled">        <label class="field__label field__label--block" for="y004">    This is my radio
+        <input class="field__input" type="radio" name="ya" id="y004h" disabled="disabled">        <label class="field__label field__label--block" for="y004h">    This is my radio
                         </label>        
     </fieldset>
     <br><br>
@@ -866,7 +882,51 @@
     </div>
 
 </div>
+<!-- load ace -->
+    <!-- ace-mode="ace/mode/css" ace-theme="ace/theme/chrome" ace-gutter="true" -->
+    <script src="/ace-builds/src/ace.js"></script>
+    <!-- load ace static_highlight extension -->
+    <script src="/ace-builds/src/ext-static_highlight.js"></script>
+    <script>
+        var source = function($el){ return $("<div/>").text(
+                $el.html()
+            ).html();
+        };
 
+        $(".wr__code pre").each(function(){
+            $(this).addClass('language-markup');
+            $(this).empty();
+            $(this).html(
+                source(
+                    $(this).closest('.pattern')
+                        .find('.wr__example').next()
+                )
+            );
+        });
+
+        var highlight = ace.require("ace/ext/static_highlight")
+        var dom = ace.require("ace/lib/dom")
+        function qsa(sel) {
+            return Array.apply(null, document.querySelectorAll(sel));
+        }
+
+        qsa(".language-markup").forEach(function (codeEl) {
+            highlight(codeEl, {
+                mode: "ace/mode/html",
+                theme: "ace/theme/github",
+                startLineNumber: 0,
+                showGutter: false,
+                trim: true
+            }, function (highlighted) {
+                
+            });
+        });
+    </script>
+    <style type="text/css">
+        pre[class*="language-"], .lt-ie9 pre {
+            overflow: auto;
+        }
+    </style>
 
 
     </div>
