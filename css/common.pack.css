@@ -3936,7 +3936,7 @@ html .field.field--preview .field__input[type="email"],
 html .field.field--preview textarea.field__input,
 html .field.field--preview div.field__input,
 html .field.field--dob .drop-controls,
-html .guidance,
+.guideline,
 .layer,
 .info,
 .warning,
@@ -6112,8 +6112,6 @@ html { /***********************************************\
         ERROR SPECIFIC STYLES
       \***********************************************/ /***********************************************\
         DROPDOWN SPECIFIC STYLES
-      \***********************************************/ /***********************************************\
-        GUIDANCE STYLES
       \***********************************************/ /**
    * Base style for button to keep code DRY
    */ /**
@@ -6894,42 +6892,6 @@ html .drop select + .drop__background:after {
 	content: "\e60c";
 }
 
-/* line 802, ../scss/common/beta/_forms.beta.scss */
-
-html .guidance {
-	font-size: 16px;
-	line-height: 22px;
-	margin-top: 10px;
-	margin-bottom: 15px;
-	padding: 0 15px;
-	position: relative;
-	border-left: 6px solid #eaeaea;
-}
-
-/* line 812, ../scss/common/beta/_forms.beta.scss */
-
-html .guidance .guidance__status {
-	margin-left: 5px;
-}
-
-/* line 815, ../scss/common/beta/_forms.beta.scss */
-
-html .guidance .guidance__status .guidance__status__icon {
-	font-size: 16px;
-}
-
-/* line 819, ../scss/common/beta/_forms.beta.scss */
-
-html .guidance .guidance__status.guidance__status--affirmed {
-	color: #188049;
-}
-
-/* line 823, ../scss/common/beta/_forms.beta.scss */
-
-html .guidance .guidance__status.guidance__status--rejected {
-	color: #a70909;
-}
-
 /* line 6, ../scss/common/beta/_buttons.beta.scss */
 
 html .newcta,
@@ -7551,14 +7513,53 @@ html .additional .btn-link {
 	display: none;
 }
 
-/* line 35, ../scss/common.scss */
+/* line 1, ../scss/common/components/_guidelines.scss */
+
+.guideline {
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0 15px;
+	position: relative;
+	border-left: 6px solid #eaeaea;
+}
+
+/* line 11, ../scss/common/components/_guidelines.scss */
+
+.guideline .guideline__status {
+	margin-left: 5px;
+	font-family: "Thesans-Semi-Light", "Helvetica Neue", Helvetica, sans-serif;
+	color: #676973;
+	white-space: nowrap;
+}
+
+/* line 17, ../scss/common/components/_guidelines.scss */
+
+.guideline .guideline__status .guideline__status__icon {
+	font-size: 16px;
+}
+
+/* line 21, ../scss/common/components/_guidelines.scss */
+
+.guideline .guideline__status.guideline__status--affirmed .guideline__status__icon {
+	color: #188049;
+}
+
+/* line 25, ../scss/common/components/_guidelines.scss */
+
+.guideline .guideline__status.guideline__status--rejected .guideline__status__icon {
+	color: #a70909;
+}
+
+/* line 36, ../scss/common.scss */
 
 .layer {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-/* line 41, ../scss/common.scss */
+/* line 42, ../scss/common.scss */
 
 .row-fluid {
 	max-width: 960px;
@@ -7566,7 +7567,7 @@ html .additional .btn-link {
 	margin-right: auto;
 }
 
-/* line 47, ../scss/common.scss */
+/* line 48, ../scss/common.scss */
 
 .alert {
 	color: #2e3137;
@@ -7575,13 +7576,13 @@ html .additional .btn-link {
 	font-family: "Thesans-Bold", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* line 53, ../scss/common.scss */
+/* line 54, ../scss/common.scss */
 
 .alert .popup-alert-close {
 	margin-left: 10px;
 }
 
-/* line 59, ../scss/common.scss */
+/* line 60, ../scss/common.scss */
 
 .alert-danger,
 .alert-error {
@@ -7878,7 +7879,7 @@ html .additional .btn-link {
 
 /* Equalities */
 
-/* line 268, ../scss/common/beta/_panels.beta.scss */
+/* line 275, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--main,
 .slatelayout--side {
@@ -7886,7 +7887,7 @@ html .additional .btn-link {
 	padding-right: 0;
 }
 
-/* line 273, ../scss/common/beta/_panels.beta.scss */
+/* line 280, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--main {
 	margin-bottom: 0;
@@ -7894,26 +7895,26 @@ html .additional .btn-link {
 	padding-right: 20px;
 }
 
-/* line 281, ../scss/common/beta/_panels.beta.scss */
+/* line 288, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--side {
 	margin-top: 10px;
 	padding-right: 0;
 }
 
-/* line 308, ../scss/common/beta/_panels.beta.scss */
+/* line 315, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors {
 	border-color: #ea0000;
 }
 
-/* line 311, ../scss/common/beta/_panels.beta.scss */
+/* line 318, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors ul {
 	margin-bottom: 0;
 }
 
-/* line 315, ../scss/common/beta/_panels.beta.scss */
+/* line 322, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__title {
 	color: #ea0000;
@@ -7921,21 +7922,21 @@ html .additional .btn-link {
 	line-height: 22px;
 }
 
-/* line 326, ../scss/common/beta/_panels.beta.scss */
+/* line 333, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy {
 	font-size: 14px;
 	line-height: 19px;
 }
 
-/* line 329, ../scss/common/beta/_panels.beta.scss */
+/* line 336, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy li {
 	line-height: 20px;
 	margin-bottom: 10px;
 }
 
-/* line 338, ../scss/common/beta/_panels.beta.scss */
+/* line 345, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy p a,
 .info--errors .info__copy p html .newcta.newcta--link,
@@ -7945,7 +7946,7 @@ html .info--errors .info__copy p .newcta.newcta--link,
 	color: #333;
 }
 
-/* line 348, ../scss/common/beta/_panels.beta.scss */
+/* line 355, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors p:last-child {
 	margin-bottom: 0;
@@ -10040,25 +10041,25 @@ html .page-contents__list-wrapper .page-contents__list .newcta.newcta--link:acti
 
 /* CPDP-4985 */
 
-/* line 106, ../scss/common.scss */
+/* line 107, ../scss/common.scss */
 
 .bcc_2col1col_alt .span8 {
 	margin-bottom: 40px;
 }
 
-/* line 114, ../scss/common.scss */
+/* line 115, ../scss/common.scss */
 
 .bcc_2col1col_alt .span4 {
 	margin-bottom: 0;
 }
 
-/* line 124, ../scss/common.scss */
+/* line 125, ../scss/common.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span8 {
 	margin-bottom: 0;
 }
 
-/* line 132, ../scss/common.scss */
+/* line 133, ../scss/common.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span4 {
 	margin-bottom: 40px;
@@ -10188,7 +10189,7 @@ html .wr__logo .newcta.newcta--link,
 
 /* line 124, ../scss/chrome/_main.scss */
 
-.wr__nav ul {
+.wr__nav .wr__group ul {
 	margin: 0;
 	padding: 0;
 }
@@ -11603,20 +11604,20 @@ html .newcta-group .newcta-group__secondly {
 	line-height: 24px;
 }
 
-/* line 315, ../scss/common/beta/_panels.beta.scss */
+/* line 322, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__title {
 	font-size: 24px;
 	line-height: 27px;
 }
 
-/* line 329, ../scss/common/beta/_panels.beta.scss */
+/* line 336, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy li {
 	line-height: 26px;
 }
 
-/* line 326, ../scss/common/beta/_panels.beta.scss */
+/* line 333, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy {
 	font-size: 16px;
@@ -11855,7 +11856,7 @@ html .bcc-header__menu .bcc-header__menu-item .newcta.newcta--link,
 
 @media (min-width: 768px) and (max-width: 768px) {
 
-/* line 99, ../scss/common.scss */
+/* line 100, ../scss/common.scss */
 
 .aui .row-fluid .span4 {
 	width: 100%;
@@ -12157,19 +12158,26 @@ html .newcta-group {
 	margin-bottom: 30px;
 }
 
-/* line 281, ../scss/common/beta/_panels.beta.scss */
+/* line 263, ../scss/common/beta/_panels.beta.scss */
+
+.slate--summary {
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+/* line 288, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--side {
 	margin-top: 0;
 }
 
-/* line 290, ../scss/common/beta/_panels.beta.scss */
+/* line 297, ../scss/common/beta/_panels.beta.scss */
 
-.slatelayout--side .cta {
+.slatelayout--side .newcta {
 	float: right;
 }
 
-/* line 299, ../scss/common/beta/_panels.beta.scss */
+/* line 306, ../scss/common/beta/_panels.beta.scss */
 
 .panel,
 .open-validation,
@@ -12472,25 +12480,25 @@ html #footer .newcta.newcta--link,
 	overflow: auto;
 }
 
-/* line 106, ../scss/common.scss */
+/* line 107, ../scss/common.scss */
 
 .bcc_2col1col_alt .span8 {
 	margin-bottom: 0;
 }
 
-/* line 114, ../scss/common.scss */
+/* line 115, ../scss/common.scss */
 
 .bcc_2col1col_alt .span4 {
 	margin-bottom: 0;
 }
 
-/* line 124, ../scss/common.scss */
+/* line 125, ../scss/common.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span8 {
 	margin-bottom: 0;
 }
 
-/* line 132, ../scss/common.scss */
+/* line 133, ../scss/common.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span4 {
 	margin-bottom: 0;

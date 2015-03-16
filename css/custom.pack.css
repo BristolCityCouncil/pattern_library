@@ -5876,7 +5876,6 @@ body.html-editor {
 .aui .preview .preview__item .preview__item__field.preview__item__field--textarea,
 .aui .preview .preview__item .preview__item__field.preview__item__field--string,
 .aui .form__item.form__item--dateofbirth,
-.aui .guideline,
 .aui .panel,
 .aui .open-validation,
 .aui .panel.panel--warning,
@@ -5891,7 +5890,7 @@ body.html-editor {
 .aui .field.field--preview textarea.field__input,
 .aui .field.field--preview div.field__input,
 .aui .field.field--dob .drop-controls,
-.aui .guidance,
+.aui .guideline,
 .aui .layer,
 .info,
 .warning,
@@ -6103,8 +6102,6 @@ body.html-editor {
         ERROR SPECIFIC STYLES
       \***********************************************/ /***********************************************\
         DROPDOWN SPECIFIC STYLES
-      \***********************************************/ /***********************************************\
-        GUIDANCE STYLES
       \***********************************************/ /**
    * Base style for button to keep code DRY
    */ /**
@@ -7725,45 +7722,6 @@ body.html-editor {
 
 .aui #field-postcode input[type="text"] {
 	text-transform: uppercase;
-}
-
-/* line 619, ../scss/common/components/_forms.scss */
-
-.aui .guideline {
-	font-size: 16px;
-	line-height: 22px;
-	margin-top: 0;
-	margin-bottom: 15px;
-	padding: 0 15px;
-	position: relative;
-	border-left: 6px solid #eaeaea;
-}
-
-/* line 629, ../scss/common/components/_forms.scss */
-
-.aui .guideline .guideline__status {
-	margin-left: 5px;
-	font-family: "Thesans-Semi-Light", "Helvetica Neue", Helvetica, sans-serif;
-	color: #676973;
-	white-space: nowrap;
-}
-
-/* line 635, ../scss/common/components/_forms.scss */
-
-.aui .guideline .guideline__status .guideline__status__icon {
-	font-size: 16px;
-}
-
-/* line 639, ../scss/common/components/_forms.scss */
-
-.aui .guideline .guideline__status.guideline__status--affirmed .guideline__status__icon {
-	color: #188049;
-}
-
-/* line 643, ../scss/common/components/_forms.scss */
-
-.aui .guideline .guideline__status.guideline__status--rejected .guideline__status__icon {
-	color: #a70909;
 }
 
 /* line 1, ../scss/common/components/_panels.scss */
@@ -9565,42 +9523,6 @@ body.html-editor {
 	content: "\e60c";
 }
 
-/* line 802, ../scss/common/beta/_forms.beta.scss */
-
-.aui .guidance {
-	font-size: 16px;
-	line-height: 22px;
-	margin-top: 10px;
-	margin-bottom: 15px;
-	padding: 0 15px;
-	position: relative;
-	border-left: 6px solid #eaeaea;
-}
-
-/* line 812, ../scss/common/beta/_forms.beta.scss */
-
-.aui .guidance .guidance__status {
-	margin-left: 5px;
-}
-
-/* line 815, ../scss/common/beta/_forms.beta.scss */
-
-.aui .guidance .guidance__status .guidance__status__icon {
-	font-size: 16px;
-}
-
-/* line 819, ../scss/common/beta/_forms.beta.scss */
-
-.aui .guidance .guidance__status.guidance__status--affirmed {
-	color: #188049;
-}
-
-/* line 823, ../scss/common/beta/_forms.beta.scss */
-
-.aui .guidance .guidance__status.guidance__status--rejected {
-	color: #a70909;
-}
-
 /* line 1, ../scss/common/beta/_openvalidation.beta.scss */
 
 .aui .open-validation {
@@ -10222,14 +10144,53 @@ body.html-editor {
 	text-decoration: underline;
 }
 
-/* line 30, ../scss/custom.scss */
+/* line 1, ../scss/common/components/_guidelines.scss */
+
+.aui .guideline {
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0 15px;
+	position: relative;
+	border-left: 6px solid #eaeaea;
+}
+
+/* line 11, ../scss/common/components/_guidelines.scss */
+
+.aui .guideline .guideline__status {
+	margin-left: 5px;
+	font-family: "Thesans-Semi-Light", "Helvetica Neue", Helvetica, sans-serif;
+	color: #676973;
+	white-space: nowrap;
+}
+
+/* line 17, ../scss/common/components/_guidelines.scss */
+
+.aui .guideline .guideline__status .guideline__status__icon {
+	font-size: 16px;
+}
+
+/* line 21, ../scss/common/components/_guidelines.scss */
+
+.aui .guideline .guideline__status.guideline__status--affirmed .guideline__status__icon {
+	color: #188049;
+}
+
+/* line 25, ../scss/common/components/_guidelines.scss */
+
+.aui .guideline .guideline__status.guideline__status--rejected .guideline__status__icon {
+	color: #a70909;
+}
+
+/* line 31, ../scss/custom.scss */
 
 .aui .layer {
 	max-width: 960px;
 	margin: 0 auto;
 }
 
-/* line 36, ../scss/custom.scss */
+/* line 37, ../scss/custom.scss */
 
 .aui .row-fluid {
 	max-width: 960px;
@@ -10237,7 +10198,7 @@ body.html-editor {
 	margin-right: auto;
 }
 
-/* line 42, ../scss/custom.scss */
+/* line 43, ../scss/custom.scss */
 
 .aui .alert {
 	color: #2e3137;
@@ -10246,13 +10207,13 @@ body.html-editor {
 	font-family: "Thesans-Bold", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* line 48, ../scss/custom.scss */
+/* line 49, ../scss/custom.scss */
 
 .aui .alert .popup-alert-close {
 	margin-left: 10px;
 }
 
-/* line 54, ../scss/custom.scss */
+/* line 55, ../scss/custom.scss */
 
 .aui .alert-danger,
 .aui .alert-error {
@@ -10550,7 +10511,7 @@ body.html-editor {
 
 /* Equalities */
 
-/* line 268, ../scss/common/beta/_panels.beta.scss */
+/* line 275, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--main,
 .slatelayout--side {
@@ -10558,7 +10519,7 @@ body.html-editor {
 	padding-right: 0;
 }
 
-/* line 273, ../scss/common/beta/_panels.beta.scss */
+/* line 280, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--main {
 	margin-bottom: 0;
@@ -10566,26 +10527,26 @@ body.html-editor {
 	padding-right: 20px;
 }
 
-/* line 281, ../scss/common/beta/_panels.beta.scss */
+/* line 288, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--side {
 	margin-top: 10px;
 	padding-right: 0;
 }
 
-/* line 308, ../scss/common/beta/_panels.beta.scss */
+/* line 315, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors {
 	border-color: #ea0000;
 }
 
-/* line 311, ../scss/common/beta/_panels.beta.scss */
+/* line 318, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors ul {
 	margin-bottom: 0;
 }
 
-/* line 315, ../scss/common/beta/_panels.beta.scss */
+/* line 322, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__title {
 	color: #ea0000;
@@ -10593,21 +10554,21 @@ body.html-editor {
 	line-height: 22px;
 }
 
-/* line 326, ../scss/common/beta/_panels.beta.scss */
+/* line 333, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy {
 	font-size: 14px;
 	line-height: 19px;
 }
 
-/* line 329, ../scss/common/beta/_panels.beta.scss */
+/* line 336, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy li {
 	line-height: 20px;
 	margin-bottom: 10px;
 }
 
-/* line 338, ../scss/common/beta/_panels.beta.scss */
+/* line 345, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy p a,
 .info--errors .info__copy p .aui .newcta.newcta--link,
@@ -10617,7 +10578,7 @@ body.html-editor {
 	color: #333;
 }
 
-/* line 348, ../scss/common/beta/_panels.beta.scss */
+/* line 355, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors p:last-child {
 	margin-bottom: 0;
@@ -11353,7 +11314,7 @@ div.uniform__select--inline.focus.active span {
 	font-style: normal;
 }
 
-/* line 73, ../scss/custom.scss */
+/* line 74, ../scss/custom.scss */
 
 .aui { /* Base class */ /* Images */ /* Tooltips */ /* Popovers */ /* Dropdowns */ /*
   .bs-docs-example-submenus {
@@ -14503,25 +14464,25 @@ h2.subh {
 
 /* CPDP-4985 */
 
-/* line 115, ../scss/custom.scss */
+/* line 116, ../scss/custom.scss */
 
 .bcc_2col1col_alt .span8 {
 	margin-bottom: 40px;
 }
 
-/* line 123, ../scss/custom.scss */
+/* line 124, ../scss/custom.scss */
 
 .bcc_2col1col_alt .span4 {
 	margin-bottom: 0;
 }
 
-/* line 133, ../scss/custom.scss */
+/* line 134, ../scss/custom.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span8 {
 	margin-bottom: 0;
 }
 
-/* line 141, ../scss/custom.scss */
+/* line 142, ../scss/custom.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span4 {
 	margin-bottom: 40px;
@@ -14651,7 +14612,7 @@ h2.subh {
 
 /* line 124, ../scss/chrome/_main.scss */
 
-.wr__nav ul {
+.wr__nav .wr__group ul {
 	margin: 0;
 	padding: 0;
 }
@@ -15925,20 +15886,20 @@ code[class*="language"],
 	line-height: 24px;
 }
 
-/* line 315, ../scss/common/beta/_panels.beta.scss */
+/* line 322, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__title {
 	font-size: 24px;
 	line-height: 27px;
 }
 
-/* line 329, ../scss/common/beta/_panels.beta.scss */
+/* line 336, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy li {
 	line-height: 26px;
 }
 
-/* line 326, ../scss/common/beta/_panels.beta.scss */
+/* line 333, ../scss/common/beta/_panels.beta.scss */
 
 .info--errors .info__copy {
 	font-size: 16px;
@@ -16551,7 +16512,7 @@ code[class*="language"],
 
 @media (min-width: 768px) and (max-width: 768px) {
 
-/* line 102, ../scss/custom.scss */
+/* line 103, ../scss/custom.scss */
 
 .aui .row-fluid .span4 {
 	width: 100%;
@@ -16950,19 +16911,26 @@ code[class*="language"],
 	margin-bottom: 30px;
 }
 
-/* line 281, ../scss/common/beta/_panels.beta.scss */
+/* line 263, ../scss/common/beta/_panels.beta.scss */
+
+.slate--summary {
+	margin-top: 60px;
+	margin-bottom: 80px;
+}
+
+/* line 288, ../scss/common/beta/_panels.beta.scss */
 
 .slatelayout--side {
 	margin-top: 0;
 }
 
-/* line 290, ../scss/common/beta/_panels.beta.scss */
+/* line 297, ../scss/common/beta/_panels.beta.scss */
 
-.slatelayout--side .cta {
+.slatelayout--side .newcta {
 	float: right;
 }
 
-/* line 299, ../scss/common/beta/_panels.beta.scss */
+/* line 306, ../scss/common/beta/_panels.beta.scss */
 
 .panel,
 .aui .open-validation,
@@ -17522,25 +17490,25 @@ code[class*="language"],
 	padding-right: 30px;
 }
 
-/* line 115, ../scss/custom.scss */
+/* line 116, ../scss/custom.scss */
 
 .bcc_2col1col_alt .span8 {
 	margin-bottom: 0;
 }
 
-/* line 123, ../scss/custom.scss */
+/* line 124, ../scss/custom.scss */
 
 .bcc_2col1col_alt .span4 {
 	margin-bottom: 0;
 }
 
-/* line 133, ../scss/custom.scss */
+/* line 134, ../scss/custom.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span8 {
 	margin-bottom: 0;
 }
 
-/* line 141, ../scss/custom.scss */
+/* line 142, ../scss/custom.scss */
 
 .yui3-js-enabled .bcc_2col1col_alt .span4 {
 	margin-bottom: 0;
