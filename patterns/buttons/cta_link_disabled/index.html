@@ -185,9 +185,12 @@
     <!-- load ace static_highlight extension -->
     <script src="/ace-builds/src/ext-static_highlight.js"></script>
     <script>
-        var source = function($el){ return $("<div/>").text(
+        var source = function($el){ 
+
+            $l = $("<div/>").text(
                 $el.html()
             ).html();
+            return $l;
         };
 
         $(".wr__code pre").each(function(){
@@ -213,7 +216,8 @@
                 theme: "ace/theme/github",
                 startLineNumber: 0,
                 showGutter: false,
-                trim: true
+                trim: true,
+                wrap: false,
             }, function (highlighted) {
                 
             });
@@ -222,6 +226,10 @@
     <style type="text/css">
         pre[class*="language-"], .lt-ie9 pre {
             overflow: auto;
+        }
+        .ace_static_highlight .ace_line {
+            white-space: nowrap;
+            word-wrap: normal;
         }
     </style>
 

@@ -14825,14 +14825,15 @@ li.bcc-header__menu-item--active {
 /* line 342, ../scss/chrome/_main.scss */
 
 .wr__code {
-	margin: 0.5em 0 0.5em 0;
+	margin: .5em 0 .5em 0;
+	overflow: auto;
 }
 
 /* line 347, ../scss/chrome/_main.scss */
 
 .wr__code pre {
 	border-radius: 0;
-	background-color: #ececec;
+	background-color: #FFF;
 	border: 0;
 }
 
@@ -14862,7 +14863,7 @@ pre[class*="language-"],
 	max-height: 30em;
 }
 
-/* line 390, ../scss/chrome/_main.scss */
+/* line 391, ../scss/chrome/_main.scss */
 
 code[class*="language"],
 .lt-ie9 code {
@@ -14884,13 +14885,13 @@ code[class*="language"],
 	text-align: left;
 }
 
-/* line 409, ../scss/chrome/_main.scss */
+/* line 410, ../scss/chrome/_main.scss */
 
 .token {
 	white-space: nowrap;
 }
 
-/* line 417, ../scss/chrome/_main.scss */
+/* line 418, ../scss/chrome/_main.scss */
 
 .token.comment,
 .token.block-comment,
@@ -14900,13 +14901,13 @@ code[class*="language"],
 	color: #7D8B99;
 }
 
-/* line 421, ../scss/chrome/_main.scss */
+/* line 422, ../scss/chrome/_main.scss */
 
 .token.punctuation {
 	color: #5F6364;
 }
 
-/* line 431, ../scss/chrome/_main.scss */
+/* line 432, ../scss/chrome/_main.scss */
 
 .token.property,
 .token.tag,
@@ -14918,7 +14919,7 @@ code[class*="language"],
 	color: #c92c2c;
 }
 
-/* line 439, ../scss/chrome/_main.scss */
+/* line 440, ../scss/chrome/_main.scss */
 
 .token.selector,
 .token.attr-name,
@@ -14928,7 +14929,7 @@ code[class*="language"],
 	color: #2f9c0a;
 }
 
-/* line 446, ../scss/chrome/_main.scss */
+/* line 447, ../scss/chrome/_main.scss */
 
 .token.operator,
 .token.entity,
@@ -14938,7 +14939,7 @@ code[class*="language"],
 	background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 454, ../scss/chrome/_main.scss */
+/* line 455, ../scss/chrome/_main.scss */
 
 .token.atrule,
 .token.attr-value,
@@ -14947,14 +14948,14 @@ code[class*="language"],
 	color: #1990b8;
 }
 
-/* line 459, ../scss/chrome/_main.scss */
+/* line 460, ../scss/chrome/_main.scss */
 
 .token.regex,
 .token.important {
 	color: #e90;
 }
 
-/* line 464, ../scss/chrome/_main.scss */
+/* line 465, ../scss/chrome/_main.scss */
 
 .language-css .token.string,
 .style .token.string {
@@ -14962,25 +14963,25 @@ code[class*="language"],
 	background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 469, ../scss/chrome/_main.scss */
+/* line 470, ../scss/chrome/_main.scss */
 
 .token.important {
 	font-weight: normal;
 }
 
-/* line 473, ../scss/chrome/_main.scss */
+/* line 474, ../scss/chrome/_main.scss */
 
 .token.entity {
 	cursor: help;
 }
 
-/* line 477, ../scss/chrome/_main.scss */
+/* line 478, ../scss/chrome/_main.scss */
 
 .namespace {
 	opacity: .7;
 }
 
-/* line 483, ../scss/chrome/_main.scss */
+/* line 484, ../scss/chrome/_main.scss */
 
 .token.tab:not(:empty):before,
 .token.cr:before,
@@ -14988,7 +14989,7 @@ code[class*="language"],
 	color: #e0d7d1;
 }
 
-/* line 488, ../scss/chrome/_main.scss */
+/* line 489, ../scss/chrome/_main.scss */
 
 .page-banner,
 .page-header {
@@ -14997,19 +14998,19 @@ code[class*="language"],
 	border-right: 1px solid #f2f2f2;
 }
 
-/* line 502, ../scss/chrome/_main.scss */
+/* line 503, ../scss/chrome/_main.scss */
 
 .page-footer {
 	background: #2E3137;
 }
 
-/* line 516, ../scss/chrome/_main.scss */
+/* line 517, ../scss/chrome/_main.scss */
 
 .wr__group {
 	position: relative;
 }
 
-/* line 520, ../scss/chrome/_main.scss */
+/* line 521, ../scss/chrome/_main.scss */
 
 .wr__group header {
 	padding-bottom: 0;
@@ -15017,7 +15018,7 @@ code[class*="language"],
 	height: 26px;
 }
 
-/* line 527, ../scss/chrome/_main.scss */
+/* line 528, ../scss/chrome/_main.scss */
 
 .wr__group ul :last-child a,
 .wr__group ul :last-child .aui .newcta.newcta--link,
@@ -15027,7 +15028,7 @@ code[class*="language"],
 	border-bottom: 0;
 }
 
-/* line 532, ../scss/chrome/_main.scss */
+/* line 533, ../scss/chrome/_main.scss */
 
 .wr__group header span {
 	color: #777;
@@ -15042,7 +15043,7 @@ code[class*="language"],
 	text-shadow: 0;
 }
 
-/* line 545, ../scss/chrome/_main.scss */
+/* line 546, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__title {
 	padding-top: 20px;
@@ -15050,20 +15051,20 @@ code[class*="language"],
 	margin-bottom: 0;
 }
 
-/* line 551, ../scss/chrome/_main.scss */
+/* line 552, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__rule {
 	margin: 20px 0;
 }
 
-/* line 569, ../scss/chrome/_main.scss */
+/* line 570, ../scss/chrome/_main.scss */
 
 .wr__logo,
 .wr__group {
 	border-right: 3px solid #bc0031;
 }
 
-/* line 572, ../scss/chrome/_main.scss */
+/* line 573, ../scss/chrome/_main.scss */
 
 .wr__nav {
 	box-shadow: inset -3px 0px 0px 0px #bc0031;
@@ -16628,7 +16629,7 @@ code[class*="language"],
 
 @media screen and (min-width: 769px) {
 
-/* line 497, ../scss/chrome/_main.scss */
+/* line 498, ../scss/chrome/_main.scss */
 
 .page-banner {
 	margin-bottom: 130px;
@@ -17556,7 +17557,7 @@ code[class*="language"],
 	top: 64px;
 }
 
-/* line 557, ../scss/chrome/_main.scss */
+/* line 558, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__title {
 	height: 150px;
@@ -17564,7 +17565,7 @@ code[class*="language"],
 	padding-bottom: 60px;
 }
 
-/* line 562, ../scss/chrome/_main.scss */
+/* line 563, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__rule {
 	margin: 0 0 40px 0;
@@ -17574,7 +17575,7 @@ code[class*="language"],
 
 @media screen and (max-width: 800px) {
 
-/* line 384, ../scss/chrome/_main.scss */
+/* line 385, ../scss/chrome/_main.scss */
 
 pre[class*="language-"],
 .lt-ie9 pre {
