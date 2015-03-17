@@ -52,7 +52,7 @@
 	    			<span>Patterns</span>
 	    		</header>
 				<ul>
-			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			    	<li class="bcc-header__menu-item ">
 			        	<a href="/patterns/buttons">Buttons</a>
 			        </li>
 			    	<li class="bcc-header__menu-item ">
@@ -61,7 +61,7 @@
 			    	<li class="bcc-header__menu-item ">
 			        	<a href="/patterns/forms">Forms</a>
 			        </li>
-			    	<li class="bcc-header__menu-item ">
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
 			        	<a href="/patterns/headers">Headers</a>
 			        </li>
 			    	<li class="bcc-header__menu-item ">
@@ -125,57 +125,72 @@
     <div class="wr__page-content">
   
  
- <div class="pattern" id="buttons-cta-group">
+ <div class="pattern" id="brand-header">
 
 
-        <div class="wr__example">
-        	<p class="wr__example__title">
-        		CTA Group
-        
-        		<!-- <span class="wr__controls"> 
-        			<span>
-        				<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
-        				<span class="wr__controls__txt">Search</span>
-        			</span> 
-        			<span>
-        				<span class="icon icon--bcc icon--bcc--cog"></span>
-        				<span class="wr__controls__txt">Code</span>
-        			</span>
-        		</span> -->
-        	</p>
-        </div>
-        <div class="pattern__block">
-            <div class="newcta-group">
-            	<a href="#" class="newcta newcta--icon newcta--primary newcta--next newcta-group__firstly">
-            		Get parking permits
-            	</a>
-            	<span class="newcta-group__secondly">
-            		or <a href="#">Just visitors permits</a>
-            	</span>
-            </div>        </div>
-        
-        <div class="wr__notes">
-        
-         
-            <div class="wr__notes__inner">
-                <p class="wr__title">
-                    Usage notes
-                </p>
-                    <p>
-        Used when there is a main CTA with an alternative (and less important) option link            </p>
-            </div>
-             
-        
-        
-        
-           
-        
-        </div>
-        
-        <div class="wr__code">
-			<pre><code class="language-markup"></code></pre>
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Header V1
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<header role="banner" id="header">
+			        <div class="row-fluid">
+			            <a id="skip-to-content" href="#main-content" tabindex="1"> <span>Skip to Content</span> 
+			            </a>
+			        </div>
+			        <div id="header__inner" class="row-fluid">
+			            <div id="logo">
+			                <p> <a href="http://www.bristol.gov.uk" title="Go to Liferay homepage"> Liferay </a> </p> 
+			            </div>
+			            <div id="nav">
+			                <p class=""> <a href="/issues">Issues </a> /  <a href="/boilerplate">Boilerplate </a> 
+			                </p>
+			            </div>
+			            <!-- START .account -->
+			            <div class="myaccount">
+			                <div class="myaccount_links"> <a id="myaccount__sign-in" data-redirect="true" href="http://localhost:8080/c/portal/login?p_l_id=11318" rel="nofollow">Sign&nbsp;in</a> &nbsp;<span class="pipe"></span>&nbsp; <a id="myaccount__create-an-account" href="/create-account">Create&nbsp;an&nbsp;account</a> 
+			                </div>
+			            </div>
+			            <!-- END .account -->
+			        </div>
+			    </header>		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p style="color: rgba(0,0,0,.6)">
+		                There is currently no usage notes at the moment.
+		            </p>
+		    </div>
+		     
+		
+		
+		
+		   
+		
 		</div>
-
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="tbc"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
 
 </div><!-- load ace -->
     <!-- ace-mode="ace/mode/css" ace-theme="ace/theme/chrome" ace-gutter="true" -->

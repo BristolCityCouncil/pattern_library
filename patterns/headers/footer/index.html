@@ -52,7 +52,7 @@
 	    			<span>Patterns</span>
 	    		</header>
 				<ul>
-			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			    	<li class="bcc-header__menu-item ">
 			        	<a href="/patterns/buttons">Buttons</a>
 			        </li>
 			    	<li class="bcc-header__menu-item ">
@@ -61,7 +61,7 @@
 			    	<li class="bcc-header__menu-item ">
 			        	<a href="/patterns/forms">Forms</a>
 			        </li>
-			    	<li class="bcc-header__menu-item ">
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
 			        	<a href="/patterns/headers">Headers</a>
 			        </li>
 			    	<li class="bcc-header__menu-item ">
@@ -125,12 +125,10 @@
     <div class="wr__page-content">
   
  
- <div class="pattern" id="buttons-cta-group">
-
-
+ <div class="pattern" id="brand-header">
         <div class="wr__example">
         	<p class="wr__example__title">
-        		CTA Group
+        		Footer - for 3rd parties
         
         		<!-- <span class="wr__controls"> 
         			<span>
@@ -143,15 +141,34 @@
         			</span>
         		</span> -->
         	</p>
-        </div>
+        </div>        
         <div class="pattern__block">
-            <div class="newcta-group">
-            	<a href="#" class="newcta newcta--icon newcta--primary newcta--next newcta-group__firstly">
-            		Get parking permits
-            	</a>
-            	<span class="newcta-group__secondly">
-            		or <a href="#">Just visitors permits</a>
-            	</span>
+            <div class="bcc-footer" role="contentinfo">
+                <div class="bcc-footer__inner">
+                    <div class="bcc-footer__menu bcc-footer__menu--left">
+                        <ul>
+                            <li>
+                                <a href="https://www.bristol.gov.uk/complaints" title="Complaints and feedback">Complaints and feedback</a>
+                            </li>
+                            <li>
+                                <a href="https://www.bristol.gov.uk/cookies" title="Cookies">Cookies</a>
+                            </li>
+                            <li>
+                                <a href="https://www.bristol.gov.uk/privacy" title="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bcc-footer__menu bcc-footer__menu--right">
+                        <ul>
+                            <li>
+                                <a href="https://www.bristol.gov.uk/contact" title="Contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="https://www.bristol.gov.uk/copyright" title="Copyright">Copyright</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>        </div>
         
         <div class="wr__notes">
@@ -161,8 +178,9 @@
                 <p class="wr__title">
                     Usage notes
                 </p>
-                    <p>
-        Used when there is a main CTA with an alternative (and less important) option link            </p>
+                    <p style="color: rgba(0,0,0,.6)">
+                        There is currently no usage notes at the moment.
+                    </p>
             </div>
              
         
@@ -173,9 +191,10 @@
         </div>
         
         <div class="wr__code">
-			<pre><code class="language-markup"></code></pre>
-		</div>
-
+            <pre><code class="language-markup">&lt;div class="tbc"&gt;
+    tbc
+&lt;/div&gt;</code></pre>
+        </div>
 
 </div><!-- load ace -->
     <!-- ace-mode="ace/mode/css" ace-theme="ace/theme/chrome" ace-gutter="true" -->

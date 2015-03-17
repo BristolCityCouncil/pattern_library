@@ -8897,15 +8897,14 @@ li.bcc-header__menu-item--active {
 .wr__nav .aui .docupload .cta.cta--link,
 .aui .docupload .wr__nav .cta.cta--link {
 	border-bottom: 1px solid #383838;
-	padding: 12px 20px;
-	font-size: 18px;
-	font-size: 1.125rem;
+	padding: 7px 14px;
+	font-size: 14px;
 	color: #fff;
 	text-decoration: none;
 	display: block;
 }
 
-/* line 152, ../scss/chrome/_main.scss */
+/* line 151, ../scss/chrome/_main.scss */
 
 .wr__nav a:hover,
 .wr__nav .aui .newcta.newcta--link:hover,
@@ -8916,7 +8915,7 @@ li.bcc-header__menu-item--active {
 	text-decoration: none;
 }
 
-/* line 156, ../scss/chrome/_main.scss */
+/* line 155, ../scss/chrome/_main.scss */
 
 .wr__nav a:focus,
 .wr__nav .aui .newcta.newcta--link:focus,
@@ -8928,10 +8927,10 @@ li.bcc-header__menu-item--active {
 	border-left: 5px solid #ff9600;
 	color: #ff9600;
 	margin-right: 5px;
-	padding: 12px 15px;
+	padding: 7px 9px;
 }
 
-/* line 175, ../scss/chrome/_main.scss */
+/* line 174, ../scss/chrome/_main.scss */
 
 .wr__notes__inner {
 	padding: 12px;
@@ -8941,7 +8940,7 @@ li.bcc-header__menu-item--active {
 	padding-bottom: 20px;
 }
 
-/* line 183, ../scss/chrome/_main.scss */
+/* line 182, ../scss/chrome/_main.scss */
 
 .wr__notes .wr__notes__inner p {
 	font-size: 14px;
@@ -8950,13 +8949,13 @@ li.bcc-header__menu-item--active {
 	line-height: 19px;
 }
 
-/* line 190, ../scss/chrome/_main.scss */
+/* line 189, ../scss/chrome/_main.scss */
 
 .wr__notes__inner p:last-of-type {
 	margin-bottom: 0;
 }
 
-/* line 194, ../scss/chrome/_main.scss */
+/* line 193, ../scss/chrome/_main.scss */
 
 .wr__title {
 	font-size: 16px;
@@ -8966,7 +8965,7 @@ li.bcc-header__menu-item--active {
 	margin-bottom: 0.3125rem;
 }
 
-/* line 202, ../scss/chrome/_main.scss */
+/* line 201, ../scss/chrome/_main.scss */
 
 .pattern {
 	padding: 0px 0px 20px 0px;
@@ -8975,13 +8974,13 @@ li.bcc-header__menu-item--active {
 	margin: 0.625rem 0rem 5.625rem 0rem;
 }
 
-/* line 209, ../scss/chrome/_main.scss */
+/* line 208, ../scss/chrome/_main.scss */
 
 .pattern__block {
 	margin-bottom: 20px;
 }
 
-/* line 213, ../scss/chrome/_main.scss */
+/* line 212, ../scss/chrome/_main.scss */
 
 .pattern__title {
 	font-family: Georgia,serif;
@@ -8992,7 +8991,7 @@ li.bcc-header__menu-item--active {
 	margin-bottom: 0.625rem;
 }
 
-/* line 222, ../scss/chrome/_main.scss */
+/* line 221, ../scss/chrome/_main.scss */
 
 .wr__example__title {
 	text-transform: uppercase;
@@ -9003,14 +9002,14 @@ li.bcc-header__menu-item--active {
 	border-bottom: 3px solid #bc0031;
 }
 
-/* line 231, ../scss/chrome/_main.scss */
+/* line 230, ../scss/chrome/_main.scss */
 
 .wr__example {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
 }
 
-/* line 236, ../scss/chrome/_main.scss */
+/* line 235, ../scss/chrome/_main.scss */
 
 .wr__mobnav {
 	height: 60px;
@@ -9024,14 +9023,14 @@ li.bcc-header__menu-item--active {
 	left: 0;
 }
 
-/* line 254, ../scss/chrome/_main.scss */
+/* line 253, ../scss/chrome/_main.scss */
 
 .visible-header .wr__mobnav {
 	left: 245px;
 	left: 15.3125rem;
 }
 
-/* line 259, ../scss/chrome/_main.scss */
+/* line 258, ../scss/chrome/_main.scss */
 
 .mini-logo {
 	height: 45px;
@@ -9045,7 +9044,7 @@ li.bcc-header__menu-item--active {
 	position: absolute;
 }
 
-/* line 271, ../scss/chrome/_main.scss */
+/* line 270, ../scss/chrome/_main.scss */
 
 .nav-launch {
 	background: url("/images/menu-icon.png") no-repeat 0 0;
@@ -9059,27 +9058,27 @@ li.bcc-header__menu-item--active {
 	cursor: pointer;
 }
 
-/* line 283, ../scss/chrome/_main.scss */
+/* line 282, ../scss/chrome/_main.scss */
 
 .wr__dropdown {
 	margin-top: 20px;
 }
 
-/* line 337, ../scss/chrome/_main.scss */
+/* line 336, ../scss/chrome/_main.scss */
 
 .lt-ie9 .wr__dropdown {
 	width: 260px;
 	width: 16.25rem;
 }
 
-/* line 342, ../scss/chrome/_main.scss */
+/* line 341, ../scss/chrome/_main.scss */
 
 .wr__code {
 	margin: .5em 0 .5em 0;
 	overflow: auto;
 }
 
-/* line 347, ../scss/chrome/_main.scss */
+/* line 346, ../scss/chrome/_main.scss */
 
 .wr__code pre {
 	border-radius: 0;
@@ -9087,20 +9086,20 @@ li.bcc-header__menu-item--active {
 	border: 0;
 }
 
-/* line 353, ../scss/chrome/_main.scss */
+/* line 352, ../scss/chrome/_main.scss */
 
 .wr__code code[class*="language"] {
 	background-color: #ececec;
 }
 
-/* line 366, ../scss/chrome/_main.scss */
+/* line 365, ../scss/chrome/_main.scss */
 
 .wr__code__text {
 	font-family: "Thesans-Bold","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Arial,sans-serif;
 	margin: 20px 0 5px 0;
 }
 
-/* line 372, ../scss/chrome/_main.scss */
+/* line 371, ../scss/chrome/_main.scss */
 
 pre[class*="language-"],
 .lt-ie9 pre {
@@ -9113,7 +9112,7 @@ pre[class*="language-"],
 	max-height: 30em;
 }
 
-/* line 391, ../scss/chrome/_main.scss */
+/* line 390, ../scss/chrome/_main.scss */
 
 code[class*="language"],
 .lt-ie9 code {
@@ -9135,13 +9134,13 @@ code[class*="language"],
 	text-align: left;
 }
 
-/* line 410, ../scss/chrome/_main.scss */
+/* line 409, ../scss/chrome/_main.scss */
 
 .token {
 	white-space: nowrap;
 }
 
-/* line 418, ../scss/chrome/_main.scss */
+/* line 417, ../scss/chrome/_main.scss */
 
 .token.comment,
 .token.block-comment,
@@ -9151,13 +9150,13 @@ code[class*="language"],
 	color: #7D8B99;
 }
 
-/* line 422, ../scss/chrome/_main.scss */
+/* line 421, ../scss/chrome/_main.scss */
 
 .token.punctuation {
 	color: #5F6364;
 }
 
-/* line 432, ../scss/chrome/_main.scss */
+/* line 431, ../scss/chrome/_main.scss */
 
 .token.property,
 .token.tag,
@@ -9169,7 +9168,7 @@ code[class*="language"],
 	color: #c92c2c;
 }
 
-/* line 440, ../scss/chrome/_main.scss */
+/* line 439, ../scss/chrome/_main.scss */
 
 .token.selector,
 .token.attr-name,
@@ -9179,7 +9178,7 @@ code[class*="language"],
 	color: #2f9c0a;
 }
 
-/* line 447, ../scss/chrome/_main.scss */
+/* line 446, ../scss/chrome/_main.scss */
 
 .token.operator,
 .token.entity,
@@ -9189,7 +9188,7 @@ code[class*="language"],
 	background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 455, ../scss/chrome/_main.scss */
+/* line 454, ../scss/chrome/_main.scss */
 
 .token.atrule,
 .token.attr-value,
@@ -9198,14 +9197,14 @@ code[class*="language"],
 	color: #1990b8;
 }
 
-/* line 460, ../scss/chrome/_main.scss */
+/* line 459, ../scss/chrome/_main.scss */
 
 .token.regex,
 .token.important {
 	color: #e90;
 }
 
-/* line 465, ../scss/chrome/_main.scss */
+/* line 464, ../scss/chrome/_main.scss */
 
 .language-css .token.string,
 .style .token.string {
@@ -9213,25 +9212,25 @@ code[class*="language"],
 	background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 470, ../scss/chrome/_main.scss */
+/* line 469, ../scss/chrome/_main.scss */
 
 .token.important {
 	font-weight: normal;
 }
 
-/* line 474, ../scss/chrome/_main.scss */
+/* line 473, ../scss/chrome/_main.scss */
 
 .token.entity {
 	cursor: help;
 }
 
-/* line 478, ../scss/chrome/_main.scss */
+/* line 477, ../scss/chrome/_main.scss */
 
 .namespace {
 	opacity: .7;
 }
 
-/* line 484, ../scss/chrome/_main.scss */
+/* line 483, ../scss/chrome/_main.scss */
 
 .token.tab:not(:empty):before,
 .token.cr:before,
@@ -9239,7 +9238,7 @@ code[class*="language"],
 	color: #e0d7d1;
 }
 
-/* line 489, ../scss/chrome/_main.scss */
+/* line 488, ../scss/chrome/_main.scss */
 
 .page-banner,
 .page-header {
@@ -9250,19 +9249,19 @@ code[class*="language"],
 	border-right: 1px solid #f2f2f2;
 }
 
-/* line 503, ../scss/chrome/_main.scss */
+/* line 502, ../scss/chrome/_main.scss */
 
 .page-footer {
 	background: #2E3137;
 }
 
-/* line 517, ../scss/chrome/_main.scss */
+/* line 516, ../scss/chrome/_main.scss */
 
 .wr__group {
 	position: relative;
 }
 
-/* line 521, ../scss/chrome/_main.scss */
+/* line 520, ../scss/chrome/_main.scss */
 
 .wr__group header {
 	padding-bottom: 0;
@@ -9270,7 +9269,7 @@ code[class*="language"],
 	height: 26px;
 }
 
-/* line 528, ../scss/chrome/_main.scss */
+/* line 527, ../scss/chrome/_main.scss */
 
 .wr__group ul :last-child a,
 .wr__group ul :last-child .aui .newcta.newcta--link,
@@ -9280,7 +9279,7 @@ code[class*="language"],
 	border-bottom: 0;
 }
 
-/* line 533, ../scss/chrome/_main.scss */
+/* line 532, ../scss/chrome/_main.scss */
 
 .wr__group header span {
 	color: #777;
@@ -9295,7 +9294,7 @@ code[class*="language"],
 	text-shadow: 0;
 }
 
-/* line 546, ../scss/chrome/_main.scss */
+/* line 545, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__title {
 	padding-top: 20px;
@@ -9303,20 +9302,20 @@ code[class*="language"],
 	margin-bottom: 0;
 }
 
-/* line 552, ../scss/chrome/_main.scss */
+/* line 551, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__rule {
 	margin: 20px 0;
 }
 
-/* line 570, ../scss/chrome/_main.scss */
+/* line 569, ../scss/chrome/_main.scss */
 
 .wr__logo,
 .wr__group {
 	border-right: 3px solid #bc0031;
 }
 
-/* line 573, ../scss/chrome/_main.scss */
+/* line 572, ../scss/chrome/_main.scss */
 
 .wr__nav {
 	box-shadow: inset -3px 0px 0px 0px #bc0031;
@@ -9491,7 +9490,7 @@ code[class*="language"],
 
 @media screen and (min-width: 480px) {
 
-/* line 307, ../scss/chrome/_main.scss */
+/* line 306, ../scss/chrome/_main.scss */
 
 .wr__dropdown {
 	left: auto;
@@ -9511,7 +9510,7 @@ code[class*="language"],
 
 @media screen and (min-width: 768px) {
 
-/* line 322, ../scss/chrome/_main.scss */
+/* line 321, ../scss/chrome/_main.scss */
 
 .wr__dropdown {
 	top: 30px;
@@ -10882,7 +10881,7 @@ code[class*="language"],
 
 @media screen and (min-width: 769px) {
 
-/* line 498, ../scss/chrome/_main.scss */
+/* line 497, ../scss/chrome/_main.scss */
 
 .page-banner {
 	margin-bottom: 130px;
@@ -10892,14 +10891,14 @@ code[class*="language"],
 
 @media screen and (min-width: 800px) {
 
-/* line 169, ../scss/chrome/_main.scss */
+/* line 168, ../scss/chrome/_main.scss */
 
 .wr__notes {
 	width: 50%;
 	float: left;
 }
 
-/* line 358, ../scss/chrome/_main.scss */
+/* line 357, ../scss/chrome/_main.scss */
 
 .wr__code {
 	width: 48%;
@@ -11798,19 +11797,19 @@ code[class*="language"],
 	left: 0;
 }
 
-/* line 249, ../scss/chrome/_main.scss */
+/* line 248, ../scss/chrome/_main.scss */
 
 .wr__mobnav {
 	display: none;
 }
 
-/* line 330, ../scss/chrome/_main.scss */
+/* line 329, ../scss/chrome/_main.scss */
 
 .wr__dropdown {
 	top: 64px;
 }
 
-/* line 558, ../scss/chrome/_main.scss */
+/* line 557, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__title {
 	height: 150px;
@@ -11818,7 +11817,7 @@ code[class*="language"],
 	padding-bottom: 60px;
 }
 
-/* line 563, ../scss/chrome/_main.scss */
+/* line 562, ../scss/chrome/_main.scss */
 
 .wr__page-content .pl__rule {
 	margin: 0 0 40px 0;
@@ -11828,7 +11827,7 @@ code[class*="language"],
 
 @media screen and (max-width: 800px) {
 
-/* line 385, ../scss/chrome/_main.scss */
+/* line 384, ../scss/chrome/_main.scss */
 
 pre[class*="language-"],
 .lt-ie9 pre {

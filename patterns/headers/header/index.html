@@ -52,7 +52,7 @@
 	    			<span>Patterns</span>
 	    		</header>
 				<ul>
-			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			    	<li class="bcc-header__menu-item ">
 			        	<a href="/patterns/buttons">Buttons</a>
 			        </li>
 			    	<li class="bcc-header__menu-item ">
@@ -61,7 +61,7 @@
 			    	<li class="bcc-header__menu-item ">
 			        	<a href="/patterns/forms">Forms</a>
 			        </li>
-			    	<li class="bcc-header__menu-item ">
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
 			        	<a href="/patterns/headers">Headers</a>
 			        </li>
 			    	<li class="bcc-header__menu-item ">
@@ -125,57 +125,90 @@
     <div class="wr__page-content">
   
  
- <div class="pattern" id="buttons-cta-group">
+ <div class="pattern" id="brand-header">
 
 
-        <div class="wr__example">
-        	<p class="wr__example__title">
-        		CTA Group
-        
-        		<!-- <span class="wr__controls"> 
-        			<span>
-        				<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
-        				<span class="wr__controls__txt">Search</span>
-        			</span> 
-        			<span>
-        				<span class="icon icon--bcc icon--bcc--cog"></span>
-        				<span class="wr__controls__txt">Code</span>
-        			</span>
-        		</span> -->
-        	</p>
-        </div>
-        <div class="pattern__block">
-            <div class="newcta-group">
-            	<a href="#" class="newcta newcta--icon newcta--primary newcta--next newcta-group__firstly">
-            		Get parking permits
-            	</a>
-            	<span class="newcta-group__secondly">
-            		or <a href="#">Just visitors permits</a>
-            	</span>
-            </div>        </div>
-        
-        <div class="wr__notes">
-        
-         
-            <div class="wr__notes__inner">
-                <p class="wr__title">
-                    Usage notes
-                </p>
-                    <p>
-        Used when there is a main CTA with an alternative (and less important) option link            </p>
-            </div>
-             
-        
-        
-        
-           
-        
-        </div>
-        
-        <div class="wr__code">
-			<pre><code class="language-markup"></code></pre>
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Header
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<!-- START Header -->
+			<div class="bcc-header">
+			        <div class="bcc-header__primary">
+			            <a id="skip-to-content" href="#main-content" tabindex="1"> <span>Skip to Content</span></a>
+			            <div class="bcc-header__primary-inner">
+			                <div class="bcc-header__brand">
+			                    <div class="bcc-header__logo"></div>
+			                    <a class="bcc-header__sitename" href="/">Home</a>
+			                </div>
+			                <div class="bcc-header__search">
+			                    <input class="bcc-header__search-box" placeholder="Search Bristol City Council" type="text" />
+			                    <button class="bcc-header__search-button" type="submit"><span class="icon--bcc icon--bcc--search"></span></button>
+			                </div>
+			                <div class="bcc-header__actions">
+			                    <ul>
+			                        <li><a href="#">Sign In</a></li>
+			                        <li><a href="#">Create an account</a></li>
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="bcc-header__secondry">
+			            <div class="bcc-header__primary-inner">
+			                <div class="bcc-header__mobile-actions">
+			                    <a class="bcc-header__mobile-nav bcc-header__mobile-nav--menu" href="#"><span class="icon--bcc icon--bcc--menu"></span> Menu</a>
+			                    <a class="bcc-header__mobile-nav bcc-header__mobile-nav--search" href="#"><span class="icon--bcc icon--bcc--search"></span> Search</a>
+			                </div>
+			                <div class="bcc-header__menu"  style="display:none" >
+			                    <ul>
+			                    </ul>
+			                </div>
+			                <div class="bcc-header__search bcc-header__search--mobile">
+			                    <input class="bcc-header__search-box" type="text" />
+			                    <button class="bcc-header__search-button" type="submit"><span class="icon--bcc icon--bcc--search"></span></button>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			<!-- END Header -->		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p style="color: rgba(0,0,0,.6)">
+		                There is currently no usage notes at the moment.
+		            </p>
+		    </div>
+		     
+		
+		
+		
+		   
+		
 		</div>
-
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="tbc"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
 
 </div><!-- load ace -->
     <!-- ace-mode="ace/mode/css" ace-theme="ace/theme/chrome" ace-gutter="true" -->
