@@ -19,7 +19,134 @@
 </head>
 
 <body>
-	<div class="bcc-header">
+	<div class="wr__mobnav">
+    	<div class="mini-logo">
+			<a href="/">
+				<img src="/images/logo-bcc-white.png" alt="">
+			</a>
+		</div>
+		<div class="nav-launch"></div>
+	</div>
+    <div class="wr__header">
+    	<div class="wr__logo">
+			<a href="/">
+				<img src="/images/logo-bcc.png" alt="">
+			</a>
+		</div>
+
+    	<div class="wr__nav">
+    		<div class="wr__group">
+				<ul>
+					<li class="bcc-header__menu-item ">
+				        <a href="/">
+				            Home
+				        </a>
+				    </li>
+
+			  
+				</ul>
+			</div>
+
+			<div class="wr__group">
+	    		<header>
+	    			<span>Patterns</span>
+	    		</header>
+				<ul>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/buttons">Buttons</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/colours">Colours</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/forms">Forms</a>
+			        </li>
+			    	<li class="bcc-header__menu-item bcc-header__menu-item--active">
+			        	<a href="/patterns/headers">Headers</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/icons">Icons</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/navigation">Navigation</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/panels">Panels</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/type">Type</a>
+			        </li>
+			    	<li class="bcc-header__menu-item ">
+			        	<a href="/patterns/validation">Validation</a>
+			        </li>
+				</ul>
+			</div>
+
+			<div class="wr__group">
+				<header>
+	    			<span>Examples</span>
+	    		</header>
+				<ul>
+				    <li class="bcc-header__menu-item ">
+				        <a href="/example/project">
+				            Webpages
+				        </a>
+				    </li>
+				    <li class="bcc-header__menu-item ">
+				        <a href="/example/emails">
+				            Emails
+				        </a>
+				    </li>
+				    
+				</ul>
+			</div>
+
+			<div class="wr__group">
+				<header>
+	    			<span>Documentation</span>
+	    		</header>
+				<ul>
+				    <li class="bcc-header__menu-item ">
+				        <a href="/documentation">
+				            Getting started
+				        </a>
+				    </li>
+				    
+				</ul>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+
+		</div>
+	</div>
+
+    <div class="wr__page-content">
+  
+ 
+ <div class="pattern" id="brand-header">
+
+
+		<div class="wr__example">
+			<p class="wr__example__title">
+				Header
+		
+				<!-- <span class="wr__controls"> 
+					<span>
+						<span class="wr__controls__icon icon icon--bcc icon--bcc--buspass"></span>
+						<span class="wr__controls__txt">Search</span>
+					</span> 
+					<span>
+						<span class="icon icon--bcc icon--bcc--cog"></span>
+						<span class="wr__controls__txt">Code</span>
+					</span>
+				</span> -->
+			</p>
+		</div>		
+		<div class="pattern__block">
+			<!-- START Header -->
+			<div class="bcc-header">
 			        <div class="bcc-header__primary">
 			            <a id="skip-to-content" href="#main-content" tabindex="1"> <span>Skip to Content</span></a>
 			            <div class="bcc-header__primary-inner">
@@ -56,6 +183,89 @@
 			            </div>
 			        </div>
 			    </div>
+			<!-- END Header -->		</div>
+		
+		<div class="wr__notes">
+		
+		 
+		    <div class="wr__notes__inner">
+		        <p class="wr__title">
+		            Usage notes
+		        </p>
+		            <p style="color: rgba(0,0,0,.6)">
+		                There is currently no usage notes at the moment.
+		            </p>
+		    </div>
+		     
+		
+		
+		
+		   
+		
+		</div>
+		
+		<div class="wr__code">
+			<pre><code class="language-markup">&lt;div class="tbc"&gt;
+	tbc
+&lt;/div&gt;</code></pre>
+		</div>
+
+</div><!-- load ace -->
+    <!-- ace-mode="ace/mode/css" ace-theme="ace/theme/chrome" ace-gutter="true" -->
+    <script src="/ace-builds/src/ace.js"></script>
+    <!-- load ace static_highlight extension -->
+    <script src="/ace-builds/src/ext-static_highlight.js"></script>
+    <script>
+        var source = function($el){ 
+
+            $l = $("<div/>").text(
+                $el.html()
+            ).html();
+            return $l;
+        };
+
+        $(".wr__code pre").each(function(){
+            $(this).addClass('language-markup');
+            $(this).empty();
+            $(this).html(
+                source(
+                    $(this).closest('.pattern')
+                        .find('.wr__example').next()
+                )
+            );
+        });
+
+        var highlight = ace.require("ace/ext/static_highlight")
+        var dom = ace.require("ace/lib/dom")
+        function qsa(sel) {
+            return Array.apply(null, document.querySelectorAll(sel));
+        }
+
+        qsa(".language-markup").forEach(function (codeEl) {
+            highlight(codeEl, {
+                mode: "ace/mode/html",
+                theme: "ace/theme/github",
+                startLineNumber: 0,
+                showGutter: false,
+                trim: true,
+                wrap: false,
+            }, function (highlighted) {
+                
+            });
+        });
+    </script>
+    <style type="text/css">
+        pre[class*="language-"], .lt-ie9 pre {
+            overflow: auto;
+        }
+        .ace_static_highlight .ace_line {
+            white-space: nowrap;
+            word-wrap: normal;
+        }
+    </style>
+
+
+    </div>
 
     <script>
         var ie7 = false;
