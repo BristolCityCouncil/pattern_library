@@ -310,6 +310,19 @@ YUI().add(['open-validation'], function(Y){
 			}
 			
 		},
+		events: {
+			"click a": "goTo",
+		},
+		goTo: function(e){
+			var t = (this.getTargets()),
+				cl = $(t).find('input').focus();
+			t = t[0];
+			if($(t).is("input"))
+				return $(t).focus();
+			if(cl.length)
+				return cl.focus();
+			$(t).closest('.field').find('input').focus();
+		},
 		getTargets: function(){
 			return (this.$el.attr('data-ov-target')) ? this.$el.attr('data-ov-target').split(',') : [this.$el.find('a').attr('href')] ;
 		},
@@ -355,7 +368,7 @@ YUI().add(['open-validation'], function(Y){
 		ensureMessageElement: function($el){
 			if($el.message) return $el;
 			$el.message = $('<div class="field__message field__message--error" />');
-			if($el.target.is('.field--set') || $el.target.is('.field--group')){
+			if($el.target.is('input[type="text"]') || $el.target.is('.field--set') || $el.target.is('.field--group')){
 				$el.target.after($el.message);
 			}else{
 				$el.target.append($el.message);
