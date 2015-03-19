@@ -6451,6 +6451,13 @@ html .info--errors .info__copy p .newcta.newcta--link,
 	margin-bottom: 0;
 }
 
+/* line 363, ../scss/common/beta/_panels.beta.scss */
+
+.span8 .slatelayout--main,
+.span8 .slatelayout--side {
+	width: 100%;
+}
+
 /* line 6, ../scss/common/_js.scss */
 
 .js .form .form__item .form__item__label.label--checkbox.form__item__label--group,

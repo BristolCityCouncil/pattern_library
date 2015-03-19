@@ -4809,6 +4809,13 @@
 	margin-bottom: 0;
 }
 
+/* line 363, ../scss/common/beta/_panels.beta.scss */
+
+.span8 .slatelayout--main,
+.span8 .slatelayout--side {
+	width: 100%;
+}
+
 /* line 4, ../scss/common/vendor/_uniform.scss */
 
 .uniform__select--block,
