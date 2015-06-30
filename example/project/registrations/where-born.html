@@ -1,0 +1,314 @@
+<!doctype html>
+<html class="aui no-js bcc-aui" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pattern Library | Bristol City Council</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Uniform.js/2.1.2/jquery.uniform.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <link rel="stylesheet" href="/bcc-beta-theme/css/base.css">
+    <link rel="stylesheet" href="/bcc-beta-theme/css/aui.css">
+    <link rel="stylesheet" href="/css/anti-aui.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script>ga=function()use($sp){};</script>
+</head>
+
+<body>
+    <header role="banner" id="header">
+        <div class="row-fluid">
+            <a id="skip-to-content" href="#main-content" tabindex="1"> <span>Skip to Content</span> 
+            </a>
+        </div>
+        <div id="header__inner" class="row-fluid">
+            <div id="logo">
+                <p> <a href="http://services.bristol.gov.uk" title="Go to Liferay homepage"> Liferay </a> </p> 
+            </div>
+            <div id="nav">
+                <p>
+                    <!-- <a href="/issues">Issues </a> /  <a href="/boilerplate">Boilerplate </a>  -->
+                    <a href="http://services.bristol.gov.uk">Online services </a> 
+                </p>
+            </div>
+            <!-- START .account -->
+            <div class="myaccount">
+                <div class="myaccount_links"> <a id="myaccount__sign-in" data-redirect="true" href="http://localhost:8080/c/portal/login?p_l_id=11318" rel="nofollow">Sign&nbsp;in</a> &nbsp;<span class="pipe"></span>&nbsp; <a id="myaccount__create-an-account" href="/create-account">Create&nbsp;an&nbsp;account</a> 
+                </div>
+            </div>
+            <!-- END .account -->
+        </div>
+        </header>
+        <div id="main">
+          <div class="page-content" id="content">
+            <!-- ***** CONTENT ***** -->
+            <div class="columns-1" id="main-content" role="main">
+              <div class="portlet-layout row-fluid">
+                <div class="portlet-column portlet-column-only span12" id="column-1">
+                  <div class="portlet-dropzone portlet-column-content portlet-column-content-only" id="layout-column_column-1">
+                    <div class="portlet-boundary portlet-boundary_bccbirths_WAR_bccregistrationsportlet_ portlet-static portlet-static-end portlet-borderless bcc-births-portlet " id="p_p_id_bccbirths_WAR_bccregistrationsportlet_" >
+                      <span id="p_bccbirths_WAR_bccregistrationsportlet"></span>
+                      <div class="portlet-borderless-container" style="">
+                        <div class="portlet-body">
+                          <script>
+                            ga('send', 'pageview', {
+                              'page': '/registrations/birth/where-born',
+                            });
+                          </script>
+                          <header class="step-header" id="where-was-your-baby-born-header">
+                          <h1 class="step-header__title">
+                            Book to register a birth
+                            <span class="step-header__title__steps">
+                              <span class="step-header__title__steps__seperator">:</span> step 1 of 6
+                            </span>
+                          </h1>
+                          <h2 class="step-header__subtitle">
+                            Where was your baby born
+                          </h2>
+                          </header>
+                          <form id="registration" class="form" action="https://services.bristol.gov.uk/registrations?p_auth=TjTOBp6E&amp;p_p_id=bccbirths_WAR_bccregistrationsportlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=2" method="get">
+                            <input type="hidden" name="execution" value="e1s1" />
+                            <input type="hidden" name="p_p_id" value="bccbirths_WAR_bccregistrationsportlet" />
+                            <fieldset class="form__item form__item--group" id="anchor_birthLocation">
+                              <legend class="form__item__label">
+                                Where did the birth happen?
+                              </legend>
+                              <label for="location0" class="form__item__label form__item__label--group label--radio">
+                                <input id="location0" class="form__item__field form__item__field--radio" name="birthLocation" type="radio" value="0" data-checkid="false" >
+                                St Michael's Hospital
+                              </label>
+                              <label for="location1" class="form__item__label form__item__label--group label--radio">
+                                <input id="location1" class="form__item__field form__item__field--radio" name="birthLocation" type="radio" value="1" data-checkid="false" >
+                                Southmead Hospital
+                              </label>
+                              <label for="location2" class="form__item__label form__item__label--group label--radio">
+                                <input id="location2" class="form__item__field form__item__field--radio" name="birthLocation" type="radio" value="2" data-checkid="false" >
+                                Cossham Hospital
+                              </label>
+                              <label for="location-in-bristol" class="form__item__label form__item__label--group label--radio">
+                                <input id="location-in-bristol" class="form__item__field form__item__field--radio" name="birthLocation" type="radio" value="in-bristol" data-checkid="false" >
+                                Another address in the Bristol City Council area
+                              </label>
+                              <div class="postcodeLookup">
+                                <div class="form__item" id="field-postcode">
+                                  <label class="form__item__label" for="postCode">Postcode for other Bristol address</label>
+                                  <input id="postCode" name="postCode" placeholder="Eg. BS1 3LP" class="form__item__field form__item__field--string form__item__field--small form__item--blurred" type="text" value=""/>
+                                  <button class="cta cta--small" type="submit" name="_eventId_lookupAddress" onClick="ga('send', 'pageview',{'page': '/registrations/birth/where-born-click-address-lookup'});">
+                                    Find address
+                                  </button>
+                                  <div class="form__item__message form__item__message--error" aria-hidden="true">
+                                </div>  </div>
+                              </div>
+                              <label for="location-outside-bristol" class="form__item__label form__item__label--group label--radio">
+                                <input id="location-outside-bristol" class="form__item__field form__item__field--radio" name="birthLocation" type="radio" value="outside-bristol" data-checkid="false" >
+                                Outside Bristol City Council area, but in England or Wales
+                              </label>
+                              <div class="form__item" id="outside-bristol-address">
+                                <label class="form__item__label" for="declarationAddress">
+                                  Name and location of hospital, or the address where the birth happened, if outside the council area
+                                </label>
+                                <textarea id="declarationAddress" name="declarationAddress" name="declarationAddress" class="form__item__field form__item__field--string form__item__field--textarea" rows="2"></textarea>
+                                </div>  <label for="location-outside-england-or-wales" class="form__item__label form__item__label--group label--radio">
+                                <input id="location-outside-england-or-wales" class="form__item__field form__item__field--radio" name="birthLocation" type="radio" value="outside-england-or-wales" data-checkid="false" >
+                                Outside England or Wales
+                              </label>
+                            </fieldset>
+                            <button type="submit" name="_eventId_next" class="cta cta--icon cta--primary cta--next">
+                              Next
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content " id="p_p_id_56_INSTANCE_7tEWhqAUwnFP_" >
+                      <span id="p_56_INSTANCE_7tEWhqAUwnFP"></span>
+                      <div class="portlet-borderless-container" style="">
+                        <div class="portlet-body">
+                          <div class="journal-content-article">
+                            <div class="panel panel--feedback">
+                              <h2 class="panel__title">Give feedback on this new online service</h2>
+                              <div class="panel__copy">
+                                <p><a href="https://www.bristol.gov.uk/node/24282" target="_blank">Give feedback (opens new window)</a> and help improve this service.<br />
+                                It only takes a minute and you won't lose any details.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="entry-links">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portlet-boundary portlet-boundary_1_WAR_kaleodesignerportlet_ portlet-static portlet-static-end portlet-borderless kaleo-designer-portlet " id="p_p_id_1_WAR_kaleodesignerportlet_" >
+              <span id="p_1_WAR_kaleodesignerportlet"></span>
+            </div>
+            <form action="#" id="hrefFm" method="post" name="hrefFm">
+              <span></span>
+            </form>
+            <!-- ***** CONTENT ***** -->
+          </div>
+        </div>
+        <!-- END </main> -->
+        <!-- START <footer> -->
+        <footer class="page-footer" role="contentinfo" id="footer">
+        <div class="layer">
+          <div>
+            <div class="legal-nav">
+              <ul class="linklist">
+                <li><a href="https://www.bristol.gov.uk/complaints" title="Complaints and feedback">Complaints and feedback</a></li>
+                <li><a href="https://www.bristol.gov.uk/cookies" title="Cookies">Cookies</a></li>
+                <li><a href="https://www.bristol.gov.uk/privacy" title="Privacy">Privacy</a></li>
+                <li><a href="https://www.bristol.gov.uk/contact" title="Contact">Contact</a></li>
+                <li><a href="https://www.bristol.gov.uk/copyright" title="Copyright">Copyright</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </footer>
+        <!-- END </footer> -->  <script src="https://services.bristol.gov.uk/notifications-portlet/notifications/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=en_US&amp;b=6210&amp;t=1435323067000" type="text/javascript"></script>
+        <script type="text/javascript">
+          // <![CDATA[
+          Liferay.Util.addInputFocus();
+          // ]]>
+        </script>
+        <script type="text/javascript">
+          // <![CDATA[
+          Liferay.Portlet.onLoad(
+          {
+            canEditTitle: false,
+            columnPos: 1,
+            isStatic: 'end',
+            namespacedId: 'p_p_id_56_INSTANCE_7tEWhqAUwnFP_',
+            portletId: '56_INSTANCE_7tEWhqAUwnFP',
+            refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d104918\x26p_p_id\x3d56_INSTANCE_7tEWhqAUwnFP\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d1\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregistrations'
+          }
+          );
+          Liferay.provide(
+          Liferay.Util,
+          'openKaleoDesignerPortlet',
+          function(config) {
+            var A = AUI();
+            var kaleoURL = Liferay.PortletURL.createURL('https://services.bristol.gov.uk/registrations?p_p_id=2_WAR_kaleodesignerportlet&p_p_lifecycle=0');
+            kaleoURL.setParameter('availableFields', config.availableFields);
+            kaleoURL.setParameter('availablePropertyModels', config.availablePropertyModels);
+            kaleoURL.setParameter('ddmStructureId', config.ddmStructureId);
+            kaleoURL.setParameter('draftVersion', config.draftVersion);
+            kaleoURL.setParameter('kaleoProcessId', config.kaleoProcessId);
+            kaleoURL.setParameter('name', config.name);
+            kaleoURL.setParameter('openerWindowName', config.openerWindowName);
+            kaleoURL.setParameter('portletResourceNamespace', config.portletResourceNamespace);
+            kaleoURL.setParameter('propertiesSaveCallback', config.propertiesSaveCallback);
+            kaleoURL.setParameter('refreshOpenerOnClose', config.refreshOpenerOnClose);
+            kaleoURL.setParameter('saveCallback', config.saveCallback);
+            kaleoURL.setParameter('uiScope', config.uiScope);
+            kaleoURL.setParameter('version', config.version);
+            kaleoURL.setWindowState('pop_up');
+            config.uri = kaleoURL.toString();
+            var dialogConfig = config.dialog;
+            if (!dialogConfig) {
+              var region = A.one(Liferay.Util.getOpener()).get('region');
+              dialogConfig = {
+                destroyOnHide: true
+              };
+              config.dialog = dialogConfig;
+            }
+            if (!('align' in dialogConfig)) {
+              dialogConfig.align = Liferay.Util.Window.ALIGN_CENTER;
+            }
+            var dialogIframeConfig = config.dialogIframe;
+            if (!dialogIframeConfig) {
+              dialogIframeConfig = {
+                closeOnEscape: false
+              };
+              config.dialogIframe = dialogIframeConfig;
+            }
+            Liferay.Util.openWindow(config);
+          },
+          ['liferay-portlet-url']
+          );
+          Liferay.Portlet.onLoad(
+          {
+            canEditTitle: false,
+            columnPos: 0,
+            isStatic: 'end',
+            namespacedId: 'p_p_id_1_WAR_kaleodesignerportlet_',
+            portletId: '1_WAR_kaleodesignerportlet',
+            refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d104918\x26p_p_id\x3d1_WAR_kaleodesignerportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregistrations'
+          }
+          );
+          Liferay.Portlet.onLoad(
+          {
+            canEditTitle: false,
+            columnPos: 0,
+            isStatic: 'end',
+            namespacedId: 'p_p_id_bccbirths_WAR_bccregistrationsportlet_',
+            portletId: 'bccbirths_WAR_bccregistrationsportlet',
+            refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d104918\x26p_p_id\x3dbccbirths_WAR_bccregistrationsportlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dcolumn-1\x26p_p_col_pos\x3d0\x26p_p_col_count\x3d2\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fregistrations'
+          }
+          );
+          AUI().use('aui-base', 'liferay-menu', 'liferay-notice', 'liferay-poller', 'liferay-session', function(A) {(function() {
+              Liferay.Util.addInputType();
+              Liferay.Portlet.ready(
+              function(portletId, node) {
+                Liferay.Util.addInputType(node);
+              }
+              );
+              if (A.UA.mobile) {
+                Liferay.Util.addInputCancel();
+              }
+              })();(function() {
+              new Liferay.Menu();
+              var liferayNotices = Liferay.Data.notices;
+              for (var i = 1; i < liferayNotices.length; i++) {
+                new Liferay.Notice(liferayNotices[i]);
+              }
+              })();(function() {
+              Liferay.Session = new Liferay.SessionBase(
+              {
+                autoExtend: false,
+                sessionLength: 30,
+                redirectOnExpire: false,
+                redirectUrl: 'https\x3a\x2f\x2fservices\x2ebristol\x2egov\x2euk\x2fweb\x2fguest',
+                warningLength: 1
+              }
+              );
+              Liferay.Session.plug(Liferay.SessionDisplay);
+          })();});
+          // ]]>
+        </script>
+        <script src="https://services.bristol.gov.uk/bcc-beta-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=en_US&amp;b=6210&amp;t=1435324798000" type="text/javascript"></script>
+        <script type="text/javascript">
+          // <![CDATA[
+          // ]]>
+        </script>
+        <style type="text/css">
+          /* YUI compressor workaround */
+          .ie .drop,
+          .firefox .drop {
+            overflow: hidden!important;
+          }
+          .ie .drop select,
+          .firefox .drop select {
+            width: 140%!important;
+          }
+          .firefox .drop select {
+            margin-top: -3px!important;
+          }
+          .ie9 .drop select {
+            margin-top: 2px!important;
+          }
+          .ie8 .drop select {
+            margin-top: -8px!important;
+          }
+        </style>
+      </body>
+    </html>
