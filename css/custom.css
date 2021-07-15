@@ -11986,3 +11986,26 @@ h3 {
 
 }
 
+/* CSS ADDED BY JAMES TARPEY 15/07/2021 */
+ 
+/* OUTLINE BUTTON STYLE */
+
+.aui .newcta.newcta--outline,
+.aui .newcta.newcta--outline:focus,
+.aui .newcta.newcta--outline:hover,
+.aui .newcta.newcta--outline:focus:hover {
+    background: none;
+    box-shadow: none;
+    color: #0d45a0;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+.aui .newcta.newcta--outline:hover {
+    color: #386ec7;
+}
+
+.aui .newcta.newcta--outline:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #ff9600;
+}
