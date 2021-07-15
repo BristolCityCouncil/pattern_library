@@ -11988,12 +11988,12 @@ h3 {
 
 /* CSS ADDED BY JAMES TARPEY 15/07/2021 */
  
-/* OUTLINE BUTTON STYLE */
+/* BORDERLESS BUTTON STYLE */
 
-.aui .newcta.newcta--outline,
-.aui .newcta.newcta--outline:focus,
-.aui .newcta.newcta--outline:hover,
-.aui .newcta.newcta--outline:focus:hover {
+.aui .newcta.newcta--borderless,
+.aui .newcta.newcta--borderless:focus,
+.aui .newcta.newcta--borderless:hover,
+.aui .newcta.newcta--borderless:focus:hover {
     background: none;
     box-shadow: none;
     color: #0d45a0;
@@ -12001,11 +12001,25 @@ h3 {
     text-decoration: underline;
 }
 
-.aui .newcta.newcta--outline:hover {
+.aui .newcta.newcta--borderless:hover {
     color: #386ec7;
 }
 
-.aui .newcta.newcta--outline:focus {
+.aui .newcta.newcta--borderless:focus {
     outline: none;
     box-shadow: 0 0 0 3px #ff9600;
+}
+
+/* PAGINATION BUTTON PATTERN */
+
+.aui .pagination-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .aui .pagination-buttons * {
+      flex: 1;
+  }
 }
