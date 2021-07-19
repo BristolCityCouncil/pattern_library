@@ -12023,3 +12023,9 @@ h3 {
       flex: 1;
   }
 }
+
+/* PANEL INLINE LINKS */
+
+.aui .info .info__copy a + a {
+  margin-left: 15px;
+}
