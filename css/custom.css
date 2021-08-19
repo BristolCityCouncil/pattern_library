@@ -12030,3 +12030,9 @@ h3 {
 .aui .info .info__copy a + a {
   margin-left: 15px;
 }
+
+/* SHORT NUMBER FIELDS */
+
+.aui .field.field--short-number .field__input[type=text] {
+  width: 160px;
+}
