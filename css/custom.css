@@ -12036,3 +12036,120 @@ h3 {
 .aui .field.field--short-number .field__input[type=text] {
   width: 160px;
 }
+
+/* LOADING OVERLAY */
+
+.aui #loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 16, 16, 0.8);
+  z-index: 9999;
+  place-items: center;
+}
+
+.aui #loading-overlay div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+}
+
+.aui #loading-overlay div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+
+.aui #loading-overlay div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.aui #loading-overlay div:nth-child(1) :after {
+  top: 63px;
+  left: 63px;
+}
+
+.aui #loading-overlay div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.aui #loading-overlay div:nth-child(2) :after {
+  top: 68px;
+  left: 56px;
+}
+
+.aui #loading-overlay div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.aui #loading-overlay div:nth-child(3) :after {
+  top: 71px;
+  left: 48px;
+}
+
+.aui #loading-overlay div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.aui #loading-overlay div:nth-child(4) :after {
+  top: 72px;
+  left: 40px;
+}
+
+.aui #loading-overlay div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.aui #loading-overlay div:nth-child(5) :after {
+  top: 71px;
+  left: 32px;
+}
+
+.aui #loading-overlay div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.aui #loading-overlay div:nth-child(6) :after {
+  top: 68px;
+  left: 24px;
+}
+
+.aui #loading-overlay div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.aui #loading-overlay div:nth-child(7) :after {
+  top: 63px;
+  left: 17px;
+}
+
+.aui #loading-overlay div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.aui #loading-overlay div:nth-child(8) :after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
