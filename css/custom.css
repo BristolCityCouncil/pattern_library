@@ -12153,3 +12153,55 @@ h3 {
     transform: rotate(360deg);
   }
 }
+
+/* OPTION BLOCKS */
+
+.aui fieldset.field--set-option-block {
+  max-width: none;
+}
+
+.aui legend + .option-block {
+  margin-top: 20px;
+}
+
+.aui .option-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.aui .option-block + .option-block {
+  margin-top: 20px;
+}
+
+.aui .option-block .field__input[type="checkbox"] + .field__label,
+.aui .option-block .field__input[type="radio"] + .field__label {
+  padding: 20px;
+}
+
+.aui .option-block .field__input[type="checkbox"] + .field__label:before,
+.aui .option-block .field__input[type="radio"] + .field__label:before,
+.aui .option-block .field__input[type="checkbox"] + .field__label:after,
+.aui .option-block .field__input[type="radio"] + .field__label:after {
+  opacity: 0;
+}
+
+.aui .option-block .field__input[type="checkbox"] + .field__label span,
+.aui .option-block .field__input[type="radio"] + .field__label span {
+  display: block;
+  font-family: "Thesans-Bold", "Helvetica Neue", Arial, sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.aui .option-block .field__input[type="radio"] + label {
+  border: 2px solid #ccc;
+}
+
+.aui .option-block .field__input[type="radio"]:checked + label {
+  border-color: #188049;
+}
+
+.aui .option-block .field__input[type="radio"]:focus + label {
+  border-color: #ff9600;
+}
