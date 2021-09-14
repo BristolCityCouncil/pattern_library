@@ -12156,7 +12156,7 @@ h3 {
 
 /* OPTION BLOCKS */
 
-.aui fieldset.field--set-option-block {
+.aui .field.field--set-option-block {
   max-width: none;
 }
 
@@ -12204,4 +12204,74 @@ h3 {
 
 .aui .option-block .field__input[type="radio"]:focus + label {
   border-color: #ff9600;
+}
+
+/* ACCORDION */
+
+.aui .accordion {
+  border-top: 1px solid #b1b4b6;
+  border-bottom: 1px solid #b1b4b6;
+  margin: 40px 0;
+}
+
+.aui .accordion h2 {
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.aui .accordion h2 button {
+  all: inherit;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  color: #0d45a0;
+  background-color: transparent;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.aui .accordion h2 button svg {
+  height: 1em;
+  margin-left: 0.5em;
+}
+
+.aui .accordion h2 button:hover,
+.aui .accordion h2 button:focus {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.aui .accordion h2 button:focus {
+  color: #000;
+  background-color: #ff9600;
+  outline: 3px solid #ff9600;
+  outline-offset: 0;
+}
+
+.aui .accordion > div {
+  margin: 0 0 20px;
+}
+
+.aui .accordion > div + h2 {
+  border-top: 1px solid #b1b4b6;
+}
+
+.aui .accordion [aria-expanded="true"] .vert {
+  display: none;
+}
+
+.aui .accordion [aria-expanded] rect {
+  fill: currentColor;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .aui .accordion svg {
+    display: none;
+  }
+  .aui .accordion > div + h2 {
+    padding-top: 20px;
+  }
 }
