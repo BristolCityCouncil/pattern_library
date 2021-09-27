@@ -12283,10 +12283,23 @@ h3 {
   line-height: 23px;
   padding: 13.5px 25px 10.5px;
 }
-
 .aui .newcta:before,
 .aui .newcta:after,
 .aui .newcta[type]:before,
 .aui .newcta[type]:after {
   top: 12px;
+}
+
+@media (min-width: 768px) {
+  .aui .newcta,
+  .aui .newcta[type] {
+    line-height: 23px;
+    padding: 13.5px 25px 10.5px;
+  }
+  .aui .newcta:before,
+  .aui .newcta:after,
+  .aui .newcta[type]:before,
+  .aui .newcta[type]:after {
+    top: 12px;
+  }
 }
