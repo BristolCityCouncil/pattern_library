@@ -12942,7 +12942,7 @@ ul.default-list li:before {
 
 @font-face {
   font-family: "bccFont";
-  src: url(./assets/bccFont.ttf) format("truetype"), url(./assets/bccFont.woff) format("woff"), url(./assets/bccFont.svg#bbcFont) format("svg");
+  src: url(../assets/bccFont.ttf) format("truetype"), url(../assets/bccFont.woff) format("woff"), url(../assets/bccFont.svg#bbcFont) format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
